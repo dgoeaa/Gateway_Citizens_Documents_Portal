@@ -194,6 +194,7 @@ Only P/public is served. Data stays outside it; P/data is ignored. No source
 variant directory, CDN, external package, outside file or build-time download
 is used by this runtime. Packaging corrects the original missing public root.
 P/README.txt is the operational/configuration reference.
+P/SHA256SUMS records each final package file's checksum except its own.
 
 Only the final package is added; no original source tree is deleted or modified.
 Old sources are archival inputs in this PR, not alternate recommended releases.
@@ -234,6 +235,23 @@ Executed local evidence:
     page overflow, unnamed buttons, missing main headings, runtime exceptions
     or external resource requests in that run. This is not full WCAG testing.
   - Escape resolves verification cancellation; no stuck sending promise.
+  - Actual partial-upload recovery retained NITDA-2026-4 and completed both
+    same-name attachments after resuming the saved draft and waiting for the
+    real OTP resend cooldown. A deliberately blocked localStorage write still
+    produced the actual server reference NITDA-2026-5 and a draft-save warning.
+    These are synthetic local records, not citizen or production results.
+  - Offline shell registration/cache and issued-reference fallback were
+    exercised with Chromium's network disabled: labelled correct-reference
+    device copy, no write controls, no API/admin cache entries.
+  - Admin exact-reference filtering and actual server-proof revocation passed.
+  - Nginx template syntax passed with temporary generated local self-signed
+    certificate fixtures. This does not validate real certificates/DNS/TLS.
+  - Secret scanning passed before every code commit.
+  - CodeQL initially flagged a filename-derived HTTP response header. It was
+    replaced by a fixed Content-Disposition filename and regression checked.
+    Subsequent successful Python/JavaScript scans reported zero alerts.
+    The latest attempt after the last offline-reference change TIMED OUT.
+    Final scan completion is FAILED, not PASSED or a live-dependency exemption.
 
 Earlier check failures are not concealed:
   - Playwright tool transport closed. Installed Chromium was used locally;
@@ -246,6 +264,8 @@ Earlier check failures are not concealed:
     retries, attempt persistence, older queues, unreachable paging listeners,
     duplicate-filename resume); each was corrected, with targeted regressions
     and browser verification where applicable.
+  - Manual offline testing then exposed a local-ID/registry-reference cache
+    alias mismatch. Corrected alias lookup and rechecked actual offline mode.
 
 Consistency:
   - No client "success" before storage/completion replies.
@@ -269,6 +289,7 @@ hierarchy/outcome instructions; full DGO unique-function parity; external
 registry adapters/domain implementation; full accessibility acceptance;
 retention/deletion, scanner integration, immutable audit/production operations
 and organizational policy approval. These need implementation or owner input.
+Final CodeQL completion is also FAILED because its latest attempt timed out.
 
 NOT VERIFIABLE live dependencies: actual operator SMTP inbox delivery, real
 public DNS/certificates/TLS deployment, organizational identities/service

@@ -12,6 +12,8 @@ Package:
 
 Read RELEASE.txt for selection, scope, enhancement decisions, exclusions and
 verification limitations. source-inventory.json records local source hashes.
+SHA256SUMS inventories the definitive package files (excluding itself); verify
+with sha256sum -c SHA256SUMS from the package directory.
 No internet searches, package downloads or external runtime libraries are needed.
 
 RUNTIME
@@ -77,7 +79,7 @@ OTP/proof digests; keep it stable across ordinary restarts.
 
 Submit metadata with localId, senderEmail, sender (name/organisation), subject,
 category, description and 1–5 attachments (name, positive size <=10 MiB, sha256).
-The response issues NITDA-YYYY-sequence and name/ticket objects. Upload every
+The response issues NITDA-YYYY-sequence and name/index/ticket objects. Upload every
 declared file using X-Upload-Ticket. Tickets expire after 15 minutes and are
 single-use. Server checks filename extension, length and SHA-256, not malware
 or the actual document's claimed MIME semantics.
@@ -123,3 +125,8 @@ Drafts, preparation history and cached cases remain in browser localStorage;
 clear site data on shared devices. They are not authoritative or encrypted.
 No stale browser proof/outbox is resent automatically. Offline record copies
 are labelled read-only. Reattach files when restoring a draft.
+Draft-write failure is warned; receipts retain the actual registry reference
+in memory even if browser storage is unavailable. Lost completion responses
+mean receipt is unconfirmed, not that the server necessarily failed to store it.
+See verification.json: the last CodeQL attempt timed out, so the final scan
+gate is incomplete despite earlier successful scans with no remaining alerts.
