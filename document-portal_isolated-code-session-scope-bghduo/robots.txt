@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# The Sitemap directive must be a fully-qualified URL; a relative path is ignored. This one is
+# absolute against the origin the running platform reported for itself on 2026-09-04 — see
+# sitemap.xml. Regenerate both with scripts/portal-seo.mjs --origin if the portal moves.
+Sitemap: https://activityweb.page.gd/sitemap.xml

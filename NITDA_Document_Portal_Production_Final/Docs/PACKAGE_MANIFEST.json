@@ -1,0 +1,231 @@
+{
+  "package": "NITDA Document Portal Production Final",
+  "generated_at": "2026-09-30T03:43:00+01:00",
+  "files": [
+    {
+      "path": "COMPLETION.md",
+      "bytes": 1836,
+      "sha256": "eee491733f63426e8fda9b38857a4b74a5854b163b758511428f5351cd5c1825"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 188,
+      "sha256": "b009b977366952c86d90f1aac77ac719ffc0647d7c80fe106981e2ef90d52ec3"
+    },
+    {
+      "path": "FINAL_QA_REPORT.md",
+      "bytes": 2891,
+      "sha256": "d9a1e56438e17014010a7f0344daaff7611f4aa9363c3f94ae4c2917f6153a17"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1172,
+      "sha256": "b70d9189170ff2965c469c2881a0854f22a100949e41bfedf3fe7aaa41d9ab5d"
+    },
+    {
+      "path": "TEST-RESULTS.md",
+      "bytes": 372,
+      "sha256": "a70de011769f1ba1857199607a0ea1564c63e042e0de71d129b98f4d04a42c53"
+    },
+    {
+      "path": "app/server.py",
+      "bytes": 11453,
+      "sha256": "82b7e39150abb6a389db8bfe138d835b76229827b146a56710ddf35859926745"
+    },
+    {
+      "path": "compose.yaml",
+      "bytes": 425,
+      "sha256": "74550641613ada6f9a5842ec475f5d21cdd2f6d690d027870f0271da1e0e9443"
+    },
+    {
+      "path": "data/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/files/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "bytes": 338,
+      "sha256": "4ec5abd78fabbaad6b8975acceddadad3ef55c837f6dd51c9fe517e4d87a2ae7"
+    },
+    {
+      "path": "public/404.html",
+      "bytes": 2893,
+      "sha256": "fff6dc2828bec6fdd498217861b04e77e82f0b50e8791d404007ef8359a3e7c1"
+    },
+    {
+      "path": "public/README.md",
+      "bytes": 10326,
+      "sha256": "a753ef20858b5daa6bc6d63862fe959bbfdd45907f6e1e85097adaf14c4f6367"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/README.md",
+      "bytes": 12355,
+      "sha256": "c843ffc31e5acb97af446410987d0ee43242daa607c8fea7f1dab76328a285a8"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_adherence.oxlintrc.json",
+      "bytes": 37670,
+      "sha256": "0e884530b52fe0ab265594142d69ff8063040bf650325d48f2507f8da29d598a"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_ds_bundle.js",
+      "bytes": 404069,
+      "sha256": "e985a80837013f3de95cab591819a5b5a4ee3f954f5abe6a31bf49cb209b602d"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_ds_manifest.json",
+      "bytes": 92603,
+      "sha256": "53112d44ab74ada1f458767f0841ac82cc6e5a21d4776bc7b12e10855ecea3d6"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/colors_and_type.css",
+      "bytes": 10767,
+      "sha256": "c0d283e30889ed1270888b1ff72aff2f877c1025cf42fc233e0789f2357b6b11"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/base.css",
+      "bytes": 4566,
+      "sha256": "fca1de68e642c17ee14863421ca0e57b8f8bb2886e772698c1f58b334e6a7a60"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/components/command-palette.css",
+      "bytes": 11685,
+      "sha256": "ff6cddd59c2ed09f16ea6a5fb56d064ebf037bded89085d5513f16ffebe57179"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/components.css",
+      "bytes": 39333,
+      "sha256": "f0c9e0e641e04fa7bf545e8bbfec22a871aad7ebbfc67467f7b755f2494dc2b9"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/layout.css",
+      "bytes": 3252,
+      "sha256": "84a3c4686b0a53666fcde3eceb7861c224c8a1af9ac8e6f1da6df13f30ba4b08"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/reset.css",
+      "bytes": 1152,
+      "sha256": "4378b202f44bc05f69abbff5cc20cf6f3f1b18551f6c0df5fdcd49f35dafae49"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.component.css",
+      "bytes": 5786,
+      "sha256": "d94ae4a79888097afb71a4ffe5433a115b04b8d720ef0ecbeea76823fa327d35"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.density.css",
+      "bytes": 1285,
+      "sha256": "9fc3ded4c2802878c7292f08233a98e54def2c43ef016c3873b841bb1dfd7d8a"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.primitive.css",
+      "bytes": 8731,
+      "sha256": "2832cde866d657df070570deb1a6e3b57e5687d9f380f979f1fc86676da05dc2"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.semantic.css",
+      "bytes": 7088,
+      "sha256": "18310e769678e9c31c11afb4d337173b48d7e6a8d2663e54901801b97e1a481a"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-dark.css",
+      "bytes": 3096,
+      "sha256": "e5eed11e51d14bc2a20a00cde3feca1527733af3877924afd72971d86a1ca2bc"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-hc.css",
+      "bytes": 2575,
+      "sha256": "b81ec9463163c33f84ce8274be73e262145e53e3a294ff5590940f3fe55ca13d"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-light.css",
+      "bytes": 753,
+      "sha256": "fd0c6c1fb18d32fad05aeb639193d241791790451d6ed97ce1516aa6e144addf"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/fonts/CascadiaMono-Regular.woff2",
+      "bytes": 143932,
+      "sha256": "abbf67cceb200508c9590ac9b75b37dd2211f58ea56279f1fa6ec87265f9d713"
+    },
+    {
+      "path": "public/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/styles.css",
+      "bytes": 1999,
+      "sha256": "a8775805c63891c8bcc06e062b946a0958e023e72c8256a7a501e0012bb3a610"
+    },
+    {
+      "path": "public/assets/nitda-lockup-white.png",
+      "bytes": 12383,
+      "sha256": "f12cd26b0dd666dc5f03131dbbd44e3fb51d76854a32faabef46152ae1a60603"
+    },
+    {
+      "path": "public/assets/nitda-lockup.png",
+      "bytes": 112180,
+      "sha256": "4eceb1252b46dc9f2b25a5c3b6e2d8dfb85146a524f37726a7749be1f59ee9fa"
+    },
+    {
+      "path": "public/assets/nitda-symbol.png",
+      "bytes": 56669,
+      "sha256": "46652723650422eb3d0d6fd548ff3bdc3bb68f5241a532a82bd3dc4274488c87"
+    },
+    {
+      "path": "public/assets/sprite.svg",
+      "bytes": 8017,
+      "sha256": "becd80d4fb0a9a94cf11997c7eb538ae082d37e0be143c8d5a1b47a67b838a22"
+    },
+    {
+      "path": "public/config.example.js",
+      "bytes": 1579,
+      "sha256": "d45eaf7c2d907399ff42aae624e15b51c7d0e6de622980548a926fc9d9e2e156"
+    },
+    {
+      "path": "public/config.local.js",
+      "bytes": 249,
+      "sha256": "7d10f14d31d8e7bf226a4741fbf1542cc59bb67e751b6b362a8144e23e9f5f1d"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 262,
+      "sha256": "7e6837b875ffc584e027cfdb0fe6aff320bb8fa9708f87764ee6c52e465db107"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 177713,
+      "sha256": "5898b75ba191e4a08ac194570e68d00d071579b0327948cdbb8630226ba13a3e"
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "bytes": 612,
+      "sha256": "431871329533cc9f16716c3ee2efdbd2e99ba6358894447190b70a68c46f1d76"
+    },
+    {
+      "path": "public/robots.txt",
+      "bytes": 75,
+      "sha256": "000be91ac685a2a9d2e53738ea2e841ae330e780225c3c33f74afbef13ec52c4"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 221,
+      "sha256": "ab61c4ccccdebb4b086cced507491bc7dd23c1dc2b9c032c49f5203ae9c98562"
+    },
+    {
+      "path": "public/support.js",
+      "bytes": 69150,
+      "sha256": "8fe7df74405f3c55f49b7249c74ea1397e65d07dea2b1bd3b4a489bec2e28cbe"
+    },
+    {
+      "path": "public/sw.js",
+      "bytes": 3735,
+      "sha256": "42e064772d3e180ac200d92fcb852dfba221897ae9e3591b9bd56bf18ae42cfa"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 46,
+      "sha256": "6838e4bc242034a9e409f573ca64e85c956937e49fdcf20f33caf75aa5f81733"
+    }
+  ]
+}

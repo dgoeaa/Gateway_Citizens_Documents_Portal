@@ -1,0 +1,111 @@
+{
+  "auditStandard": "WCAG 2.2 Level AA",
+  "auditDate": "2026-10-22",
+  "packageVersion": "2026.10.22-2",
+  "scope": [
+    "404.html",
+    "index.html",
+    "privacy.html",
+    "submit.html",
+    "support.html",
+    "track.html",
+    "portal-journey.css",
+    "js/portal-journey.js",
+    "sw.js"
+  ],
+  "result": "PASS WITH MANUAL VERIFICATION REQUIRED",
+  "automatedFindings": [],
+  "findingCounts": {},
+  "pageInventory": {
+    "404.html": {
+      "headings": 4,
+      "images": 2,
+      "forms": 0,
+      "controls": 3,
+      "links": 22,
+      "duplicateIds": 0
+    },
+    "index.html": {
+      "headings": 9,
+      "images": 2,
+      "forms": 0,
+      "controls": 3,
+      "links": 27,
+      "duplicateIds": 0
+    },
+    "privacy.html": {
+      "headings": 13,
+      "images": 2,
+      "forms": 0,
+      "controls": 3,
+      "links": 21,
+      "duplicateIds": 0
+    },
+    "submit.html": {
+      "headings": 6,
+      "images": 2,
+      "forms": 1,
+      "controls": 18,
+      "links": 23,
+      "duplicateIds": 0
+    },
+    "support.html": {
+      "headings": 9,
+      "images": 2,
+      "forms": 1,
+      "controls": 12,
+      "links": 21,
+      "duplicateIds": 0
+    },
+    "track.html": {
+      "headings": 6,
+      "images": 2,
+      "forms": 1,
+      "controls": 8,
+      "links": 20,
+      "duplicateIds": 0
+    }
+  },
+  "featureChecks": {
+    "visible_focus": true,
+    "reduced_motion": true,
+    "forced_colors": true,
+    "touch_targets": true,
+    "print_integrity": true,
+    "status_announcements": true,
+    "current_page": true,
+    "current_step": true,
+    "invalid_semantics": true,
+    "busy_semantics": true,
+    "escape_recovery": true,
+    "focus_restoration": true,
+    "position_restoration": true,
+    "tooltips": true,
+    "offline_assets": true
+  },
+  "enhancementContrastRatios": {
+    "green_on_ink": 8.1,
+    "gold_on_ink": 10.22,
+    "white_on_ink": 18.03,
+    "ink_on_green": 8.1
+  },
+  "automatedChecksPassed": true,
+  "manualVerificationRequired": [
+    "Keyboard-only traversal and visible focus order in a rendered browser",
+    "Screen-reader announcements with NVDA/JAWS/VoiceOver",
+    "Reflow at 320 CSS pixels and 400% browser zoom",
+    "Computed contrast for every inherited design-system state in light, dark and high-contrast themes",
+    "Touch tooltip behaviour on representative iOS and Android devices",
+    "Live error, timeout, upload, verification and submission responses against production workflows",
+    "PDF/print pagination in supported browsers"
+  ],
+  "remediationsApplied": [
+    "Added an explicit accessible name to the visually hidden attachment file input.",
+    "Added Windows forced-colors support for progress, focus, tooltip and floating return controls.",
+    "Rotated the service-worker cache and advanced the build to 2026.10.22-2."
+  ],
+  "limitations": [
+    "No browser engine or automated accessibility engine was available in the execution environment, so this is a comprehensive static audit plus syntax, integrity and contrast checks rather than a rendered axe/Accessibility Insights run.",
+    "Live tenant workflow calls were not executed."
+  ]
+}

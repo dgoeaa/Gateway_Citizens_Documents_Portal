@@ -1,0 +1,36 @@
+{
+  "package": "FOLIO-PORTAL v2026.10.22-2",
+  "checks": {
+    "source_bundle_integrity": true,
+    "configuration_unchanged": true,
+    "business_logic_unchanged": true,
+    "brand_assets_unchanged": true,
+    "routes_present": true,
+    "journey_assets_linked": true,
+    "submission_form_present": true,
+    "tracking_form_present": true,
+    "support_form_present": true,
+    "file_input_named": true,
+    "forced_colors_present": true,
+    "service_worker_precache": true,
+    "accessibility_audit_passed": true,
+    "javascript_syntax": true,
+    "css_balanced": true
+  },
+  "javascriptSyntax": {
+    "js/core.js": true,
+    "js/data.js": true,
+    "js/home.js": true,
+    "js/icons.js": true,
+    "js/portal-journey.js": true,
+    "js/submit.js": true,
+    "js/support.js": true,
+    "js/track.js": true,
+    "sw.js": true
+  },
+  "accessibilityAudit": "FINAL_ACCESSIBILITY_AUDIT.md",
+  "limitations": [
+    "Live tenant workflows were not executed.",
+    "Rendered browser and assistive-technology verification remains required before formal certification."
+  ]
+}

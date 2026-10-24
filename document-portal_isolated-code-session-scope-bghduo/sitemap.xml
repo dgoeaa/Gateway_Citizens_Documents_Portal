@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The sitemaps.org 0.9 protocol requires every <loc> to be an absolute URL beginning with
+     the protocol. These are, against https://activityweb.page.gd — the origin the running
+     platform reported for itself on 2026-09-04 (register ITEM-8), not a value this repository
+     chose. Regenerate with:
+       node scripts/portal-seo.mjs --origin <the value location.origin prints>
+     if the portal is ever published somewhere else. Do NOT prefix these by hand; they are
+     already absolute and doing it twice produces https://host/https://host/…
+     404.html is deliberately absent: it is not a destination.
+     STILL OUTSTANDING (register ITEM-42): the portal has not been redeployed since these were
+     written, and no validator has read the file from the deployed origin. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://activityweb.page.gd/index.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://activityweb.page.gd/submit.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://activityweb.page.gd/track.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://activityweb.page.gd/support.html</loc><changefreq>weekly</changefreq></url>
+</urlset>

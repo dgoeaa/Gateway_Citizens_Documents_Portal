@@ -1,0 +1,14 @@
+services:
+  portal:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      PORTAL_SECRET: ${PORTAL_SECRET:?set PORTAL_SECRET}
+      SMTP_HOST: ${SMTP_HOST:?set SMTP_HOST}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_FROM: ${SMTP_FROM:?set SMTP_FROM}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+    volumes: ["portal-data:/app/data"]
+    restart: unless-stopped
+volumes: { portal-data: {} }

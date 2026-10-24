@@ -1,0 +1,11 @@
+{
+  "schema": "folio-build-id/v1",
+  "package": "FOLIO-PORTAL",
+  "version": "2026.10.22-3",
+  "label": "FOLIO-PORTAL v2026.10.22-3",
+  "builtUtc": "2026-10-22T08:43:39.556Z",
+  "commit": "08166eb13b9e78adf8ad913cd130ce73d1dace96",
+  "codeFingerprint": "0cfa14c2a6e75a52",
+  "configDigest": "6b083d04e4d69866",
+  "files": 43
+}

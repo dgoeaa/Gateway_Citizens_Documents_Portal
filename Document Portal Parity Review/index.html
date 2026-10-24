@@ -1,0 +1,751 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Document Portal Parity Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column (about 70ch) for prose, widening to 1120px for tables and charts;
+   a deep-green masthead in the Agency's own brand green, then numbered report sections. */
+:root {
+  --bg: #F7F9F8;
+  --surface: #FFFFFF;
+  --sunk: #EEF3F0;
+  --ink: #13201A;
+  --ink-2: #34423C;
+  --muted: #56635D;
+  --line: #D9E2DD;
+  --line-strong: #B9C7C0;
+  --brand: #05583B;
+  --brand-2: #0C603F;
+  --on-brand: #F3FAF6;
+  --on-brand-muted: #B8D9C8;
+  --link: #0C603F;
+  --chart-hi: #1A7250;
+  --chart-lo: #7D8984;
+  --grid: #E3E9E6;
+  --bad-bg: #FBE9EA; --bad-fg: #8E1F28; --bad-line: #E9B9BD;
+  --warn-bg: #FDF2DE; --warn-fg: #7A4F00; --warn-line: #EED3A1;
+  --info-bg: #E8EFF7; --info-fg: #284E78; --info-line: #BACDE3;
+  --good-bg: #E5F2EB; --good-fg: #145C3F; --good-line: #B3D6C4;
+  --na-bg: #EFF1F0; --na-fg: #56635D;
+  --font-display: "Outfit", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0D1411; --surface: #131C18; --sunk: #18231E; --ink: #E5EEE9; --ink-2: #C3D0CA; --muted: #98A7A0;
+    --line: #25322C; --line-strong: #3A4A43; --brand: #0A3D2A; --brand-2: #0F4A34; --on-brand: #EAF5EF; --on-brand-muted: #A9CDBA;
+    --link: #7FD3A7; --chart-hi: #3BAA74; --chart-lo: #66716C; --grid: #24302A;
+    --bad-bg: #3A1A1D; --bad-fg: #F3B4B9; --bad-line: #5E2A2F;
+    --warn-bg: #36290F; --warn-fg: #F2CF8A; --warn-line: #5A4520;
+    --info-bg: #182739; --info-fg: #A9C7EA; --info-line: #2C4561;
+    --good-bg: #13301F; --good-fg: #9FDDBC; --good-line: #285A40;
+    --na-bg: #1C2622; --na-fg: #98A7A0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0D1411; --surface: #131C18; --sunk: #18231E; --ink: #E5EEE9; --ink-2: #C3D0CA; --muted: #98A7A0;
+  --line: #25322C; --line-strong: #3A4A43; --brand: #0A3D2A; --brand-2: #0F4A34; --on-brand: #EAF5EF; --on-brand-muted: #A9CDBA;
+  --link: #7FD3A7; --chart-hi: #3BAA74; --chart-lo: #66716C; --grid: #24302A;
+  --bad-bg: #3A1A1D; --bad-fg: #F3B4B9; --bad-line: #5E2A2F;
+  --warn-bg: #36290F; --warn-fg: #F2CF8A; --warn-line: #5A4520;
+  --info-bg: #182739; --info-fg: #A9C7EA; --info-line: #2C4561;
+  --good-bg: #13301F; --good-fg: #9FDDBC; --good-line: #285A40;
+  --na-bg: #1C2622; --na-fg: #98A7A0;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--link); text-underline-offset: 2px; }
+a:focus-visible, [tabindex]:focus-visible, summary:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+code, .mono { font-family: var(--font-mono); font-size: 0.86em; }
+code { background: var(--sunk); padding: 0.08em 0.35em; border-radius: 3px; overflow-wrap: anywhere; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.2; margin: 0; color: var(--ink); }
+p { margin: 0; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.prose { max-width: 70ch; }
+
+/* masthead */
+.mast { background: var(--brand); color: var(--on-brand); }
+.mast .wrap { padding-block: 40px 36px; display: grid; gap: 18px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-brand-muted); }
+.mast h1 { color: var(--on-brand); font-size: clamp(30px, 5vw, 46px); font-weight: 600; letter-spacing: -0.01em; }
+.mast .lede { color: var(--on-brand); font-size: 18px; max-width: 64ch; }
+.mast .lede a { color: var(--on-brand); }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 13.5px; color: var(--on-brand-muted); }
+.facts b { color: var(--on-brand); font-weight: 600; }
+
+nav.toc { border-bottom: 1px solid var(--line); background: var(--surface); }
+nav.toc .wrap { display: flex; flex-wrap: wrap; gap: 4px 18px; padding-block: 12px; font-size: 14px; }
+nav.toc a { color: var(--ink-2); text-decoration: none; }
+nav.toc a:hover { color: var(--link); text-decoration: underline; }
+
+main { display: grid; gap: 56px; padding-block: 40px 72px; }
+section { display: grid; gap: 18px; scroll-margin-top: 16px; }
+section > .head { display: grid; gap: 6px; }
+.secnum { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); letter-spacing: 0.06em; }
+h2 { font-size: clamp(23px, 3vw, 29px); font-weight: 600; }
+h3 { font-size: 18px; font-weight: 600; }
+.sub { color: var(--ink-2); max-width: 70ch; }
+.note { color: var(--muted); font-size: 14px; max-width: 75ch; }
+
+/* verdict */
+.verdict { display: grid; gap: 22px; }
+.verdict .claim { font-family: var(--font-display); font-size: clamp(24px, 3.4vw, 34px); font-weight: 600; line-height: 1.2; max-width: 30ch; text-wrap: balance; }
+.three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.three > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 20px; display: grid; gap: 8px; align-content: start; }
+.three h3 { font-size: 16.5px; }
+.three p { color: var(--ink-2); font-size: 15px; }
+.tally { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 14.5px; color: var(--ink-2); }
+
+/* chips */
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; line-height: 1; padding: 5px 9px; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex: none; }
+.chip.bad { background: var(--bad-bg); color: var(--bad-fg); border-color: var(--bad-line); }
+.chip.warn { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-line); }
+.chip.info { background: var(--info-bg); color: var(--info-fg); border-color: var(--info-line); }
+.chip.good { background: var(--good-bg); color: var(--good-fg); border-color: var(--good-line); }
+.chip.bad::before { border-radius: 1px; transform: rotate(45deg); }
+.chip.warn::before { border-radius: 0; clip-path: polygon(50% 0, 100% 100%, 0 100%); width: 8px; }
+
+/* tables */
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { font-size: 12.5px; font-weight: 600; color: var(--muted); letter-spacing: 0.02em; background: var(--sunk); position: sticky; top: 0; }
+tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
+tbody th { font-weight: 600; color: var(--ink); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 13px; white-space: nowrap; }
+tr.group th { background: var(--sunk); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr.subject td, tr.subject th { background: color-mix(in srgb, var(--good-bg) 55%, var(--surface)); }
+.score { display: inline-block; min-width: 2.6em; text-align: center; font-family: var(--font-mono); font-size: 13px; font-weight: 500; padding: 2px 6px; border-radius: 4px; border: 1px solid; }
+.score.g { background: var(--good-bg); color: var(--good-fg); border-color: var(--good-line); }
+.score.a { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-line); }
+.score.r { background: var(--bad-bg); color: var(--bad-fg); border-color: var(--bad-line); }
+
+/* parity matrix */
+.matrix td { min-width: 132px; }
+.matrix th:first-child { min-width: 210px; }
+.st { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+.st.y { background: var(--good-bg); color: var(--good-fg); }
+.st.n { background: var(--bad-bg); color: var(--bad-fg); }
+.st.p { background: var(--warn-bg); color: var(--warn-fg); }
+.st.x { background: var(--na-bg); color: var(--na-fg); }
+.matrix .d { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.4; margin-top: 3px; }
+.matrix thead th:nth-child(2) { color: var(--good-fg); }
+
+/* charts */
+.charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 14px; display: grid; gap: 12px; min-width: 0; position: relative; }
+figcaption { display: grid; gap: 2px; }
+figcaption b { font-family: var(--font-display); font-weight: 600; font-size: 16px; }
+figcaption span { color: var(--muted); font-size: 13px; }
+.bars { display: grid; gap: 10px; position: relative; }
+.bar { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; align-items: center; cursor: default; }
+.bar .lab { font-size: 13px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar.hi .lab { color: var(--ink); font-weight: 600; }
+.track { position: relative; height: 22px; display: flex; align-items: center; gap: 8px; }
+.track i { display: block; height: 14px; border-radius: 0 4px 4px 0; background: var(--chart-lo); min-width: 3px; }
+.bar.hi .track i { background: var(--chart-hi); }
+.track span { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bar:hover .track i, .bar:focus-visible .track i { filter: brightness(1.12); }
+.axis { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; }
+.ticks { position: relative; height: 16px; border-top: 1px solid var(--line-strong); }
+.ticks span { position: absolute; top: 3px; transform: translateX(-50%); font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.ticks span:first-child { transform: none; }
+.gridlines { position: absolute; inset: 0 0 0 122px; pointer-events: none; }
+.gridlines b { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--grid); }
+.tip { position: absolute; z-index: 5; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12.5px; line-height: 1.45; padding: 8px 10px; border-radius: 5px; max-width: 240px; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+.tip b { display: block; font-weight: 600; }
+
+/* findings */
+.findings { display: grid; gap: 14px; }
+.finding { background: var(--surface); border: 1px solid var(--line); border-left-width: 4px; border-radius: var(--radius); padding: 18px 20px; display: grid; gap: 10px; }
+.finding.t-bad { border-left-color: var(--bad-fg); }
+.finding.t-warn { border-left-color: var(--warn-fg); }
+.finding.t-info { border-left-color: var(--info-fg); }
+.finding .top { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
+.finding .id { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.finding h3 { font-size: 17.5px; flex: 1 1 320px; }
+.finding .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.finding .who { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; }
+.finding dl { margin: 0; display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 6px 14px; font-size: 15px; }
+.finding dt { font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; padding-top: 3px; }
+.finding dd { margin: 0; color: var(--ink-2); max-width: 78ch; }
+.finding dd ul { margin: 4px 0 0; padding-left: 18px; }
+details.snip { border: 1px solid var(--line); border-radius: var(--radius); background: var(--sunk); }
+details.snip summary { cursor: pointer; padding: 10px 14px; font-size: 14px; font-weight: 600; }
+details.snip pre { margin: 0; padding: 0 14px 14px; overflow-x: auto; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.55; color: var(--ink-2); }
+details.snip p { padding: 0 14px 12px; font-size: 13.5px; color: var(--muted); }
+
+/* lists */
+.cols2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.card h3 { font-size: 16px; }
+.card ul { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: 14.5px; display: grid; gap: 5px; }
+.card .host { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+
+/* gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
+.shot { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: grid; gap: 10px; }
+.shot .pair { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: 10px; align-items: start; }
+.shot img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 4px; background: var(--sunk); }
+.shot figcaption { font-size: 13px; color: var(--ink-2); }
+.shot figcaption b { font-family: var(--font-body); font-size: 13.5px; display: block; }
+
+.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 18px; font-size: 14.5px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; color: var(--ink-2); }
+
+footer.end { border-top: 1px solid var(--line); }
+footer.end .wrap { padding-block: 22px 40px; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 860px) {
+  .three, .charts, .cols2 { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+  .finding dl { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .finding dt { padding-top: 8px; }
+  .bar, .axis { grid-template-columns: 104px minmax(0, 1fr); gap: 8px; }
+  .bar .lab { font-size: 12px; }
+  .gridlines { left: 112px; }
+  .mast .wrap { padding-block: 28px 26px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">Parity review · 20 October 2026 · Final commissioning</div>
+    <h1>Document Portal Parity Review</h1>
+    <p class="lede">How the hosted NITDA Document Portal at <b>folio-portal.page.gd</b> compares with four live NITDA websites, and whether the hosted copy matches the build on the baseline branch.</p>
+    <div class="facts">
+      <span>Baseline <b class="mono">claude/system-remediation-gaps-ahpmsy @ bf7db83</b></span>
+      <span>Hosted files dated <b>19 Oct 2026, 03:18 GMT</b></span>
+      <span><b>26</b> pages crawled · <b>16</b> Lighthouse runs · <b>0</b> flow calls made</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#verdict">Verdict</a>
+    <a href="#estate">The estate</a>
+    <a href="#scorecard">Scorecard</a>
+    <a href="#matrix">Parity matrix</a>
+    <a href="#findings">Portal findings</a>
+    <a href="#build">Build parity</a>
+    <a href="#content">Content and Charter</a>
+    <a href="#siblings">Agency sites</a>
+    <a href="#screens">Screens</a>
+    <a href="#method">Method</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="verdict" aria-labelledby="h-verdict">
+  <div class="head"><div class="secnum">01</div><h2 id="h-verdict">Verdict</h2></div>
+  <div class="verdict">
+    <p class="claim">The portal's code is ready for production. Its hosting is not.</p>
+    <div class="three">
+      <div>
+        <h3>It matches the baseline</h3>
+        <p>34 of the 44 portal files on the baseline branch are byte-identical on the host. The other 10 are a build stamp, five re-encoded logos and four files the packager leaves out, two of which belong on the host (P11). The deployed config wires all seven endpoints and matches the delivered-build ledger key for key.</p>
+      </div>
+      <div>
+        <h3>It leads the Agency estate</h3>
+        <p>It ties DL4ALL for the best home-page accessibility and SEO scores, scores 100 for accessibility on Track and Support, and has the smallest pages (272 KB against 0.6 to 5 MB). It makes no third-party requests. It is the only Agency channel where a member of the public can submit a document and track it without an account.</p>
+      </div>
+      <div>
+        <h3>It trails on hosting and trust</h3>
+        <p>It is the only one of the five not on a nitda.gov.ng address. It serves itself over plain HTTP, tells browsers to cache pages and its endpoint config for 30 days, and sends unknown URLs to the host's error site. Its phone number and hours differ from those the Agency publishes.</p>
+      </div>
+    </div>
+    <div class="tally">
+      <span class="chip bad">6 before launch</span>
+      <span class="chip warn">5 next release</span>
+      <span class="chip info">3 improve</span>
+      <span>Four of the six launch items (P1–P4) are properties of the host, not the code. Moving to an Agency-controlled host settles them together.</span>
+    </div>
+  </div>
+</section>
+
+<section id="estate" aria-labelledby="h-estate">
+  <div class="head"><div class="secnum">02</div><h2 id="h-estate">The estate compared</h2>
+    <p class="sub">Five public sites, each doing a different job. The comparison is about shared standards: transport security, accessibility, performance, discoverability and accurate content. It does not compare features the sites were never meant to share.</p></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Site</th><th scope="col">What it is for</th><th scope="col">Built with</th><th scope="col">Hosting and certificate</th><th scope="col">Sign-in</th></tr></thead>
+      <tbody>
+        <tr class="subject"><th scope="row">NITDA Document Portal<br><span class="mono">folio-portal.page.gd</span></th><td>Submit a document to the Agency, track it, open a helpdesk case</td><td>Static HTML, CSS, JS (NITDA Design System v2.1); Power Automate flows called directly</td><td>InfinityFree free hosting (openresty). Certificate issued to <span class="mono">page.gd</span> by ZeroSSL, valid to 29 Nov 2026</td><td>None. Email one-time code for submission and verified tracking</td></tr>
+        <tr><th scope="row">NITDA website<br><span class="mono">nitda.gov.ng</span></th><td>Corporate information, services, regulations, news, forms to download</td><td>WordPress, Elementor, PHP 7.4</td><td>nginx on Plesk. Sectigo <span class="mono">*.nitda.gov.ng</span>, valid to 12 Mar 2027</td><td>None</td></tr>
+        <tr><th scope="row">Compliance Portal<br><span class="mono">clearance.nitda.gov.ng</span></th><td>IT Project Clearance submissions by public institutions</td><td>Django, Vue, jQuery 1.12</td><td>nginx 1.14 on Ubuntu. Let's Encrypt, valid to 20 Nov 2026</td><td>Email and password</td></tr>
+        <tr><th scope="row">LMS Portal<br><span class="mono">lms.nitda.gov.ng</span></th><td>Staff and public courses, helpdesk tickets</td><td>WordPress, Divi, Tutor LMS</td><td>LiteSpeed. Let's Encrypt, valid to 12 Jan 2027</td><td>WordPress account</td></tr>
+        <tr><th scope="row">DL4ALL Dashboard<br><span class="mono">dashboard.digitalliteracy.nitda.gov.ng</span></th><td>National digital-literacy tracker, partner registration, public API</td><td>Next.js with Auth.js</td><td>Apache 2.4 on Ubuntu. Let's Encrypt, valid to 1 Dec 2026</td><td>Partner account</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="scorecard" aria-labelledby="h-score">
+  <div class="head"><div class="secnum">03</div><h2 id="h-score">Scorecard</h2>
+    <p class="sub">Lighthouse 12.2.1 on each home page under identical conditions: mobile with simulated throttling, then desktop. Scores are out of 100. Green is 90 or above, amber 50 to 89, red below 50.</p></div>
+
+  <div class="charts">
+    <figure>
+      <figcaption><b>Page weight, home page</b><span>Kilobytes transferred, Lighthouse mobile run</span></figcaption>
+      <div class="bars" data-chart="weight" data-max="5500" data-ticks="0,1000,2000,3000,4000,5000" data-unit="KB">
+        <div class="gridlines" aria-hidden="true"></div>
+        <div class="bar hi" tabindex="0" data-v="272" data-tip="Document Portal|272 KB · 31 requests · no third-party hosts"><span class="lab">Document Portal</span><div class="track"><i></i><span>272 KB</span></div></div>
+        <div class="bar" tabindex="0" data-v="592" data-tip="LMS Portal|592 KB · 63 requests"><span class="lab">LMS Portal</span><div class="track"><i></i><span>592 KB</span></div></div>
+        <div class="bar" tabindex="0" data-v="709" data-tip="DL4ALL|709 KB · 47 requests (its data API was blocked in this test)"><span class="lab">DL4ALL</span><div class="track"><i></i><span>709 KB</span></div></div>
+        <div class="bar" tabindex="0" data-v="1736" data-tip="Compliance Portal|1,736 KB · 25 requests, for a sign-in form"><span class="lab">Compliance Portal</span><div class="track"><i></i><span>1,736 KB</span></div></div>
+        <div class="bar" tabindex="0" data-v="5051" data-tip="nitda.gov.ng|5,051 KB · 136 requests"><span class="lab">nitda.gov.ng</span><div class="track"><i></i><span>5,051 KB</span></div></div>
+      </div>
+      <div class="axis" aria-hidden="true"><span></span><div class="ticks" data-for="weight"></div></div>
+    </figure>
+    <figure>
+      <figcaption><b>Largest contentful paint, mobile</b><span>Seconds until the main content shows, simulated slow 4G</span></figcaption>
+      <div class="bars" data-chart="lcp" data-max="22" data-ticks="0,5,10,15,20" data-unit="s">
+        <div class="gridlines" aria-hidden="true"></div>
+        <div class="bar hi" tabindex="0" data-v="2.0" data-tip="Document Portal|2.0 s · within Google's 2.5 s 'good' threshold"><span class="lab">Document Portal</span><div class="track"><i></i><span>2.0 s</span></div></div>
+        <div class="bar" tabindex="0" data-v="2.7" data-tip="LMS Portal|2.7 s"><span class="lab">LMS Portal</span><div class="track"><i></i><span>2.7 s</span></div></div>
+        <div class="bar" tabindex="0" data-v="1.7" data-tip="DL4ALL|1.7 s (without its live figures)"><span class="lab">DL4ALL</span><div class="track"><i></i><span>1.7 s</span></div></div>
+        <div class="bar" tabindex="0" data-v="11.0" data-tip="Compliance Portal|11.0 s"><span class="lab">Compliance Portal</span><div class="track"><i></i><span>11.0 s</span></div></div>
+        <div class="bar" tabindex="0" data-v="21.1" data-tip="nitda.gov.ng|21.1 s"><span class="lab">nitda.gov.ng</span><div class="track"><i></i><span>21.1 s</span></div></div>
+      </div>
+      <div class="axis" aria-hidden="true"><span></span><div class="ticks" data-for="lcp"></div></div>
+    </figure>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Page</th><th scope="col" class="num">Performance<br>mobile / desktop</th><th scope="col" class="num">Accessibility</th><th scope="col" class="num">Best practice</th><th scope="col" class="num">SEO</th><th scope="col" class="num">LCP mobile</th><th scope="col" class="num">Layout shift (CLS)</th><th scope="col" class="num">Weight</th><th scope="col" class="num">Server response*</th></tr></thead>
+      <tbody>
+        <tr class="group"><th colspan="9" scope="rowgroup">Home pages</th></tr>
+        <tr class="subject"><th scope="row">Document Portal</th><td class="num"><span class="score a">89</span> / <span class="score g">97</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">92</span></td><td class="num">2.0 s</td><td class="num">0.168</td><td class="num">272 KB</td><td class="num">0.13 s</td></tr>
+        <tr><th scope="row">nitda.gov.ng</th><td class="num"><span class="score r">18</span> / <span class="score r">38</span></td><td class="num"><span class="score a">81</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score a">77</span></td><td class="num">21.1 s</td><td class="num">0.839</td><td class="num">5,051 KB</td><td class="num">4.5 s</td></tr>
+        <tr><th scope="row">Compliance Portal (sign-in)</th><td class="num"><span class="score a">56</span> / <span class="score a">69</span></td><td class="num"><span class="score a">86</span></td><td class="num"><span class="score g">93</span></td><td class="num"><span class="score g">91</span></td><td class="num">11.0 s</td><td class="num">0</td><td class="num">1,736 KB</td><td class="num">0.21 s</td></tr>
+        <tr><th scope="row">LMS Portal</th><td class="num"><span class="score a">84</span> / <span class="score a">86</span></td><td class="num"><span class="score a">83</span></td><td class="num"><span class="score g">100</span></td><td class="num"><span class="score a">85</span></td><td class="num">2.7 s</td><td class="num">0.001</td><td class="num">592 KB</td><td class="num">5.4 s</td></tr>
+        <tr><th scope="row">DL4ALL Dashboard</th><td class="num"><span class="score a">81</span> / <span class="score g">99</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">92</span></td><td class="num">1.7 s</td><td class="num">0.331</td><td class="num">709 KB</td><td class="num">0.22 s</td></tr>
+        <tr class="group"><th colspan="9" scope="rowgroup">Service pages (mobile)</th></tr>
+        <tr class="subject"><th scope="row">Portal: Submit</th><td class="num"><span class="score a">74</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">92</span></td><td class="num">2.0 s</td><td class="num">0.887</td><td class="num">280 KB</td><td class="num">0.13 s</td></tr>
+        <tr class="subject"><th scope="row">Portal: Track</th><td class="num"><span class="score a">89</span></td><td class="num"><span class="score g">100</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">92</span></td><td class="num">2.5 s</td><td class="num">0.132</td><td class="num">277 KB</td><td class="num">0.13 s</td></tr>
+        <tr class="subject"><th scope="row">Portal: Support</th><td class="num"><span class="score a">88</span></td><td class="num"><span class="score g">100</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score g">92</span></td><td class="num">2.6 s</td><td class="num">0.132</td><td class="num">274 KB</td><td class="num">0.66 s</td></tr>
+        <tr><th scope="row">nitda.gov.ng: Contact</th><td class="num"><span class="score a">55</span></td><td class="num"><span class="score a">87</span></td><td class="num"><span class="score g">96</span></td><td class="num"><span class="score a">85</span></td><td class="num">9.3 s</td><td class="num">0</td><td class="num">1,415 KB</td><td class="num">4.3 s</td></tr>
+        <tr><th scope="row">LMS: New ticket</th><td class="num"><span class="score a">89</span></td><td class="num"><span class="score a">77</span></td><td class="num"><span class="score g">100</span></td><td class="num"><span class="score a">85</span></td><td class="num">2.0 s</td><td class="num">0.002</td><td class="num">538 KB</td><td class="num">3.8 s</td></tr>
+        <tr><th scope="row">DL4ALL: Partner registration</th><td class="num"><span class="score a">70</span></td><td class="num"><span class="score g">90</span></td><td class="num"><span class="score g">100</span></td><td class="num"><span class="score g">92</span></td><td class="num">5.3 s</td><td class="num">0.024</td><td class="num">509 KB</td><td class="num">0.22 s</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">* Time to first byte from the test browser, which ran on a cloud network outside Nigeria. Use it to compare sites with each other, not as what users in Nigeria will see. The portal's only failed best-practice audit is the manifest error in P10. Its Submit page's performance score is held down by the layout shift in P7.</p>
+</section>
+
+<section id="matrix" aria-labelledby="h-matrix">
+  <div class="head"><div class="secnum">04</div><h2 id="h-matrix">Parity matrix</h2>
+    <p class="sub">The same checks applied to every site. Each cell is what we measured on 20 October 2026. "Partial" means the site meets the check only in part, as the note says.</p></div>
+  <div class="tablewrap">
+    <table class="matrix">
+      <thead><tr><th scope="col">Check</th><th scope="col">Document Portal</th><th scope="col">nitda.gov.ng</th><th scope="col">Compliance Portal</th><th scope="col">LMS Portal</th><th scope="col">DL4ALL</th></tr></thead>
+      <tbody>
+        <tr class="group"><th colspan="6" scope="rowgroup">Trust and transport</th></tr>
+        <tr><th scope="row">On an Agency (nitda.gov.ng) address</th><td><span class="st n">No</span><span class="d">Free shared domain page.gd</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr><th scope="row">HTTP redirected to HTTPS</th><td><span class="st n">No</span><span class="d">Full portal served over HTTP</span></td><td><span class="st x">Not tested</span><span class="d">No direct route from the test network</span></td><td><span class="st n">No</span><span class="d">Sign-in form stays on HTTP</span></td><td><span class="st y">Yes</span><span class="d">301</span></td><td><span class="st y">Yes</span><span class="d">301</span></td></tr>
+        <tr><th scope="row">HSTS header</th><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Security headers sent (of 6 checked)</th><td><span class="st n">0 of 6</span></td><td><span class="st p">3 of 6</span><span class="d">Frame protection, permissions</span></td><td><span class="st p">1 of 6</span><span class="d">X-Frame-Options</span></td><td><span class="st n">0 of 6</span></td><td><span class="st n">0 of 6</span></td></tr>
+        <tr><th scope="row">Software versions hidden</th><td><span class="st y">Yes</span></td><td><span class="st n">No</span><span class="d">PHP 7.4.33, Plesk</span></td><td><span class="st n">No</span><span class="d">nginx 1.14.0</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span><span class="d">Next.js, Apache 2.4.52</span></td></tr>
+        <tr><th scope="row">Pages reachable without a bot challenge</th><td><span class="st n">No</span><span class="d">JavaScript cookie test on every page</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr><th scope="row">HTTP/2</th><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td><td><span class="st y">Yes</span><span class="d">Also HTTP/3</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Unknown URL returns a 404 page</th><td><span class="st n">No</span><span class="d">Sent to errors.infinityfree.net</span></td><td><span class="st y">Yes</span></td><td><span class="st p">Partial</span><span class="d">Bare server 404</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span><span class="d">Redirects to home</span></td></tr>
+        <tr><th scope="row">No long-lived cache on pages</th><td><span class="st n">No</span><span class="d">30-day public cache on HTML and config</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st p">Partial</span><span class="d">One-year CDN cache</span></td></tr>
+        <tr class="group"><th colspan="6" scope="rowgroup">Discoverability</th></tr>
+        <tr><th scope="row">robots.txt</th><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span><span class="d">Redirects to home</span></td></tr>
+        <tr><th scope="row">XML sitemap</th><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Meta description</th><td><span class="st y">Yes</span><span class="d">Every page</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr><th scope="row">Link preview in WhatsApp, X, LinkedIn</th><td><span class="st n">No</span><span class="d">No Open Graph; preview bots get the challenge</span></td><td><span class="st p">Partial</span><span class="d">Title only</span></td><td><span class="st p">Partial</span><span class="d">Title only</span></td><td><span class="st y">Yes</span><span class="d">Open Graph, Twitter card, JSON-LD</span></td><td><span class="st p">Partial</span><span class="d">Title and description</span></td></tr>
+        <tr><th scope="row">Can be monitored for uptime</th><td><span class="st n">No</span><span class="d">UptimeRobot gets 403</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr class="group"><th colspan="6" scope="rowgroup">Accessibility</th></tr>
+        <tr><th scope="row">WCAG 2.1 AA failures on home (axe-core)</th><td><span class="st p">1 rule</span><span class="d">Contrast, 11 elements</span></td><td><span class="st n">3 rules</span><span class="d">Unnamed buttons and links, contrast</span></td><td><span class="st n">2 rules</span><span class="d">Contrast, unlabelled field</span></td><td><span class="st n">3 rules</span><span class="d">Zoom locked, unnamed links, contrast</span></td><td><span class="st p">1 rule</span><span class="d">Contrast, 13 elements</span></td></tr>
+        <tr><th scope="row">Skip-to-content link</th><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Page landmarks (header, nav, main, footer)</th><td><span class="st y">All four</span></td><td><span class="st p">No main</span></td><td><span class="st p">Footer only</span></td><td><span class="st p">No main</span></td><td><span class="st y">All four</span></td></tr>
+        <tr><th scope="row">Pinch zoom allowed</th><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st n">No</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr><th scope="row">High-contrast theme</th><td><span class="st y">Yes</span><span class="d">Light, dark, high contrast</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Phone layout without sideways scroll</th><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td><td><span class="st y">Yes</span></td></tr>
+        <tr class="group"><th colspan="6" scope="rowgroup">Service to the public</th></tr>
+        <tr><th scope="row">Submit a document online</th><td><span class="st y">Yes</span><span class="d">8 types, 5 files of 10 MB</span></td><td><span class="st n">No</span><span class="d">Forms to download; general contact form</span></td><td><span class="st p">Account</span><span class="d">Public institutions only</span></td><td><span class="st x">Not its job</span></td><td><span class="st x">Not its job</span></td></tr>
+        <tr><th scope="row">Track a request by reference</th><td><span class="st y">Yes</span><span class="d">No account needed</span></td><td><span class="st n">No</span></td><td><span class="st p">Account</span></td><td><span class="st p">Account</span><span class="d">Own tickets</span></td><td><span class="st x">Not its job</span></td></tr>
+        <tr><th scope="row">Helpdesk with a case reference</th><td><span class="st y">Yes</span><span class="d">Reference issued at once</span></td><td><span class="st p">Partial</span><span class="d">Contact form; reference not tested</span></td><td><span class="st n">No</span><span class="d">Password reset broken</span></td><td><span class="st p">Account</span></td><td><span class="st p">Partial</span><span class="d">Contact form</span></td></tr>
+        <tr><th scope="row">Abuse protection on public forms</th><td><span class="st y">Yes</span><span class="d">Email one-time code, flow-side limits</span></td><td><span class="st y">Yes</span><span class="d">reCAPTCHA</span></td><td><span class="st y">Yes</span><span class="d">reCAPTCHA</span></td><td><span class="st y">Yes</span><span class="d">CAPTCHA plugin</span></td><td><span class="st x">None seen</span></td></tr>
+        <tr><th scope="row">Third-party hosts contacted</th><td><span class="st y">None</span></td><td><span class="st p">4</span><span class="d">Google Fonts, X, YouTube</span></td><td><span class="st p">3</span><span class="d">Google Fonts, reCAPTCHA</span></td><td><span class="st p">1</span><span class="d">Google Fonts</span></td><td><span class="st y">None</span></td></tr>
+        <tr class="group"><th colspan="6" scope="rowgroup">Content and policy</th></tr>
+        <tr><th scope="row">Phone matches the Agency's published line</th><td><span class="st n">No</span><span class="d">+234 700 000 6483</span></td><td><span class="st y">Yes</span><span class="d">+234 816 840 1851</span></td><td><span class="st x">None shown</span></td><td><span class="st y">Yes</span></td><td><span class="st x">Own line</span><span class="d">+234 813 222 2312</span></td></tr>
+        <tr><th scope="row">Privacy notice linked</th><td><span class="st n">No</span><span class="d">Consent text and DPO address only</span></td><td><span class="st p">Yes, dated</span><span class="d">Cites NDPR 2019, not NDPA 2023</span></td><td><span class="st n">No</span></td><td><span class="st p">Partial</span><span class="d">On the ticket page</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">Languages other than English</th><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td></tr>
+        <tr><th scope="row">security.txt contact for researchers</th><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td><td><span class="st n">No</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="findings" aria-labelledby="h-find">
+  <div class="head"><div class="secnum">05</div><h2 id="h-find">Portal findings</h2>
+    <p class="sub">Fourteen findings, in the order to act on them. Each names who can act: the <b>host</b> (server or hosting choice), the <b>portal code</b> (a change and redeploy), the <b>content owner</b>, or an <b>owner decision</b>.</p></div>
+
+  <div class="findings">
+
+    <article class="finding t-bad" id="p1">
+      <div class="top"><span class="id">P1</span><h3>The portal is not on an Agency address, and its host checks every visitor for bots</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Owner decision · Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The portal runs on <code>folio-portal.page.gd</code> under a certificate issued to <code>page.gd</code>, which is shared by every site on that free domain. All four Agency sites sit on nitda.gov.ng addresses. The portal's own header says "An official portal of the Federal Republic of Nigeria". NITDA's 2026 Service Charter (§5.1) presents .gov.ng names as what gives government websites their credibility. The free host also answers any visitor without its test cookie with a JavaScript challenge (<code>aes.js</code>). In our tests WhatsApp, X, LinkedIn, Telegram and Slack link previews received the challenge instead of the page, UptimeRobot received 403, and the browser's manifest request received HTML (P10). The repository already records that this host breaks service-worker registration (<code>scripts/config-build.mjs</code>, 17 Oct 2026).</dd>
+        <dt>Fix</dt><dd>Publish the same package at an Agency-controlled address, such as a nitda.gov.ng subdomain, on a static host with no challenge. The config file deploys unchanged because the flow addresses do not move. The move needs a Flow Configuration <code>ALLOWED_ORIGIN</code> row for the new origin, robots.txt and sitemap.xml regenerated, and one flow-package release: 21 package files load the email logos from <code>folio-portal.page.gd/email-assets/</code>. A host that lets you set redirects, headers and an error page also settles P2, P3, P4, P10 and P12.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-bad" id="p2">
+      <div class="top"><span class="id">P2</span><h3>HTTPS is not enforced</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd><code>http://folio-portal.page.gd/</code> serves the whole portal with no redirect and no HSTS header. Over HTTP the page is not a secure context, which has three effects. The scripts and <code>config.local.js</code>, with all seven signed flow URLs, travel unencrypted and can be altered in transit. <code>crypto.subtle</code> is unavailable, so the wizard declares every attachment with an empty SHA-256 (<code>js/submit.js:355</code>); the upload flow package records the declared value and has no step that recomputes it. The clipboard API is off. Flow calls from an HTTP page would also carry an <code>http://</code> origin, which the allow-list would need to name. We did not test that, because no flow was called.</dd>
+        <dt>Fix</dt><dd>Redirect every HTTP request to HTTPS with a 301 at the host, then add <code>Strict-Transport-Security</code>.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-bad" id="p3">
+      <div class="top"><span class="id">P3</span><h3>Pages, scripts and the endpoint config are cached for 30 days</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>Every HTML page, <code>js/*.js</code>, <code>sw.js</code> and <code>config.local.js</code> is served with <code>Cache-Control: max-age=2592000, public</code>. A returning visitor's browser reuses its copy for up to 30 days without asking the server. After a config rebuild that changes a signed URL (<code>npm run config:rebuild</code>), those visitors keep calling the old address until their copy expires. After a code release, they keep the old code. The package README asks for <code>no-cache</code> on <code>sw.js</code> (deployment checklist, step 3).</dd>
+        <dt>Fix</dt><dd>Serve <code>*.html</code>, <code>js/</code>, <code>config.local.js</code>, <code>sw.js</code> and <code>manifest.webmanifest</code> with <code>Cache-Control: no-cache</code> so browsers revalidate against the ETag. Keep long caching for fonts and images.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-bad" id="p4">
+      <div class="top"><span class="id">P4</span><h3>Unknown addresses leave the portal</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>Any unknown path answers 302 to <code>errors.infinityfree.net/errors/404/</code>, the host's own generic error page on another domain. The portal's own <code>404.html</code> never appears. That page tells someone who followed a link in an official notification to write to portal@nitda.gov.ng. nitda.gov.ng and the LMS both return their own 404 page.</dd>
+        <dt>Fix</dt><dd>Point the host's 404 handler at <code>/404.html</code> (<code>ErrorDocument 404 /404.html</code> on Apache-style hosts).</dd>
+      </dl>
+      <details class="snip">
+        <summary>Draft host rules for P2 to P4 and P12 (untested on this host)</summary>
+        <p>Apache-style <code>.htaccess</code> for the site root. InfinityFree sits behind a proxy, so test on a spare path first: a redirect rule that cannot see the original scheme will loop.</p>
+<pre>RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.html
+
+&lt;IfModule mod_headers.c&gt;
+  &lt;FilesMatch "\.(html|js|webmanifest)$"&gt;
+    Header set Cache-Control "no-cache"
+  &lt;/FilesMatch&gt;
+  &lt;FilesMatch "\.(woff2|png|svg)$"&gt;
+    Header set Cache-Control "public, max-age=2592000"
+  &lt;/FilesMatch&gt;
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+&lt;/IfModule&gt;</pre>
+      </details>
+    </article>
+
+    <article class="finding t-bad" id="p5">
+      <div class="top"><span class="id">P5</span><h3>Contact details contradict the Agency's</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Content owner</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The portal's telephone, +234 700 000 6483, appears nowhere else in the estate, and the repository records no source for it. nitda.gov.ng, the LMS and the 2026 Service Charter all give +234 816 840 1851. The hours disagree three ways: the portal says 08:00 to 17:00, nitda.gov.ng says 08:30 to 16:30, and the Charter says 9am to 4pm. See the <a href="#content">contact comparison</a>.</dd>
+        <dt>Fix</dt><dd>Confirm the registry line and hours with the registry and the SERVICOM unit. Then update <code>PF.ORG</code> and <code>PF.CHANNELS</code> in <code>js/data.js</code>, the helpdesk row in <code>js/support.js</code>, and the footer of each HTML page, where the number and hours are written out.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-bad" id="p6">
+      <div class="top"><span class="id">P6</span><h3>There is no privacy notice</h3><div class="meta"><span class="chip bad">Before launch</span><span class="who">Content owner · DPO</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The portal collects name, official email, telephone, organisation, state and documents. The consent checkbox cites the Nigeria Data Protection Act and the support page names dpo@nitda.gov.ng. No page or link says what the data is used for, how long it is kept, who it is shared with, or what rights the person has. nitda.gov.ng links a privacy policy and a cookies policy from every footer, though its policy is made under the NDPR 2019, not the NDPA 2023.</dd>
+        <dt>Fix</dt><dd>Publish a portal privacy notice under the NDPA 2023. Link it from the footer, the consent checkbox and the review step of the wizard.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-warn" id="p7">
+      <div class="top"><span class="id">P7</span><h3>A "JavaScript is required" warning flashes on every page</h3><div class="meta"><span class="chip warn">Next release</span><span class="who">Portal code</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>Each page renders the <code>.pf-nojs</code> warning box, and <code>core.js</code> removes it only once it runs (<code>js/core.js:936</code>). Visitors who have JavaScript see a false warning for about a second, then the page jumps up by 123 px. Measured layout shift on a phone: Submit 0.887 (Google's "poor" band starts at 0.25), Home 0.168, Track and Support 0.132.</dd>
+        <dt>Fix</dt><dd>The inline script in each page's head already runs before first paint to set the theme. Have it also add a class to <code>&lt;html&gt;</code>, and hide <code>.pf-nojs</code> under that class. Wrapping the box in <code>&lt;noscript&gt;</code> also works.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-warn" id="p8">
+      <div class="top"><span class="id">P8</span><h3>This browser's own numbers are presented as the registry's</h3><div class="meta"><span class="chip warn">Next release</span><span class="who">Portal code</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>"Registry activity", "Requests in the registry", "Received in the last 7 days" and the "requests in progress" ribbon on every page count only the records stored in the visitor's own browser (<code>PF.metrics</code>, <code>js/core.js:615</code>). A first-time visitor is told "No submissions in the register yet". On the Support page, "Accepting documents", "Helpdesk: Open" and the footer's "All portal services operational" are fixed text. We saw "Open" at 03:11 WAT. The live clock shows the device's local time labelled WAT. The package README itself names presenting device data as the registry's answer as the failure the portal was rebuilt to avoid.</dd>
+        <dt>Fix</dt><dd>Relabel the counts "Your requests on this device", or remove them until the registry offers a public count. Drive the status rows from real checks or remove them. Compute the clock in the Africa/Lagos time zone.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-warn" id="p9">
+      <div class="top"><span class="id">P9</span><h3>Colour contrast fails in the light and dark themes</h3><div class="meta"><span class="chip warn">Next release</span><span class="who">Portal code (design tokens)</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>axe-core, WCAG 2.1 AA, run in each theme.
+          <ul>
+            <li>Light: 11 px muted grey <code>#807D7E</code> on white reaches 4.07:1 against the 4.5:1 required. 11 elements on Home and 9 on Submit, including the step counter and type tags.</li>
+            <li>Dark: the brand green <code>#05583B</code> is used as text on <code>#0B1410</code> at 2.19:1. This affects the current navigation item, hero emphasis, secondary buttons, FAQ questions and reset buttons: 21 elements on Home, 14 on Submit, 4 on Support and 2 on Track.</li>
+            <li>High contrast: no failures on any page.</li>
+          </ul></dd>
+        <dt>Fix</dt><dd>Darken the subtle-text token in the light theme. In the dark theme, map text and outline greens to a light step such as green-300 (<code>#6FAE8E</code>).</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-warn" id="p10">
+      <div class="top"><span class="id">P10</span><h3>"Install as app" and offline mode do not work on this host</h3><div class="meta"><span class="chip warn">Next release</span><span class="who">Portal code · Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>Browsers fetch <code>manifest.webmanifest</code> without cookies, so the host answers with its challenge page. Chrome logs "Manifest: Line 1, column 1, Syntax error". The deployed config sets <code>serviceWorker: false</code>, so the offline shell is off. The README's "Built in" list still promises an installable app with an offline shell.</dd>
+        <dt>Fix</dt><dd>On this host, adding <code>crossorigin="use-credentials"</code> to the manifest link should let the cookie through (untested). P1 removes the cause. Until then, take the claim out of the README.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-warn" id="p11">
+      <div class="top"><span class="id">P11</span><h3>No robots.txt or sitemap at the live root</h3><div class="meta"><span class="chip warn">Next release</span><span class="who">Portal build</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The packager drops both files from the portal zip (<code>scripts/config-build.mjs:40</code>, <code>PORTAL_NOT_AT_SUBPATH</code>) because they only make sense at a host root. The root-hosted zip inherits that, so <code>/robots.txt</code> answers 302 to the host's error page. The repository copies name <code>activityweb.page.gd</code>, which <code>scripts/platforms.config.mjs:85</code> records as serving an older portal. ITEM-42 was closed against that older origin and the portal moved on 19 Oct 2026, so this is a new observation. It is not evidence against that closure.</dd>
+        <dt>Fix</dt><dd>Regenerate both with <code>node scripts/portal-seo.mjs --origin &lt;production origin&gt;</code> and include them in the root zip.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-info" id="p12">
+      <div class="top"><span class="id">P12</span><h3>No security headers, and HTTP/1.1 only</h3><div class="meta"><span class="chip info">Improve</span><span class="who">Host</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The portal sends none of HSTS, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy or Permissions-Policy, so any site can frame the submission page. nitda.gov.ng sends frame protection and the Compliance Portal sends X-Frame-Options. No site in the estate sends HSTS. nitda.gov.ng and the LMS serve HTTP/2 (the LMS also HTTP/3); the portal's 30 small requests per page would benefit.</dd>
+        <dt>Fix</dt><dd>Set the headers at the host. The portal loads no third-party script, so a strict CSP is achievable. It needs a hash for the inline theme script and <code>connect-src</code> for the Power Platform host.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-info" id="p13">
+      <div class="top"><span class="id">P13</span><h3>Shared links show no preview</h3><div class="meta"><span class="chip info">Improve</span><span class="who">Portal code</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>No page carries Open Graph, Twitter card or canonical tags, and most preview bots receive the host challenge anyway (P1). The LMS publishes Open Graph, a Twitter card and JSON-LD.</dd>
+        <dt>Fix</dt><dd>Add <code>og:title</code>, <code>og:description</code>, <code>og:image</code> (the lockup), <code>og:url</code> and a canonical link to each page.</dd>
+      </dl>
+    </article>
+
+    <article class="finding t-info" id="p14">
+      <div class="top"><span class="id">P14</span><h3>Some Service Charter commitments are not reflected yet</h3><div class="meta"><span class="chip info">Improve</span><span class="who">Content owner · Portal code</span></div></div>
+      <dl>
+        <dt>Evidence</dt><dd>The Charter has officers administer, and customers complete, a customer feedback form (§8.1 v, §8.2 iv), and the SERVICOM unit reports a satisfaction index. The portal collects no feedback after a decision or a closed case. §10 promises the Charter in Hausa, Igbo and Yoruba; the portal is English only, as are the four other sites. nitda.gov.ng links reportgov.ng for service complaints; the portal does not mention SERVICOM or the grievance route. See the <a href="#charter">Charter comparison</a>.</dd>
+        <dt>Fix</dt><dd>Add a one-question satisfaction prompt to the decision timeline and to closed helpdesk cases. Link the Charter and the grievance route from the Support page.</dd>
+      </dl>
+    </article>
+
+  </div>
+</section>
+
+<section id="build" aria-labelledby="h-build">
+  <div class="head"><div class="secnum">06</div><h2 id="h-build">Build parity: hosted copy against the baseline</h2>
+    <p class="sub">Every file under <code>document-portal/</code> on the baseline branch was fetched from the live host and compared by SHA-256. The deployed config was read in the browser: only host names, workflow ids and URL digests were kept, never a signed URL.</p></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Files</th><th scope="col" class="num">Count</th><th scope="col">Result</th><th scope="col">Why</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">HTML pages, application scripts, design-system CSS, font, icons, favicon, manifest</th><td class="num">34</td><td><span class="chip good">Byte-identical</span></td><td>5 HTML, 7 JS, 18 CSS, 1 font, 2 SVG, 1 manifest</td></tr>
+        <tr><th scope="row"><code>sw.js</code></th><td class="num">1</td><td><span class="chip good">Differs by design</span></td><td>Only <code>const BUILD = 'dev'</code> became <code>'d22e15e956cb91f4'</code>, written by the packager</td></tr>
+        <tr><th scope="row">Logo PNGs (<code>ds/logo/</code>, <code>email-assets/</code>)</th><td class="num">5</td><td><span class="chip good">Same image</span></td><td>Re-encoded smaller. Same dimensions; one is pixel-identical and four differ by at most 1/255 per channel</td></tr>
+        <tr><th scope="row"><code>README.md</code>, <code>config.example.js</code></th><td class="num">2</td><td><span class="chip good">Absent by design</span></td><td>Developer files, not deployed</td></tr>
+        <tr><th scope="row"><code>robots.txt</code>, <code>sitemap.xml</code></th><td class="num">2</td><td><span class="chip warn">Absent</span></td><td>Left out by the packager; see P11</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Endpoint key</th><th scope="col">Flow</th><th scope="col">Configured</th><th scope="col">Workflow id matches ledger</th><th scope="col">URL digest matches ledger</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="mono">SUBMISSION</th><td>CG_Submission_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">UPLOAD</th><td>CG_Upload_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">STATUS</th><td>CG_Portal_Status_Check_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">SUPPORT</th><td>CG_Portal_Support_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">VERIFY</th><td>CG_Portal_Verification_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">VERIFY_CONFIRM</th><td>CG_Portal_Verification_Confirmation_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row" class="mono">WRITEBACK</th><td>CG_Portal_Writeback_Endpoint</td><td>Yes, signed</td><td>Yes</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Ledger: <code>registers/config-build-ledger.json</code>, built 20 Oct 2026 00:04 UTC from commit c90be7e. All seven URLs point at the Agency's own Power Platform environment, and the host carries no keys beyond the ledger's. The config also sets <code>serviceWorker: false</code> (see P10). The portal is live, not in demo mode.</p>
+</section>
+
+<section id="content" aria-labelledby="h-content">
+  <div class="head"><div class="secnum">07</div><h2 id="h-content">Content parity and the Service Charter</h2>
+    <p class="sub">What a citizen is told by the portal, set beside what the Agency publishes elsewhere.</p></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Detail</th><th scope="col">Document Portal</th><th scope="col">nitda.gov.ng</th><th scope="col">LMS Portal</th><th scope="col">Service Charter 2026</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Telephone</th><td><span class="st n">Differs</span> +234 700 000 6483</td><td>+234 816 840 1851</td><td>+234 816 840 1851</td><td>0816 840 1851</td></tr>
+        <tr><th scope="row">Hours</th><td><span class="st n">Differs</span> Mon–Fri 08:00–17:00 WAT</td><td>Mon–Fri 08:30–16:30</td><td>Not stated</td><td>Mon–Fri 9am–4pm, excluding public holidays</td></tr>
+        <tr><th scope="row">Email</th><td>portal@nitda.gov.ng; dpo@nitda.gov.ng</td><td>info@nitda.gov.ng; zonal office addresses</td><td>lms@nitda.gov.ng</td><td>info@nitda.gov.ng</td></tr>
+        <tr><th scope="row">Head office</th><td><span class="st y">Matches</span> No. 28 Port Harcourt Crescent, Off Gimbiya Street, Area 11, Garki, Abuja</td><td>Same, plus P.M.B 564</td><td>28 Port Harcourt Crescent, Area 11, Garki, Abuja</td><td>Plot 28, Port Harcourt Crescent, Off Gimbiya Street, Area 11, Garki</td></tr>
+        <tr><th scope="row">Complaints route</th><td>Helpdesk case with a reference</td><td>Contact form (Enquiry, Complaint, Comment, Suggestion) and reportgov.ng</td><td>Tickets after sign-in</td><td>Grievance Redress Mechanism (§9)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="charter">Against the Service Charter</h3>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">Charter commitment</th><th scope="col">What the portal does</th><th scope="col">Position</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Send acknowledgement of a received request (§8.1 i)</th><td>Issues a reference at once; acknowledges receipt within 3 working days, by email and on the timeline</td><td><span class="chip good">Meets</span></td></tr>
+        <tr><th scope="row">Complaints resolved within 3 working days, 21 if investigated (§9.1)</th><td>Helpdesk promises a reply within 1 working day</td><td><span class="chip good">Ahead</span></td></tr>
+        <tr><th scope="row">Timelines apply only to complete, valid submissions (§7)</th><td>Field validation, attachment guidance per type, review step before sending</td><td><span class="chip good">Supports</span></td></tr>
+        <tr><th scope="row">Customer feedback form; satisfaction index tracked monthly (§6, §8.1 v, §8.2 iv)</th><td>No feedback is collected</td><td><span class="chip warn">Gap (P14)</span></td></tr>
+        <tr><th scope="row">Charter in Hausa, Igbo and Yoruba; helplines for special needs (§10)</th><td>English only; high-contrast theme, keyboard support and screen-reader labelling</td><td><span class="chip warn">Partial (P14)</span></td></tr>
+        <tr><th scope="row">Working hours 9am to 4pm (§7)</th><td>States 08:00 to 17:00</td><td><span class="chip bad">Conflicts (P5)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="siblings" aria-labelledby="h-sib">
+  <div class="head"><div class="secnum">08</div><h2 id="h-sib">What we saw on the other Agency sites</h2>
+    <p class="sub">These are outside the portal's scope. They are listed for the teams that run each site, because two of them are more serious than anything found on the portal.</p></div>
+  <div class="cols2">
+    <div class="card">
+      <h3>Compliance Portal</h3><span class="host">clearance.nitda.gov.ng</span>
+      <ul>
+        <li><b>The sign-in page works over plain HTTP.</b> <code>http://</code> redirects to <code>http://…/system/login</code>, whose form posts the password to an <code>http://</code> address.</li>
+        <li><b>"Forgot password" returns HTTP 500</b> (Server Error), so users cannot recover their accounts.</li>
+        <li>Headers show nginx 1.14.0. The connection negotiates TLS 1.2, and the footer reads © 2018.</li>
+        <li>The sign-in page weighs 1.7 MB; Lighthouse mobile performance is 56.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>NITDA website</h3><span class="host">nitda.gov.ng</span>
+      <ul>
+        <li>Headers announce PHP 7.4.33, which has received no security fixes since November 2022, and Plesk.</li>
+        <li>The 5 MB home page takes 21 s to show its main content on a simulated phone, and shifts by 0.84 while it loads.</li>
+        <li>The home page has 12 empty <code>h1</code> headings, 20 unnamed links, no skip link and no main landmark.</li>
+        <li>The footer "Contact Us" link is malformed and returns 403. The privacy policy cites the NDPR 2019.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>LMS Portal</h3><span class="host">lms.nitda.gov.ng</span>
+      <ul>
+        <li>The viewport disables pinch zoom (<code>user-scalable=0</code>, <code>maximum-scale=1.0</code>), a WCAG 1.4.4 failure on every page.</li>
+        <li>The server takes 3.4 to 5.4 s to respond from the test location.</li>
+        <li>The Courses page has 202 contrast failures.</li>
+        <li>Every guest gets a 30-day "user online" cookie, with no notice.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>DL4ALL Dashboard</h3><span class="host">dashboard.digitalliteracy.nitda.gov.ng</span>
+      <ul>
+        <li>Unknown addresses, <code>robots.txt</code> and <code>sitemap.xml</code> all redirect to the home page.</li>
+        <li>Headers announce Next.js. Mobile layout shift is 0.33.</li>
+        <li>Done well: its session cookies use the <code>__Host-</code> and <code>__Secure-</code> prefixes and are HttpOnly and Secure. It also publishes API documentation.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Across all five sites: none sends HSTS, none publishes a <code>security.txt</code>, and none offers a language other than English.</p>
+</section>
+
+<section id="screens" aria-labelledby="h-screens">
+  <div class="head"><div class="secnum">09</div><h2 id="h-screens">Screens</h2>
+    <p class="sub">Home pages as captured on 20 October 2026, desktop at 1366 px and phone at 390 px. The portal is shown after dismissing its first-visit welcome. DL4ALL shows empty figures because its data API is outside this test's network allow-list.</p></div>
+  <div class="gallery">
+    <figure class="shot"><div class="pair"><img src="shots/portal-desktop.jpg" alt="Document Portal home on desktop: headline 'One front door for every official document you send us' with Start a submission and Track a request buttons and a registry activity panel" loading="lazy" width="960" height="562"><img src="shots/portal-mobile.jpg" alt="Document Portal home on a phone" loading="lazy" width="320" height="692"></div><figcaption><b>Document Portal</b>folio-portal.page.gd</figcaption></figure>
+    <figure class="shot"><div class="pair"><img src="shots/nitda-desktop.jpg" alt="nitda.gov.ng home on desktop: a dark hero banner about compliance with laws and misinformation management" loading="lazy" width="960" height="562"><img src="shots/nitda-mobile.jpg" alt="nitda.gov.ng home on a phone" loading="lazy" width="320" height="692"></div><figcaption><b>NITDA website</b>nitda.gov.ng</figcaption></figure>
+    <figure class="shot"><div class="pair"><img src="shots/clearance-desktop.jpg" alt="Compliance Portal sign-in card with email and password fields" loading="lazy" width="960" height="562"><img src="shots/clearance-mobile.jpg" alt="Compliance Portal sign-in on a phone" loading="lazy" width="320" height="692"></div><figcaption><b>Compliance Portal</b>clearance.nitda.gov.ng</figcaption></figure>
+    <figure class="shot"><div class="pair"><img src="shots/lms-desktop.jpg" alt="LMS Portal landing page: 'Empower your Career with the NITDA LMS Portal'" loading="lazy" width="960" height="562"><img src="shots/lms-mobile.jpg" alt="LMS Portal on a phone" loading="lazy" width="320" height="692"></div><figcaption><b>LMS Portal</b>lms.nitda.gov.ng</figcaption></figure>
+    <figure class="shot"><div class="pair"><img src="shots/dl4all-desktop.jpg" alt="DL4ALL dashboard: 'Nigeria's digital literacy progress tracker' with a progress ring" loading="lazy" width="960" height="562"><img src="shots/dl4all-mobile.jpg" alt="DL4ALL dashboard on a phone" loading="lazy" width="320" height="692"></div><figcaption><b>DL4ALL Dashboard</b>dashboard.digitalliteracy.nitda.gov.ng</figcaption></figure>
+  </div>
+</section>
+
+<section id="method" aria-labelledby="h-method">
+  <div class="head"><div class="secnum">10</div><h2 id="h-method">Method and limits</h2></div>
+  <div class="cols2">
+    <div class="card">
+      <h3>How it was measured</h3>
+      <dl class="kv">
+        <dt>When</dt><dd>20 Oct 2026, 02:00 to 02:35 UTC (03:00 to 03:35 WAT)</dd>
+        <dt>Browser</dt><dd>Chromium via Playwright 1.56.1, desktop 1366×800 and phone 390×844</dd>
+        <dt>Accessibility</dt><dd>axe-core 4.10.2, WCAG 2.0 and 2.1 A and AA rules; the portal also in each of its three themes</dd>
+        <dt>Scores</dt><dd>Lighthouse 12.2.1, default mobile and desktop presets</dd>
+        <dt>Pages</dt><dd>26: portal 5, nitda.gov.ng 8, Compliance Portal 3, LMS 6, DL4ALL 4, each including one deliberately unknown address</dd>
+        <dt>Also checked</dt><dd>TLS certificates, HTTP-to-HTTPS redirects, robots.txt, sitemaps, security.txt, link-preview and monitoring user agents, email-client image fetches, the 2026 Service Charter PDF</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <h3>What it did not do, and what that limits</h3>
+      <ul>
+        <li>No sign-ins and no form submissions on any site. Every request to a Power Automate host was blocked by the test browser; none was attempted, so no tenant record was created.</li>
+        <li>The portal's <code>config.local.js</code> was read in memory. Only host names, workflow ids and SHA-256 digests were kept.</li>
+        <li>The repository was only read. Nothing was committed, pushed or changed on the baseline branch.</li>
+        <li>The tests ran from a cloud network outside Nigeria, through a proxy. Response times compare sites with each other; they are not what users in Nigeria see.</li>
+        <li>Hosts outside the network allow-list (X, YouTube, reCAPTCHA, the DL4ALL data API) were blocked. That lowers measured page weight and adds console errors on nitda.gov.ng, the Compliance Portal and DL4ALL.</li>
+        <li>The HTTP-to-HTTPS redirect on nitda.gov.ng could not be tested. Signed-in areas of the sibling sites were not assessed.</li>
+        <li>The email logos were checked separately: Gmail, Outlook and Yahoo image proxies receive the real PNGs, because the host challenges only HTML pages.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="end"><div class="wrap">Document Portal Parity Review · prepared 20 October 2026 for final commissioning of the NITDA Document Portal. Measurements are a snapshot of that morning.</div></footer>
+
+<script>
+(function () {
+  var tip = null;
+  function fmt(v, unit) { return unit === 'KB' ? (v >= 1000 ? (v / 1000) + 'k' : String(v)) : v + ' s'; }
+  document.querySelectorAll('.bars').forEach(function (chart) {
+    var max = parseFloat(chart.dataset.max);
+    var ticks = chart.dataset.ticks.split(',').map(Number);
+    var unit = chart.dataset.unit;
+    chart.querySelectorAll('.bar').forEach(function (bar) {
+      var v = parseFloat(bar.dataset.v);
+      var i = bar.querySelector('.track i');
+      i.style.width = 'calc((100% - 78px) * ' + (v / max).toFixed(4) + ')';
+      var parts = bar.dataset.tip.split('|');
+      bar.setAttribute('aria-label', parts[0] + ': ' + parts[1]);
+    });
+    var grid = chart.querySelector('.gridlines');
+    var axis = chart.parentNode.querySelector('.ticks[data-for="' + chart.dataset.chart + '"]');
+    ticks.forEach(function (t) {
+      var pos = 'calc((100% - 78px) * ' + (t / max).toFixed(4) + ')';
+      if (t > 0) { var g = document.createElement('b'); g.style.left = pos; grid.appendChild(g); }
+      var s = document.createElement('span'); s.style.left = pos;
+      var last = t === ticks[ticks.length - 1];
+      var n = unit === 'KB' ? t / 1000 : t;
+      s.textContent = last ? n + (unit === 'KB' ? ' MB' : ' s') : String(n);
+      axis.appendChild(s);
+    });
+    var fig = chart.closest('figure');
+    function show(bar) {
+      var parts = bar.dataset.tip.split('|');
+      if (!tip) { tip = document.createElement('div'); tip.className = 'tip'; tip.setAttribute('role', 'tooltip'); }
+      tip.innerHTML = '';
+      var b = document.createElement('b'); b.textContent = parts[0]; tip.appendChild(b);
+      tip.appendChild(document.createTextNode(parts[1]));
+      fig.appendChild(tip);
+      tip.hidden = false;
+      var fr = fig.getBoundingClientRect(), br = bar.getBoundingClientRect();
+      var val = bar.querySelector('.track span').getBoundingClientRect();
+      var tw = tip.offsetWidth, th = tip.offsetHeight;
+      var left = val.right - fr.left + 12, top = br.top - fr.top + br.height / 2 - th / 2;
+      if (left + tw > fr.width - 8) { left = Math.max(8, fr.width - tw - 8); top = br.top - fr.top - th - 6; }
+      tip.style.left = left + 'px';
+      tip.style.top = Math.max(4, top) + 'px';
+    }
+    function hide() { if (tip) tip.hidden = true; }
+    chart.querySelectorAll('.bar').forEach(function (bar) {
+      bar.addEventListener('mouseenter', function () { show(bar); });
+      bar.addEventListener('focus', function () { show(bar); });
+      bar.addEventListener('mouseleave', hide);
+      bar.addEventListener('blur', hide);
+    });
+  });
+})();
+</script>
+
+</body></html>

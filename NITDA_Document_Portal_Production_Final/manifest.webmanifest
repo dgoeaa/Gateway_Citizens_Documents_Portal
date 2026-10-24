@@ -1,0 +1,25 @@
+{
+  "name": "NITDA Document Portal",
+  "short_name": "NITDA Portal",
+  "description": "Submit documents and correspondence to NITDA, track them to a decision, and reach the helpdesk.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F2F3",
+  "theme_color": "#05583B",
+  "lang": "en-NG",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/nitda-symbol.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
