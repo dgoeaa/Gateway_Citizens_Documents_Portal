@@ -1,0 +1,411 @@
+{
+  "recordedAt": "2026-10-24T08:37:28.285952+00:00",
+  "repositoryRoot": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal",
+  "packageRoot": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/final-portal",
+  "codeCommit": "2d88b90d0459df0193fad7fc01a1ed9e11962b53",
+  "releaseClassification": "PRE-PRODUCTION PACKAGE",
+  "fullRequestedCompletion": "FAILED",
+  "fixturePolicy": "All test records, email addresses, ratings and documents are explicit synthetic isolated local fixtures, never production facts or seeded deployable data. No test codes, proofs or private keys are included here.",
+  "runtimeVersions": {
+    "python": "3.12.3",
+    "node": "v22.23.3"
+  },
+  "checks": [
+    {
+      "name": "all_original_sources_read_hashed_parsed",
+      "status": "PASSED",
+      "files": 874,
+      "uniqueContents": 328,
+      "evidence": "source-inventory.json; all hashes rechecked against originals"
+    },
+    {
+      "name": "standard_library_regression_suite",
+      "status": "PASSED",
+      "tests": 16,
+      "seconds": 7.627,
+      "command": "python -m unittest discover -s /home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/final-portal/tests -v",
+      "output": "test_local_page_assets_and_navigation_exist (test_portal.PackageIntegrityTests.test_local_page_assets_and_navigation_exist) ... ok\ntest_service_worker_contains_only_existing_public_shell_assets (test_portal.PackageIntegrityTests.test_service_worker_contains_only_existing_public_shell_assets) ... ok\ntest_admin_workflow_support_feedback_and_audit (test_portal.PortalTests.test_admin_workflow_support_feedback_and_audit) ... ok\ntest_authentication_and_uniform_owner_denial (test_portal.PortalTests.test_authentication_and_uniform_owner_denial) ... ok\ntest_complete_submission_tracking_download_and_restart (test_portal.PortalTests.test_complete_submission_tracking_download_and_restart) ... ok\ntest_concurrent_upload_ticket_is_single_use (test_portal.PortalTests.test_concurrent_upload_ticket_is_single_use) ... ok\ntest_configuration_fails_closed (test_portal.PortalTests.test_configuration_fails_closed) ... ok\ntest_http_boundary_and_private_storage (test_portal.PortalTests.test_http_boundary_and_private_storage) ... ok\ntest_mail_failure_is_not_reported_as_sent (test_portal.PortalTests.test_mail_failure_is_not_reported_as_sent) ... ok\ntest_otp_attempt_ceiling_cooldown_expiry_and_single_use (test_portal.PortalTests.test_otp_attempt_ceiling_cooldown_expiry_and_single_use) ... ok\ntest_paging_and_exact_reference_keep_older_work_accessible (test_portal.PortalTests.test_paging_and_exact_reference_keep_older_work_accessible) ... ok\ntest_partial_upload_and_replay_are_not_success (test_portal.PortalTests.test_partial_upload_and_replay_are_not_success) ... ok\ntest_resumed_tickets_keep_original_attachment_indexes (test_portal.PortalTests.test_resumed_tickets_keep_original_attachment_indexes) ... ok\ntest_support_accepts_unknown_reference_without_exposing_records (test_portal.PortalTests.test_support_accepts_unknown_reference_without_exposing_records) ... ok\ntest_validation_limits_and_idempotency (test_portal.PortalTests.test_validation_limits_and_idempotency) ... ok\ntest_withdrawal_and_terminal_record_protection (test_portal.PortalTests.test_withdrawal_and_terminal_record_protection) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 7.627s\n\nOK"
+    },
+    {
+      "name": "javascript_syntax",
+      "status": "PASSED",
+      "files": 12,
+      "command": "node --check <each public JavaScript file>"
+    },
+    {
+      "name": "python_compilation",
+      "status": "PASSED",
+      "command": "python -m py_compile /home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/final-portal/app/server.py"
+    },
+    {
+      "name": "real_browser_core_workflows",
+      "status": "PASSED",
+      "evidence": "Installed Chromium via local DevTools protocol; wizard, OTP, upload, completion, tracking, staff update, citizen response, support/reply, feedback, Escape"
+    },
+    {
+      "name": "partial_upload_recovery_same_filename",
+      "status": "PASSED",
+      "evidence": "Explicit failure injected for second upload; actual server completion after draft restore, same reference and both file bytes"
+    },
+    {
+      "name": "blocked_browser_storage",
+      "status": "PASSED",
+      "evidence": "Explicit setItem failure; save warning and actual server-issued reference retained"
+    },
+    {
+      "name": "offline_shell_and_read_only_reference_alias",
+      "status": "PASSED",
+      "evidence": {
+        "online": false,
+        "alias": true,
+        "deviceLabel": true,
+        "correctReference": true,
+        "noWriteActions": true
+      }
+    },
+    {
+      "name": "admin_exact_reference_and_revocation",
+      "status": "PASSED",
+      "filter": {
+        "records": 1,
+        "reference": "NITDA-2026-4",
+        "page": "Exact reference",
+        "url": "/admin.html"
+      },
+      "logout": "Session cleared and server proof revoked."
+    },
+    {
+      "name": "responsive_basic_semantics",
+      "status": "PASSED",
+      "cases": 24,
+      "widths": [
+        320,
+        390,
+        768,
+        1280
+      ],
+      "pages": [
+        "index",
+        "submit",
+        "track",
+        "support",
+        "privacy",
+        "admin"
+      ],
+      "scope": "Measured overflow, headings, accessible button names, runtime exceptions and resource origins only. Not full accessibility certification."
+    },
+    {
+      "name": "proxy_template_with_local_test_certificate",
+      "status": "PASSED",
+      "command": "nginx -t -p /tmp/portal-tls -c /tmp/portal-tls/nginx.conf",
+      "output": "nginx: the configuration file /tmp/portal-tls/nginx.conf syntax is ok\nnginx: configuration file /tmp/portal-tls/nginx.conf test is successful",
+      "scope": "Template substitutions use generated localhost self-signed certificate fixtures, not a live deployment."
+    },
+    {
+      "name": "code_secret_scanning",
+      "status": "PASSED",
+      "evidence": "Secret-scanning tool: all initial package files and each later code change scanned before commit; no secrets detected"
+    },
+    {
+      "name": "codeql_download_header_finding_fix",
+      "status": "PASSED",
+      "evidence": "Initial py/http-response-splitting alert fixed using static attachment filename; subsequent successful Python and JavaScript analyses reported zero alerts."
+    },
+    {
+      "name": "codeql_latest_final_attempt",
+      "status": "FAILED",
+      "reason": "Final attempt after offline-reference code commit timed out. No final result was returned; earlier clean analyses are not substituted for a completed final scan."
+    },
+    {
+      "name": "complete_original_baseline_and_full_instruction",
+      "status": "FAILED",
+      "reason": "No supplied candidate demonstrated complete unchanged behavior; named embedded JSON and full ordered hierarchy/outcome instruction absent."
+    },
+    {
+      "name": "full_enterprise_unique_function_parity",
+      "status": "FAILED",
+      "reason": "DGO enterprise modules, external registry adapters, tenant/RBAC provisioning, automated retention and richer domain workflows remain archival/deferred, not implemented active functions."
+    },
+    {
+      "name": "full_accessibility_acceptance",
+      "status": "FAILED",
+      "reason": "Only the listed local browser/keyboard/layout checks were completed, not a full conformance acceptance."
+    },
+    {
+      "name": "production_operational_acceptance",
+      "status": "FAILED",
+      "reason": "No completed capacity, scanner, backup restoration, immutable audit, retention/deletion or organizational/privacy acceptance."
+    },
+    {
+      "name": "actual_smtp_inbox_delivery",
+      "status": "NOT VERIFIABLE",
+      "absentDependency": "Operator SMTP service credentials and real recipient inbox access; local test transport does not send mail."
+    },
+    {
+      "name": "public_dns_certificates_tls",
+      "status": "NOT VERIFIABLE",
+      "absentDependency": "Actual deployment domain, DNS binding, operator certificate/key and live reverse proxy endpoint."
+    },
+    {
+      "name": "supported_assistive_technology_matrix",
+      "status": "NOT VERIFIABLE",
+      "absentDependency": "Required screen-reader and supported device/assistive-technology facilities not available in the local execution facilities."
+    }
+  ],
+  "browserEvidence": {
+    "workflow": {
+      "adminLogin": true,
+      "tracking": true,
+      "writeback": true,
+      "supportCase": "CASE-2026-2",
+      "caseReply": true,
+      "feedback": true,
+      "escape": {
+        "resolved": true,
+        "open": false
+      },
+      "exceptions": []
+    },
+    "recovery": {
+      "partial": {
+        "title": "Receipt not confirmed",
+        "ref": "NITDA-2026-4",
+        "attempt": "NITDA-GW365SMVL"
+      },
+      "recovered": {
+        "title": "Submission received",
+        "ref": "NITDA-2026-4",
+        "draft": null
+      },
+      "record": {
+        "complete": true,
+        "files": 2
+      },
+      "storageUnavailable": {
+        "title": "Submission received",
+        "ref": "NITDA-2026-5",
+        "warning": true
+      },
+      "privateCached": [],
+      "exceptions": []
+    },
+    "finalLayoutAndOffline": {
+      "offline": {
+        "online": false,
+        "alias": true,
+        "deviceLabel": true,
+        "correctReference": true,
+        "noWriteActions": true
+      },
+      "filter": {
+        "records": 1,
+        "reference": "NITDA-2026-4",
+        "page": "Exact reference",
+        "url": "/admin.html"
+      },
+      "logout": "Session cleared and server proof revoked.",
+      "results": [
+        {
+          "path": "/index.html",
+          "width": 320,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/submit.html",
+          "width": 320,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/track.html",
+          "width": 320,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/support.html",
+          "width": 429,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/privacy.html",
+          "width": 320,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/admin.html",
+          "width": 320,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/index.html",
+          "width": 390,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/submit.html",
+          "width": 390,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/track.html",
+          "width": 390,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/support.html",
+          "width": 429,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/privacy.html",
+          "width": 390,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/admin.html",
+          "width": 390,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/index.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/submit.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/track.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/support.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/privacy.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/admin.html",
+          "width": 768,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/index.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/submit.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/track.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/support.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/privacy.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        },
+        {
+          "path": "/admin.html",
+          "width": 1280,
+          "overflow": false,
+          "heading": true,
+          "unnamedButtons": 0,
+          "external": 0
+        }
+      ],
+      "errors": []
+    }
+  },
+  "historicalCheckFailures": [
+    "Playwright transport closed; used installed Chromium without downloads.",
+    "Initial browser evaluation redeclared a test-only global const; corrected inline expression.",
+    "First integrity test treated / as filesystem root; corrected web-root resolution and reran.",
+    "Review/manual checks exposed retry/paging/closure/offline bugs; corrected and rechecked.",
+    "Latest final CodeQL attempt timed out and remains FAILED."
+  ]
+}

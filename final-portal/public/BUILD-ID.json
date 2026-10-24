@@ -1,0 +1,6 @@
+{
+  "version": "pre-production-1",
+  "package": "final-portal",
+  "baseline": "NITDA_Document_Portal_Production_Final",
+  "clientEnhancement": "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root"
+}

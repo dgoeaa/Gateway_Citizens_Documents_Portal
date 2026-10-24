@@ -1,0 +1,3020 @@
+{
+  "repositoryRoot": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal",
+  "sourceCommit": "8df72a65d42b4d6a72a2c2429e44f66ab6e4e7cf",
+  "scope": "All 17 original top-level source trees; excludes .git and final-portal. No external materials. Hashes are byte evidence, not functionality certification.",
+  "treeHashAlgorithm": "SHA-256 over sorted relative UTF-8 paths + NUL + raw per-file SHA-256 digests",
+  "missingNamedInput": {
+    "name": "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root__FULL_EMBEDDED_CONTENTS.json",
+    "present": false,
+    "opened": false
+  },
+  "totalFiles": 874,
+  "uniqueByteContents": 328,
+  "inspectionCounts": {
+    "utf8Decoded": 309,
+    "htmlParsed": 35,
+    "jsonParsed": 14,
+    "binaryReadAndHashed": 19,
+    "woff2HeadersRead": 1,
+    "svgParsed": 3,
+    "pngHeadersRead": 7,
+    "javascriptSyntaxChecked": 176,
+    "pythonParsed": 2,
+    "jpegHeadersRead": 10
+  },
+  "parseFailures": [],
+  "identicalTrees": [
+    [
+      "4",
+      "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root"
+    ],
+    [
+      "document-portal",
+      "document-portal_handover_source"
+    ],
+    [
+      "document-portal _folio-platform-suite-1.0.2",
+      "document-portal_suite"
+    ],
+    [
+      "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e",
+      "document-portal_repo_ root"
+    ]
+  ],
+  "trees": [
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/4",
+      "files": 49,
+      "bytes": 789782,
+      "treeSha256": "5dd4bf2e1511e27d8eb6b1320abb8769d3ad0e7d8e6ba296919284413bfa7f20"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/CG",
+      "files": 43,
+      "bytes": 782755,
+      "treeSha256": "bd73ab25aedc40efd6b698777dc60e2d9d8c722644f7a5062691247984497682"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/DGO_Document_Portal_Production",
+      "files": 170,
+      "bytes": 1529009,
+      "treeSha256": "3cf603fae49de1608e16a76ed496ec704ec5473fd9e323445994beaecb33b960"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/Document Portal Parity Review",
+      "files": 11,
+      "bytes": 323569,
+      "treeSha256": "0b75063e417907fd3817fd94f8afba91e730bf34e7bc79981a844c1a0eb8f0d3"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/FOLIO-PORTAL-Production__Commissioned_v1_181026",
+      "files": 40,
+      "bytes": 755970,
+      "treeSha256": "93fea22679bd5cc5607a9e71c36454b0550061aff2748c0eb93a0a34f39832f6"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root",
+      "files": 43,
+      "bytes": 764541,
+      "treeSha256": "74a22d161304d773c22aab29ea1852a4796872d289b81c89f7e3443238a1c5d5"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root",
+      "files": 49,
+      "bytes": 789782,
+      "treeSha256": "5dd4bf2e1511e27d8eb6b1320abb8769d3ad0e7d8e6ba296919284413bfa7f20"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/Folio-Portal-Premium",
+      "files": 46,
+      "bytes": 771225,
+      "treeSha256": "00708dcd2a8713b42cbc98d1e8919ab602201706a3e2b836aed2ccbf113625eb"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/NITDA_Document_Portal_Production_Final",
+      "files": 45,
+      "bytes": 1275833,
+      "treeSha256": "b9a73d028af56c71936f82d26214ced764266b589e022175070864f5849413be"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal",
+      "files": 46,
+      "bytes": 803255,
+      "treeSha256": "4dddd25daa27ccc63727aac1539ca0600ef02cb57945a460ca2cd7760dbb39c6"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal _folio-platform-suite-1.0.2",
+      "files": 51,
+      "bytes": 933160,
+      "treeSha256": "7dc820637259f16234b7098f6f9f604c964be1ab738898d96e094004f253e986"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e",
+      "files": 46,
+      "bytes": 786169,
+      "treeSha256": "6271956e29f951749cf5f27de7774f281a8d049e4b89e90d80f45165218b120e"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_folio-platform-suite-1.0.3",
+      "files": 51,
+      "bytes": 916073,
+      "treeSha256": "90860b22231c3c609a82fce52195ffe3165f1946805be29c6644d143a8b186c4"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_handover_source",
+      "files": 46,
+      "bytes": 803255,
+      "treeSha256": "4dddd25daa27ccc63727aac1539ca0600ef02cb57945a460ca2cd7760dbb39c6"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_isolated-code-session-scope-bghduo",
+      "files": 41,
+      "bytes": 736463,
+      "treeSha256": "ef6155173f992985751c71a8e7fa989d1e692dcdee41531064b79fc5050990ac"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_repo_ root",
+      "files": 46,
+      "bytes": 786169,
+      "treeSha256": "6271956e29f951749cf5f27de7774f281a8d049e4b89e90d80f45165218b120e"
+    },
+    {
+      "directory": "/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/document-portal_suite",
+      "files": 51,
+      "bytes": 933160,
+      "treeSha256": "7dc820637259f16234b7098f6f9f604c964be1ab738898d96e094004f253e986"
+    }
+  ],
+  "uniqueFiles": [
+    {
+      "sha256": "45e68e72f045c717e5789637e9cc5b63bcaac13368388a20641fd0484ba3254e",
+      "bytes": 2468,
+      "paths": [
+        "4/.htaccess",
+        "CG/.htaccess",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/.htaccess",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/.htaccess",
+        "Folio-Portal-Premium/.htaccess",
+        "document-portal/.htaccess",
+        "document-portal _folio-platform-suite-1.0.2/.htaccess",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/.htaccess",
+        "document-portal_folio-platform-suite-1.0.3/.htaccess",
+        "document-portal_handover_source/.htaccess",
+        "document-portal_repo_ root/.htaccess",
+        "document-portal_suite/.htaccess"
+      ]
+    },
+    {
+      "sha256": "fcbd51b8dc396a59d4105c657b7de20b612d9a3b5fcf138b52efdb459be06eb3",
+      "bytes": 5694,
+      "paths": [
+        "4/404.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/404.html"
+      ]
+    },
+    {
+      "sha256": "5244d57735e472ced913da43b15082df63634c7b22b1621f1b2904c29251672a",
+      "bytes": 330,
+      "paths": [
+        "4/BUILD-ID.json",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/BUILD-ID.json"
+      ]
+    },
+    {
+      "sha256": "443114253289d4a96cf0665669f4d397816ff44d72bb79f8df8fb106aec56072",
+      "bytes": 5454,
+      "paths": [
+        "4/CITIZEN_JOURNEY_ENHANCEMENT.md",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/CITIZEN_JOURNEY_ENHANCEMENT.md"
+      ]
+    },
+    {
+      "sha256": "a17430786fc6a8f056cfd1deb3ffefea0c1dc41d0e106136ff88f76283a49d27",
+      "bytes": 1071,
+      "paths": [
+        "4/CITIZEN_JOURNEY_TEST_RESULTS.json",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/CITIZEN_JOURNEY_TEST_RESULTS.json"
+      ]
+    },
+    {
+      "sha256": "160e3f97260edf91294e27d030017a14c2e0b3d03f7e5aa7f0bd6381b61caae0",
+      "bytes": 3134,
+      "paths": [
+        "4/FINAL_ACCESSIBILITY_AUDIT.json",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/FINAL_ACCESSIBILITY_AUDIT.json"
+      ]
+    },
+    {
+      "sha256": "1fcd9a42be5a89a1a4b5810cacbf8b0f4228873335e97982a183acdbb1d10e2c",
+      "bytes": 2383,
+      "paths": [
+        "4/FINAL_ACCESSIBILITY_AUDIT.md",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/FINAL_ACCESSIBILITY_AUDIT.md"
+      ]
+    },
+    {
+      "sha256": "3f186ac5c96212ce00ffafa6c0a9ba7ba653bd0a08f1394632b9d50c8975fa56",
+      "bytes": 11121,
+      "paths": [
+        "4/ds/colors_and_type.css",
+        "CG/ds/colors_and_type.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/colors_and_type.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/colors_and_type.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/colors_and_type.css",
+        "Folio-Portal-Premium/ds/colors_and_type.css",
+        "document-portal/ds/colors_and_type.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/colors_and_type.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/colors_and_type.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/colors_and_type.css",
+        "document-portal_handover_source/ds/colors_and_type.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/colors_and_type.css",
+        "document-portal_repo_ root/ds/colors_and_type.css",
+        "document-portal_suite/ds/colors_and_type.css"
+      ]
+    },
+    {
+      "sha256": "0ba79ee1dd5091aa128271b6a5e9b908af50476f6fb41c186a2772d22c613f7d",
+      "bytes": 849,
+      "paths": [
+        "4/ds/ds.css",
+        "CG/ds/ds.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/ds.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/ds.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/ds.css",
+        "Folio-Portal-Premium/ds/ds.css",
+        "document-portal/ds/ds.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/ds.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/ds.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/ds.css",
+        "document-portal_handover_source/ds/ds.css",
+        "document-portal_repo_ root/ds/ds.css",
+        "document-portal_suite/ds/ds.css"
+      ]
+    },
+    {
+      "sha256": "abbf67cceb200508c9590ac9b75b37dd2211f58ea56279f1fa6ec87265f9d713",
+      "bytes": 143932,
+      "paths": [
+        "4/ds/fonts/CascadiaMono-Regular.woff2",
+        "CG/ds/fonts/CascadiaMono-Regular.woff2",
+        "DGO_Document_Portal_Production/assets/fonts/CascadiaMono-Regular.woff2",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/fonts/CascadiaMono-Regular.woff2",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/fonts/CascadiaMono-Regular.woff2",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/fonts/CascadiaMono-Regular.woff2",
+        "Folio-Portal-Premium/ds/fonts/CascadiaMono-Regular.woff2",
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/fonts/CascadiaMono-Regular.woff2",
+        "document-portal/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal _folio-platform-suite-1.0.2/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_folio-platform-suite-1.0.3/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_handover_source/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_isolated-code-session-scope-bghduo/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_repo_ root/ds/fonts/CascadiaMono-Regular.woff2",
+        "document-portal_suite/ds/fonts/CascadiaMono-Regular.woff2"
+      ]
+    },
+    {
+      "sha256": "becd80d4fb0a9a94cf11997c7eb538ae082d37e0be143c8d5a1b47a67b838a22",
+      "bytes": 8017,
+      "paths": [
+        "4/ds/icons/sprite.svg",
+        "CG/ds/icons/sprite.svg",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/icons/sprite.svg",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/icons/sprite.svg",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/icons/sprite.svg",
+        "Folio-Portal-Premium/ds/icons/sprite.svg",
+        "NITDA_Document_Portal_Production_Final/assets/sprite.svg",
+        "document-portal/ds/icons/sprite.svg",
+        "document-portal _folio-platform-suite-1.0.2/ds/icons/sprite.svg",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/icons/sprite.svg",
+        "document-portal_folio-platform-suite-1.0.3/ds/icons/sprite.svg",
+        "document-portal_handover_source/ds/icons/sprite.svg",
+        "document-portal_isolated-code-session-scope-bghduo/ds/icons/sprite.svg",
+        "document-portal_repo_ root/ds/icons/sprite.svg",
+        "document-portal_suite/ds/icons/sprite.svg"
+      ]
+    },
+    {
+      "sha256": "50aa8481180414087183597bd5530fae91fc8495ae9c9bcc476434b87d7c49d3",
+      "bytes": 5273,
+      "paths": [
+        "4/ds/logo/nitda-lockup-white.png",
+        "4/email-assets/nitda-lockup-white.png",
+        "CG/email-assets/nitda-lockup-white.png",
+        "DGO_Document_Portal_Production/assets/nitda-lockup-white.png",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/email-assets/nitda-lockup-white.png",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/logo/nitda-lockup-white.png",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/email-assets/nitda-lockup-white.png",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/logo/nitda-lockup-white.png",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/email-assets/nitda-lockup-white.png",
+        "Folio-Portal-Premium/ds/logo/nitda-lockup-white.png",
+        "Folio-Portal-Premium/email-assets/nitda-lockup-white.png",
+        "document-portal/email-assets/nitda-lockup-white.png",
+        "document-portal _folio-platform-suite-1.0.2/email-assets/nitda-lockup-white.png",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/logo/nitda-lockup-white.png",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/email-assets/nitda-lockup-white.png",
+        "document-portal_folio-platform-suite-1.0.3/ds/logo/nitda-lockup-white.png",
+        "document-portal_folio-platform-suite-1.0.3/email-assets/nitda-lockup-white.png",
+        "document-portal_handover_source/email-assets/nitda-lockup-white.png",
+        "document-portal_repo_ root/ds/logo/nitda-lockup-white.png",
+        "document-portal_repo_ root/email-assets/nitda-lockup-white.png",
+        "document-portal_suite/email-assets/nitda-lockup-white.png"
+      ],
+      "imageDimensions": [
+        544,
+        254
+      ]
+    },
+    {
+      "sha256": "e3c3bdd4d3072cd6f5b5c188386acc34f6b97fdddf66e23dfdd673f79fd2df8a",
+      "bytes": 100791,
+      "paths": [
+        "4/ds/logo/nitda-lockup.png",
+        "DGO_Document_Portal_Production/assets/nitda-lockup.png",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/logo/nitda-lockup.png",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/logo/nitda-lockup.png",
+        "Folio-Portal-Premium/ds/logo/nitda-lockup.png",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/logo/nitda-lockup.png",
+        "document-portal_folio-platform-suite-1.0.3/ds/logo/nitda-lockup.png",
+        "document-portal_repo_ root/ds/logo/nitda-lockup.png"
+      ],
+      "imageDimensions": [
+        572,
+        260
+      ]
+    },
+    {
+      "sha256": "46652723650422eb3d0d6fd548ff3bdc3bb68f5241a532a82bd3dc4274488c87",
+      "bytes": 56669,
+      "paths": [
+        "4/ds/logo/nitda-symbol.png",
+        "CG/ds/logo/nitda-symbol.png",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/logo/nitda-symbol.png",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/logo/nitda-symbol.png",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/logo/nitda-symbol.png",
+        "Folio-Portal-Premium/ds/logo/nitda-symbol.png",
+        "NITDA_Document_Portal_Production_Final/assets/nitda-symbol.png",
+        "document-portal/ds/logo/nitda-symbol.png",
+        "document-portal _folio-platform-suite-1.0.2/ds/logo/nitda-symbol.png",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/logo/nitda-symbol.png",
+        "document-portal_folio-platform-suite-1.0.3/ds/logo/nitda-symbol.png",
+        "document-portal_handover_source/ds/logo/nitda-symbol.png",
+        "document-portal_isolated-code-session-scope-bghduo/ds/logo/nitda-symbol.png",
+        "document-portal_repo_ root/ds/logo/nitda-symbol.png",
+        "document-portal_suite/ds/logo/nitda-symbol.png"
+      ],
+      "imageDimensions": [
+        263,
+        277
+      ]
+    },
+    {
+      "sha256": "1052b860fe27b30e1223c4fbe58121515dd683a6a9e50731efe0432018c3020e",
+      "bytes": 5971,
+      "paths": [
+        "4/ds/styles/base.css",
+        "CG/ds/styles/base.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/styles/base.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/styles/base.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/styles/base.css",
+        "Folio-Portal-Premium/ds/styles/base.css",
+        "document-portal/ds/styles/base.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/styles/base.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/styles/base.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/styles/base.css",
+        "document-portal_handover_source/ds/styles/base.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/styles/base.css",
+        "document-portal_repo_ root/ds/styles/base.css",
+        "document-portal_suite/ds/styles/base.css"
+      ]
+    },
+    {
+      "sha256": "ff6cddd59c2ed09f16ea6a5fb56d064ebf037bded89085d5513f16ffebe57179",
+      "bytes": 11685,
+      "paths": [
+        "4/ds/styles/components/command-palette.css",
+        "CG/ds/styles/components/command-palette.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/styles/components/command-palette.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/styles/components/command-palette.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/styles/components/command-palette.css",
+        "Folio-Portal-Premium/ds/styles/components/command-palette.css",
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/components/command-palette.css",
+        "document-portal/ds/styles/components/command-palette.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/styles/components/command-palette.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/styles/components/command-palette.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/styles/components/command-palette.css",
+        "document-portal_handover_source/ds/styles/components/command-palette.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/styles/components/command-palette.css",
+        "document-portal_repo_ root/ds/styles/components/command-palette.css",
+        "document-portal_suite/ds/styles/components/command-palette.css"
+      ]
+    },
+    {
+      "sha256": "cceca1de8d78bb26ad8b744d1e98036eba421cb8c021b3269e5278d67aa29cee",
+      "bytes": 39669,
+      "paths": [
+        "4/ds/styles/components.css",
+        "CG/ds/styles/components.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/styles/components.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/styles/components.css",
+        "Folio-Portal-Premium/ds/styles/components.css",
+        "document-portal/ds/styles/components.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/styles/components.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/styles/components.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/styles/components.css",
+        "document-portal_handover_source/ds/styles/components.css",
+        "document-portal_repo_ root/ds/styles/components.css",
+        "document-portal_suite/ds/styles/components.css"
+      ]
+    },
+    {
+      "sha256": "109ac37d73c1e88ee5ce7de51f02ae1e1b81fb2c063b96f677d11dd069694c38",
+      "bytes": 3252,
+      "paths": [
+        "4/ds/styles/layout.css",
+        "CG/ds/styles/layout.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/styles/layout.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/styles/layout.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/styles/layout.css",
+        "Folio-Portal-Premium/ds/styles/layout.css",
+        "document-portal/ds/styles/layout.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/styles/layout.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/styles/layout.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/styles/layout.css",
+        "document-portal_handover_source/ds/styles/layout.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/styles/layout.css",
+        "document-portal_repo_ root/ds/styles/layout.css",
+        "document-portal_suite/ds/styles/layout.css"
+      ]
+    },
+    {
+      "sha256": "4378b202f44bc05f69abbff5cc20cf6f3f1b18551f6c0df5fdcd49f35dafae49",
+      "bytes": 1152,
+      "paths": [
+        "4/ds/styles/reset.css",
+        "CG/ds/styles/reset.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/styles/reset.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/styles/reset.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/styles/reset.css",
+        "Folio-Portal-Premium/ds/styles/reset.css",
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/reset.css",
+        "document-portal/ds/styles/reset.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/styles/reset.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/styles/reset.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/styles/reset.css",
+        "document-portal_handover_source/ds/styles/reset.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/styles/reset.css",
+        "document-portal_repo_ root/ds/styles/reset.css",
+        "document-portal_suite/ds/styles/reset.css"
+      ]
+    },
+    {
+      "sha256": "00c4e6e5edd4ba36e77103dc1b655ccdb9b1fcd01707cb0b5f732e24c0aed10d",
+      "bytes": 1899,
+      "paths": [
+        "4/ds/tokens/tokens.breakpoint.css",
+        "CG/ds/tokens/tokens.breakpoint.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.breakpoint.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.breakpoint.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.breakpoint.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.breakpoint.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.breakpoint.css",
+        "document-portal/ds/tokens/tokens.breakpoint.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.breakpoint.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.breakpoint.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.breakpoint.css",
+        "document-portal_handover_source/ds/tokens/tokens.breakpoint.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.breakpoint.css",
+        "document-portal_repo_ root/ds/tokens/tokens.breakpoint.css",
+        "document-portal_suite/ds/tokens/tokens.breakpoint.css"
+      ]
+    },
+    {
+      "sha256": "d94ae4a79888097afb71a4ffe5433a115b04b8d720ef0ecbeea76823fa327d35",
+      "bytes": 5786,
+      "paths": [
+        "4/ds/tokens/tokens.component.css",
+        "CG/ds/tokens/tokens.component.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.component.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.component.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.component.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.component.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.component.css",
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.component.css",
+        "document-portal/ds/tokens/tokens.component.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.component.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.component.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.component.css",
+        "document-portal_handover_source/ds/tokens/tokens.component.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.component.css",
+        "document-portal_repo_ root/ds/tokens/tokens.component.css",
+        "document-portal_suite/ds/tokens/tokens.component.css"
+      ]
+    },
+    {
+      "sha256": "9fc3ded4c2802878c7292f08233a98e54def2c43ef016c3873b841bb1dfd7d8a",
+      "bytes": 1285,
+      "paths": [
+        "4/ds/tokens/tokens.density.css",
+        "CG/ds/tokens/tokens.density.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.density.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.density.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.density.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.density.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.density.css",
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.density.css",
+        "document-portal/ds/tokens/tokens.density.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.density.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.density.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.density.css",
+        "document-portal_handover_source/ds/tokens/tokens.density.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.density.css",
+        "document-portal_repo_ root/ds/tokens/tokens.density.css",
+        "document-portal_suite/ds/tokens/tokens.density.css"
+      ]
+    },
+    {
+      "sha256": "ebfb742676766b97f8e706b69e0be693e80ff511a43fe9bd4b4d382831761216",
+      "bytes": 2300,
+      "paths": [
+        "4/ds/tokens/tokens.platforms.css",
+        "CG/ds/tokens/tokens.platforms.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.platforms.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.platforms.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.platforms.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.platforms.css",
+        "document-portal/ds/tokens/tokens.platforms.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.platforms.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.platforms.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.platforms.css",
+        "document-portal_handover_source/ds/tokens/tokens.platforms.css",
+        "document-portal_repo_ root/ds/tokens/tokens.platforms.css",
+        "document-portal_suite/ds/tokens/tokens.platforms.css"
+      ]
+    },
+    {
+      "sha256": "c340b223cb9fa2c3554b16aa6645419b397d933047128b16593880f36714e146",
+      "bytes": 821,
+      "paths": [
+        "4/ds/tokens/tokens.portal.css",
+        "CG/ds/tokens/tokens.portal.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.portal.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.portal.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.portal.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.portal.css",
+        "document-portal/ds/tokens/tokens.portal.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.portal.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.portal.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.portal.css",
+        "document-portal_handover_source/ds/tokens/tokens.portal.css",
+        "document-portal_repo_ root/ds/tokens/tokens.portal.css",
+        "document-portal_suite/ds/tokens/tokens.portal.css"
+      ]
+    },
+    {
+      "sha256": "cfa022357a70c13ba0d06e0b63102448adf400d336539284893da8e0f8954d06",
+      "bytes": 8820,
+      "paths": [
+        "4/ds/tokens/tokens.primitive.css",
+        "CG/ds/tokens/tokens.primitive.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.primitive.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.primitive.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.primitive.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.primitive.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.primitive.css",
+        "document-portal/ds/tokens/tokens.primitive.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.primitive.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.primitive.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.primitive.css",
+        "document-portal_handover_source/ds/tokens/tokens.primitive.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.primitive.css",
+        "document-portal_repo_ root/ds/tokens/tokens.primitive.css",
+        "document-portal_suite/ds/tokens/tokens.primitive.css"
+      ]
+    },
+    {
+      "sha256": "8bd9ede6aaa63bfbfb7a47c72610ab2db745fbeff80f908e33334bc63e96e4c0",
+      "bytes": 7473,
+      "paths": [
+        "4/ds/tokens/tokens.semantic.css",
+        "CG/ds/tokens/tokens.semantic.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.semantic.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.semantic.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.semantic.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.semantic.css",
+        "document-portal/ds/tokens/tokens.semantic.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.semantic.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.semantic.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.semantic.css",
+        "document-portal_handover_source/ds/tokens/tokens.semantic.css",
+        "document-portal_repo_ root/ds/tokens/tokens.semantic.css",
+        "document-portal_suite/ds/tokens/tokens.semantic.css"
+      ]
+    },
+    {
+      "sha256": "b151d84a2f618d94482da2637fc72d1dafa27bbb4261fd9e8d58d8de5038c668",
+      "bytes": 4237,
+      "paths": [
+        "4/ds/tokens/tokens.theme-dark.css",
+        "CG/ds/tokens/tokens.theme-dark.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.theme-dark.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.theme-dark.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.theme-dark.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.theme-dark.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.theme-dark.css",
+        "document-portal/ds/tokens/tokens.theme-dark.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.theme-dark.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.theme-dark.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.theme-dark.css",
+        "document-portal_handover_source/ds/tokens/tokens.theme-dark.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.theme-dark.css",
+        "document-portal_repo_ root/ds/tokens/tokens.theme-dark.css",
+        "document-portal_suite/ds/tokens/tokens.theme-dark.css"
+      ]
+    },
+    {
+      "sha256": "b026526bc91836efee2a4ba85c75633d25f5aca18822930616e0fb64cc6d6f45",
+      "bytes": 3159,
+      "paths": [
+        "4/ds/tokens/tokens.theme-hc.css",
+        "CG/ds/tokens/tokens.theme-hc.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.theme-hc.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.theme-hc.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.theme-hc.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.theme-hc.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.theme-hc.css",
+        "document-portal/ds/tokens/tokens.theme-hc.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.theme-hc.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.theme-hc.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.theme-hc.css",
+        "document-portal_handover_source/ds/tokens/tokens.theme-hc.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.theme-hc.css",
+        "document-portal_repo_ root/ds/tokens/tokens.theme-hc.css",
+        "document-portal_suite/ds/tokens/tokens.theme-hc.css"
+      ]
+    },
+    {
+      "sha256": "1f74dda73d341c82ce837fae7e2048b80310fb97aa310ce675c1cbef6a9998c3",
+      "bytes": 729,
+      "paths": [
+        "4/ds/tokens/tokens.theme-light.css",
+        "CG/ds/tokens/tokens.theme-light.css",
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.theme-light.css",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/tokens/tokens.theme-light.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/ds/tokens/tokens.theme-light.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/ds/tokens/tokens.theme-light.css",
+        "Folio-Portal-Premium/ds/tokens/tokens.theme-light.css",
+        "document-portal/ds/tokens/tokens.theme-light.css",
+        "document-portal _folio-platform-suite-1.0.2/ds/tokens/tokens.theme-light.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/ds/tokens/tokens.theme-light.css",
+        "document-portal_folio-platform-suite-1.0.3/ds/tokens/tokens.theme-light.css",
+        "document-portal_handover_source/ds/tokens/tokens.theme-light.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.theme-light.css",
+        "document-portal_repo_ root/ds/tokens/tokens.theme-light.css",
+        "document-portal_suite/ds/tokens/tokens.theme-light.css"
+      ]
+    },
+    {
+      "sha256": "46af6abd736869c30c95329bbf1e5e9c6123fa2f823ca222bf59fbb7a3db4448",
+      "bytes": 24963,
+      "paths": [
+        "4/email-assets/dgo-logo-whiteout.png",
+        "CG/email-assets/dgo-logo-whiteout.png",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/email-assets/dgo-logo-whiteout.png",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/email-assets/dgo-logo-whiteout.png",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/email-assets/dgo-logo-whiteout.png",
+        "Folio-Portal-Premium/email-assets/dgo-logo-whiteout.png",
+        "document-portal/email-assets/dgo-logo-whiteout.png",
+        "document-portal _folio-platform-suite-1.0.2/email-assets/dgo-logo-whiteout.png",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/email-assets/dgo-logo-whiteout.png",
+        "document-portal_folio-platform-suite-1.0.3/email-assets/dgo-logo-whiteout.png",
+        "document-portal_handover_source/email-assets/dgo-logo-whiteout.png",
+        "document-portal_repo_ root/email-assets/dgo-logo-whiteout.png",
+        "document-portal_suite/email-assets/dgo-logo-whiteout.png"
+      ],
+      "imageDimensions": [
+        880,
+        224
+      ]
+    },
+    {
+      "sha256": "7e6837b875ffc584e027cfdb0fe6aff320bb8fa9708f87764ee6c52e465db107",
+      "bytes": 262,
+      "paths": [
+        "4/favicon.svg",
+        "CG/favicon.svg",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/favicon.svg",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/favicon.svg",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/favicon.svg",
+        "Folio-Portal-Premium/favicon.svg",
+        "NITDA_Document_Portal_Production_Final/favicon.svg",
+        "document-portal/favicon.svg",
+        "document-portal _folio-platform-suite-1.0.2/favicon.svg",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/favicon.svg",
+        "document-portal_folio-platform-suite-1.0.3/favicon.svg",
+        "document-portal_handover_source/favicon.svg",
+        "document-portal_isolated-code-session-scope-bghduo/favicon.svg",
+        "document-portal_repo_ root/favicon.svg",
+        "document-portal_suite/favicon.svg"
+      ]
+    },
+    {
+      "sha256": "9daef92c394bb2b3f646ed0f2816f817c8aabf15c062aecb896ce52f9a42ffcb",
+      "bytes": 14156,
+      "paths": [
+        "4/index.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/index.html"
+      ]
+    },
+    {
+      "sha256": "d8f084890f683c2226ebf84b9bf968d1cd8dd4d60319995d005c63503949a023",
+      "bytes": 54825,
+      "paths": [
+        "4/js/core.js",
+        "CG/js/core.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/core.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/core.js",
+        "document-portal/js/core.js",
+        "document-portal _folio-platform-suite-1.0.2/js/core.js",
+        "document-portal_handover_source/js/core.js",
+        "document-portal_suite/js/core.js"
+      ]
+    },
+    {
+      "sha256": "3e177be94c5e730c97c2eccf74f6e29cd324f2f038929eb9924761442fd8af40",
+      "bytes": 25325,
+      "paths": [
+        "4/js/data.js",
+        "CG/js/data.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/data.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/data.js",
+        "Folio-Portal-Premium/js/data.js",
+        "document-portal/js/data.js",
+        "document-portal _folio-platform-suite-1.0.2/js/data.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/data.js",
+        "document-portal_folio-platform-suite-1.0.3/js/data.js",
+        "document-portal_handover_source/js/data.js",
+        "document-portal_repo_ root/js/data.js",
+        "document-portal_suite/js/data.js"
+      ]
+    },
+    {
+      "sha256": "4afccee10c6e52348eaf920e6715dfd789477e01f0c84835573d8f21fc3e9c78",
+      "bytes": 10409,
+      "paths": [
+        "4/js/home.js",
+        "CG/js/home.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/home.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/home.js",
+        "document-portal/js/home.js",
+        "document-portal _folio-platform-suite-1.0.2/js/home.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/home.js",
+        "document-portal_folio-platform-suite-1.0.3/js/home.js",
+        "document-portal_handover_source/js/home.js",
+        "document-portal_repo_ root/js/home.js",
+        "document-portal_suite/js/home.js"
+      ]
+    },
+    {
+      "sha256": "51f308c33c451a2c33c53de35dd4aa1a71b65ab8843e634131c7cfca976def52",
+      "bytes": 14113,
+      "paths": [
+        "4/js/icons.js",
+        "CG/js/icons.js",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/icons.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/icons.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/icons.js",
+        "Folio-Portal-Premium/js/icons.js",
+        "document-portal/js/icons.js",
+        "document-portal _folio-platform-suite-1.0.2/js/icons.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/icons.js",
+        "document-portal_folio-platform-suite-1.0.3/js/icons.js",
+        "document-portal_handover_source/js/icons.js",
+        "document-portal_repo_ root/js/icons.js",
+        "document-portal_suite/js/icons.js"
+      ]
+    },
+    {
+      "sha256": "1404648007721ca0790eb6d8b827d5c2574f2c35354739495f0b2a7617fc8d5d",
+      "bytes": 7849,
+      "paths": [
+        "4/js/portal-journey.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/portal-journey.js"
+      ]
+    },
+    {
+      "sha256": "f86f0113eb21c0c9420f1087847741f3e6462acea39acc9b2cdc4c583df4807d",
+      "bytes": 39503,
+      "paths": [
+        "4/js/submit.js",
+        "CG/js/submit.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/submit.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/submit.js",
+        "document-portal/js/submit.js",
+        "document-portal _folio-platform-suite-1.0.2/js/submit.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/submit.js",
+        "document-portal_folio-platform-suite-1.0.3/js/submit.js",
+        "document-portal_handover_source/js/submit.js",
+        "document-portal_repo_ root/js/submit.js",
+        "document-portal_suite/js/submit.js"
+      ]
+    },
+    {
+      "sha256": "d95b1b771cebdaae5fb4bceb34ea7a8a90cf9bbfaec3c8d5e84a2e5aea6518ab",
+      "bytes": 17986,
+      "paths": [
+        "4/js/support.js",
+        "CG/js/support.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/support.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/support.js",
+        "Folio-Portal-Premium/js/support.js",
+        "document-portal/js/support.js",
+        "document-portal _folio-platform-suite-1.0.2/js/support.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/support.js",
+        "document-portal_folio-platform-suite-1.0.3/js/support.js",
+        "document-portal_handover_source/js/support.js",
+        "document-portal_repo_ root/js/support.js",
+        "document-portal_suite/js/support.js"
+      ]
+    },
+    {
+      "sha256": "fbfa5315d4c45f788d3e19b9b85bdf87c72a15b16be75b249321a266d41831f1",
+      "bytes": 39120,
+      "paths": [
+        "4/js/track.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/js/track.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/track.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/track.js",
+        "document-portal_folio-platform-suite-1.0.3/js/track.js",
+        "document-portal_repo_ root/js/track.js"
+      ]
+    },
+    {
+      "sha256": "03f7968ad51cf890bfd870f3d3d676fb20517ca395825ccbf26e7bc7e65f4f79",
+      "bytes": 733,
+      "paths": [
+        "4/manifest.webmanifest",
+        "CG/manifest.webmanifest",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/manifest.webmanifest",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/manifest.webmanifest",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/manifest.webmanifest",
+        "Folio-Portal-Premium/manifest.webmanifest",
+        "document-portal/manifest.webmanifest",
+        "document-portal _folio-platform-suite-1.0.2/manifest.webmanifest",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/manifest.webmanifest",
+        "document-portal_folio-platform-suite-1.0.3/manifest.webmanifest",
+        "document-portal_handover_source/manifest.webmanifest",
+        "document-portal_repo_ root/manifest.webmanifest",
+        "document-portal_suite/manifest.webmanifest"
+      ]
+    },
+    {
+      "sha256": "ad3c535e12f29c3ab90b15608500542b69e5b67f471951ce774612c21dc41535",
+      "bytes": 4680,
+      "paths": [
+        "4/portal-journey.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/portal-journey.css"
+      ]
+    },
+    {
+      "sha256": "a0baf9114bfb093f2076c014ef167127e8ada6d15951fc60136ea0d06791264a",
+      "bytes": 30695,
+      "paths": [
+        "4/portal.css",
+        "CG/portal.css",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/portal.css",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/portal.css",
+        "Folio-Portal-Premium/portal.css",
+        "document-portal/portal.css",
+        "document-portal _folio-platform-suite-1.0.2/portal.css",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/portal.css",
+        "document-portal_folio-platform-suite-1.0.3/portal.css",
+        "document-portal_handover_source/portal.css",
+        "document-portal_repo_ root/portal.css",
+        "document-portal_suite/portal.css"
+      ]
+    },
+    {
+      "sha256": "95d2ad5f25f46df4d97db109122da376158cc85d4d48883097da3e3a59f814f0",
+      "bytes": 11740,
+      "paths": [
+        "4/privacy.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/privacy.html"
+      ]
+    },
+    {
+      "sha256": "8281f384086276fdd244d120571c6981171951edd9c1db6c831bf8bfb6d7b948",
+      "bytes": 15483,
+      "paths": [
+        "4/submit.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/submit.html"
+      ]
+    },
+    {
+      "sha256": "002b88cb85d8b7d76ab84fcec04a251443ac1318e968bf700275a3d6985770b4",
+      "bytes": 13957,
+      "paths": [
+        "4/support.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/support.html"
+      ]
+    },
+    {
+      "sha256": "e7c4139ff964ac8489f4ffd69006875845152477feb5df593d0250502af55bb6",
+      "bytes": 4545,
+      "paths": [
+        "4/sw.js",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/sw.js"
+      ]
+    },
+    {
+      "sha256": "06e28b340e39d390887dd8f11b502157eec67609a4dc13063c82953c47e80d9b",
+      "bytes": 8741,
+      "paths": [
+        "4/track.html",
+        "FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/track.html"
+      ]
+    },
+    {
+      "sha256": "dd86279bb760433e41338434913eef467bc633b42483471bd2c09ee61d9b3002",
+      "bytes": 5599,
+      "paths": [
+        "CG/404.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/404.html",
+        "document-portal _folio-platform-suite-1.0.2/404.html",
+        "document-portal_folio-platform-suite-1.0.3/404.html",
+        "document-portal_suite/404.html"
+      ]
+    },
+    {
+      "sha256": "e689923304163e18e3fd8343c9a23b72f844adf5b1b055f332cccaee940f9ca2",
+      "bytes": 327,
+      "paths": [
+        "CG/BUILD-ID.json"
+      ]
+    },
+    {
+      "sha256": "f12cd26b0dd666dc5f03131dbbd44e3fb51d76854a32faabef46152ae1a60603",
+      "bytes": 12383,
+      "paths": [
+        "CG/ds/logo/nitda-lockup-white.png",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/logo/nitda-lockup-white.png",
+        "NITDA_Document_Portal_Production_Final/assets/nitda-lockup-white.png",
+        "document-portal/ds/logo/nitda-lockup-white.png",
+        "document-portal _folio-platform-suite-1.0.2/ds/logo/nitda-lockup-white.png",
+        "document-portal_handover_source/ds/logo/nitda-lockup-white.png",
+        "document-portal_isolated-code-session-scope-bghduo/ds/logo/nitda-lockup-white.png",
+        "document-portal_suite/ds/logo/nitda-lockup-white.png"
+      ],
+      "imageDimensions": [
+        544,
+        254
+      ]
+    },
+    {
+      "sha256": "4eceb1252b46dc9f2b25a5c3b6e2d8dfb85146a524f37726a7749be1f59ee9fa",
+      "bytes": 112180,
+      "paths": [
+        "CG/ds/logo/nitda-lockup.png",
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/logo/nitda-lockup.png",
+        "NITDA_Document_Portal_Production_Final/assets/nitda-lockup.png",
+        "document-portal/ds/logo/nitda-lockup.png",
+        "document-portal _folio-platform-suite-1.0.2/ds/logo/nitda-lockup.png",
+        "document-portal_handover_source/ds/logo/nitda-lockup.png",
+        "document-portal_isolated-code-session-scope-bghduo/ds/logo/nitda-lockup.png",
+        "document-portal_suite/ds/logo/nitda-lockup.png"
+      ],
+      "imageDimensions": [
+        572,
+        260
+      ]
+    },
+    {
+      "sha256": "a92af4b213b13d577e3403bb6a8c89e6b1276099cdcb8f5abaaf5dc0fcd22585",
+      "bytes": 14061,
+      "paths": [
+        "CG/index.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/index.html",
+        "document-portal/index.html",
+        "document-portal _folio-platform-suite-1.0.2/index.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/index.html",
+        "document-portal_folio-platform-suite-1.0.3/index.html",
+        "document-portal_handover_source/index.html",
+        "document-portal_repo_ root/index.html",
+        "document-portal_suite/index.html"
+      ]
+    },
+    {
+      "sha256": "8112a5b3130ccdb012901bcd9a3c4820332125affdab8097d2a3869f9e59468a",
+      "bytes": 38835,
+      "paths": [
+        "CG/js/track.js",
+        "document-portal/js/track.js",
+        "document-portal _folio-platform-suite-1.0.2/js/track.js",
+        "document-portal_handover_source/js/track.js",
+        "document-portal_suite/js/track.js"
+      ]
+    },
+    {
+      "sha256": "1f0240499b01a45ed505266d3ef3b5bb23e5bea9445079e8e1b5bad57bc14f98",
+      "bytes": 11645,
+      "paths": [
+        "CG/privacy.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/privacy.html",
+        "document-portal/privacy.html",
+        "document-portal _folio-platform-suite-1.0.2/privacy.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/privacy.html",
+        "document-portal_folio-platform-suite-1.0.3/privacy.html",
+        "document-portal_handover_source/privacy.html",
+        "document-portal_repo_ root/privacy.html",
+        "document-portal_suite/privacy.html"
+      ]
+    },
+    {
+      "sha256": "4a8f15acc5d5569dc6ea3a90e01cf05404ea5261337e62264aefa549253239de",
+      "bytes": 15352,
+      "paths": [
+        "CG/submit.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/submit.html",
+        "document-portal/submit.html",
+        "document-portal _folio-platform-suite-1.0.2/submit.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/submit.html",
+        "document-portal_folio-platform-suite-1.0.3/submit.html",
+        "document-portal_handover_source/submit.html",
+        "document-portal_repo_ root/submit.html",
+        "document-portal_suite/submit.html"
+      ]
+    },
+    {
+      "sha256": "8bc66d0d29842634b08e0c4d5e3f45ed23af356a5ca340b733f6b459a32ae916",
+      "bytes": 13862,
+      "paths": [
+        "CG/support.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/support.html",
+        "document-portal/support.html",
+        "document-portal _folio-platform-suite-1.0.2/support.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/support.html",
+        "document-portal_folio-platform-suite-1.0.3/support.html",
+        "document-portal_handover_source/support.html",
+        "document-portal_repo_ root/support.html",
+        "document-portal_suite/support.html"
+      ]
+    },
+    {
+      "sha256": "32f3f144b78b26751f60530ee8cb8380ce9b4b61320ee7c560d5528fa135df50",
+      "bytes": 4484,
+      "paths": [
+        "CG/sw.js",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/sw.js",
+        "Folio-Portal-Premium/sw.js"
+      ]
+    },
+    {
+      "sha256": "9c21924646deccca777c0b8a46138907efb298b17dcc2896acc6ea8c2411c628",
+      "bytes": 8646,
+      "paths": [
+        "CG/track.html",
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/track.html",
+        "document-portal/track.html",
+        "document-portal _folio-platform-suite-1.0.2/track.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/track.html",
+        "document-portal_folio-platform-suite-1.0.3/track.html",
+        "document-portal_handover_source/track.html",
+        "document-portal_repo_ root/track.html",
+        "document-portal_suite/track.html"
+      ]
+    },
+    {
+      "sha256": "bfd02a7f7415513776c82274b7fd80140623d5b2fc0ef29b0eb5390c6f8160ec",
+      "bytes": 2472,
+      "paths": [
+        "DGO_Document_Portal_Production/COMPLETION_REPORT.md"
+      ]
+    },
+    {
+      "sha256": "2cbcafaa2337954c47a600c8a1c5fa445cd2ef463ad446325f6260cf5f484419",
+      "bytes": 265,
+      "paths": [
+        "DGO_Document_Portal_Production/Dockerfile"
+      ]
+    },
+    {
+      "sha256": "c5ab63be72fff1fb3789d71e1b3ba91051843fc4eb213b54f8245ea78f1227c9",
+      "bytes": 27522,
+      "paths": [
+        "DGO_Document_Portal_Production/MANIFEST.json"
+      ]
+    },
+    {
+      "sha256": "0a046b62bc0f364555d97406d42594ca07963825120e82f5cfa30b964e505be2",
+      "bytes": 527,
+      "paths": [
+        "DGO_Document_Portal_Production/OPERATIONS.md"
+      ]
+    },
+    {
+      "sha256": "5b8997293decf5d12dcd75460de149159ad5e4f070296dcaecd6c78b5058610c",
+      "bytes": 10811,
+      "paths": [
+        "DGO_Document_Portal_Production/__pycache__/server.cpython-312.pyc"
+      ]
+    },
+    {
+      "sha256": "7168d579e3aae5ee1e45e4c2685eb50db4b1972c3929baba55b40feec1f48c5a",
+      "bytes": 11615,
+      "paths": [
+        "DGO_Document_Portal_Production/assets/icons/sprite.svg"
+      ]
+    },
+    {
+      "sha256": "cb6a4fdd09044ac158d8381b1c88dde0342562a6bb4641982655da5262b510ff",
+      "bytes": 52505,
+      "paths": [
+        "DGO_Document_Portal_Production/assets/nitda-symbol.png"
+      ],
+      "imageDimensions": [
+        263,
+        277
+      ]
+    },
+    {
+      "sha256": "49882c6e7b4bfc71a7974a8ae8aa8c39b55db9039cc852525531abf83a40df12",
+      "bytes": 1023,
+      "paths": [
+        "DGO_Document_Portal_Production/config/acknowledgement-flow.config.js"
+      ]
+    },
+    {
+      "sha256": "275f0e58001bbe58c7c47202c706068bedf6032724c83b4d1e12cbc1f00c22b5",
+      "bytes": 12988,
+      "paths": [
+        "DGO_Document_Portal_Production/config/action-ownership.config.js"
+      ]
+    },
+    {
+      "sha256": "8978b2f50f36d4a251e2c8c573f748f8f963697e4933d8df9dfd462b14bd7af3",
+      "bytes": 20851,
+      "paths": [
+        "DGO_Document_Portal_Production/config/action-routing.config.js"
+      ]
+    },
+    {
+      "sha256": "b225e001a1668672ae4b54ce47784c457b86824f22e7bd7e77fae75843d2b188",
+      "bytes": 2808,
+      "paths": [
+        "DGO_Document_Portal_Production/config/activity-parity.config.js"
+      ]
+    },
+    {
+      "sha256": "f39d50870fbdbe604fdb1cf6e4aef4563792a6a245ff6d9baadc0771de4b2fed",
+      "bytes": 621,
+      "paths": [
+        "DGO_Document_Portal_Production/config/app.config.js"
+      ]
+    },
+    {
+      "sha256": "b97bed9c70cc7390b4781c5e44966d9a28623c54b6350741e17d16ba464c2740",
+      "bytes": 3808,
+      "paths": [
+        "DGO_Document_Portal_Production/config/assignment-cascade.config.js"
+      ]
+    },
+    {
+      "sha256": "18483d568f7eaa41dc83e821edb614ae46f9d1dea8a96a097a9c0e20248dc3c5",
+      "bytes": 5411,
+      "paths": [
+        "DGO_Document_Portal_Production/config/auth.config.js"
+      ]
+    },
+    {
+      "sha256": "bfccce868126686bcf1e5a3a082a2e0313da3a2bebe41034d21d4816ddceb571",
+      "bytes": 1309,
+      "paths": [
+        "DGO_Document_Portal_Production/config/browser-certification.config.js"
+      ]
+    },
+    {
+      "sha256": "ed775ba95d4ebbaed18457c30fa5a725b4768ffb0f08eb40e2df36ba1fe1ac8c",
+      "bytes": 725,
+      "paths": [
+        "DGO_Document_Portal_Production/config/cache-policy.config.js"
+      ]
+    },
+    {
+      "sha256": "b05cf1fdd2c82fc3a9d587c2364e124ae07bcf5e03ef58c7c8f0efd6ad426a3c",
+      "bytes": 952,
+      "paths": [
+        "DGO_Document_Portal_Production/config/config.example.js"
+      ]
+    },
+    {
+      "sha256": "2778d37dc08fd25d4be70dfcfd0c4d07d31907d9e7c56e05ee5c8e6294bbe477",
+      "bytes": 6658,
+      "paths": [
+        "DGO_Document_Portal_Production/config/correspondence-categories.config.js"
+      ]
+    },
+    {
+      "sha256": "1b06f7079b81fa487022616927e44ee2c89ac63907d29781195c4062ccd3ad26",
+      "bytes": 4532,
+      "paths": [
+        "DGO_Document_Portal_Production/config/correspondence-email-templates.config.js"
+      ]
+    },
+    {
+      "sha256": "89a54d4ae29dc3f9c3762a477330d4eb37e19f6fbc6007955ca9b20935556abf",
+      "bytes": 1322,
+      "paths": [
+        "DGO_Document_Portal_Production/config/deeplink.config.js"
+      ]
+    },
+    {
+      "sha256": "7646407a55027fcff44d67b7fcab933b0a4c4bc164f376fc8351973eb1d0e470",
+      "bytes": 4764,
+      "paths": [
+        "DGO_Document_Portal_Production/config/dynamic-actions.config.js"
+      ]
+    },
+    {
+      "sha256": "a921e245de1f87e4750f68aa95ae29082ec3d9319415b2f6ac134448cc32f2f3",
+      "bytes": 6863,
+      "paths": [
+        "DGO_Document_Portal_Production/config/endpoints.config.js"
+      ]
+    },
+    {
+      "sha256": "3e3a5cba18945905f656c1bf5e4fafd37bc4a2ec3647a6c0b8a0182420189fbc",
+      "bytes": 6086,
+      "paths": [
+        "DGO_Document_Portal_Production/config/entry-points.config.js"
+      ]
+    },
+    {
+      "sha256": "2294249cba8c91f6dfb43b9fba78083eba75c0fb9203e8ea06ae4fbe83dc3d0a",
+      "bytes": 1303,
+      "paths": [
+        "DGO_Document_Portal_Production/config/fetch-policy.config.js"
+      ]
+    },
+    {
+      "sha256": "e0d350bf1e479ccb191c5c51f48e137b619da822b315474c2e8cc7132789cc3f",
+      "bytes": 10988,
+      "paths": [
+        "DGO_Document_Portal_Production/config/filename-policy.config.js"
+      ]
+    },
+    {
+      "sha256": "e6f7062b33ed762af7152ae88f024fe244ec308b3ebcc8732e5aca2453726c38",
+      "bytes": 7319,
+      "paths": [
+        "DGO_Document_Portal_Production/config/module-boundaries.config.js"
+      ]
+    },
+    {
+      "sha256": "52c25e31af42a3fd63a3898fee33af247e6fb3229be9887001d859f1cd509372",
+      "bytes": 605,
+      "paths": [
+        "DGO_Document_Portal_Production/config/nav.config.js"
+      ]
+    },
+    {
+      "sha256": "f08222b6027b7f45c5e85d84dd157f80f12655b3c6451d85cdde72e02c85e527",
+      "bytes": 3976,
+      "paths": [
+        "DGO_Document_Portal_Production/config/navigation-relationships.config.js"
+      ]
+    },
+    {
+      "sha256": "2d21cc60cf588677206635c990a062daec95a2f51ead996fd7bdd70bfd3338c9",
+      "bytes": 284,
+      "paths": [
+        "DGO_Document_Portal_Production/config/performance-budget.config.js"
+      ]
+    },
+    {
+      "sha256": "ee8959a330abcb25da3861cb85f01e9b882e1739a435284b5e7437a29670794b",
+      "bytes": 22144,
+      "paths": [
+        "DGO_Document_Portal_Production/config/platform-provisioning.config.js"
+      ]
+    },
+    {
+      "sha256": "e291f6b335e14ddaeeba36263bad41e9bc699fa78349e020754b6b51f9258691",
+      "bytes": 1524,
+      "paths": [
+        "DGO_Document_Portal_Production/config/priority.config.js"
+      ]
+    },
+    {
+      "sha256": "75dee69aed29536de82a0aee99cbac79d6e47b18fd326cfef199c3cb622d7be8",
+      "bytes": 2284,
+      "paths": [
+        "DGO_Document_Portal_Production/config/product-definition.config.json"
+      ]
+    },
+    {
+      "sha256": "4ddcf3eb0fe167d5fb73c65cb6f020971526b43262ebbe7997da23c30d977e0a",
+      "bytes": 3916,
+      "paths": [
+        "DGO_Document_Portal_Production/config/rbac.config.js"
+      ]
+    },
+    {
+      "sha256": "74a8ae479c2d4d8cef77614aa4e1d12c813b6b313d303116152f570f585d4e05",
+      "bytes": 445,
+      "paths": [
+        "DGO_Document_Portal_Production/config/receipt-ledger.config.js"
+      ]
+    },
+    {
+      "sha256": "8f7818ed7ba9fc536074fe1f7b30a052ff1341d6416741410cc9da20f145f075",
+      "bytes": 3887,
+      "paths": [
+        "DGO_Document_Portal_Production/config/routes.config.js"
+      ]
+    },
+    {
+      "sha256": "3229d1046a3811736d5d88e3dba88242e42f3fdab8f8dcbe32d173b9e3a8d077",
+      "bytes": 4089,
+      "paths": [
+        "DGO_Document_Portal_Production/config/source-routing.config.js"
+      ]
+    },
+    {
+      "sha256": "5e3ff689172fb19d816d300e3373fb0b9b73b37f9426733d96a486351263480c",
+      "bytes": 1303,
+      "paths": [
+        "DGO_Document_Portal_Production/config/source-views.config.js"
+      ]
+    },
+    {
+      "sha256": "a03c049816536be797e5dc597ed8b275d9f9bef79628490cde57f9aadb5de931",
+      "bytes": 786,
+      "paths": [
+        "DGO_Document_Portal_Production/config/state-schema.config.js"
+      ]
+    },
+    {
+      "sha256": "95a10406a6bb089aeeeafaa424ca6396124275f2921bc815dbfea77e2b1daeba",
+      "bytes": 3861,
+      "paths": [
+        "DGO_Document_Portal_Production/config/status-vocabulary.config.js"
+      ]
+    },
+    {
+      "sha256": "b97a416f3a3829c49c1038ea273c9cd21e15fbba09355492f07fce9a5b6c5170",
+      "bytes": 1061,
+      "paths": [
+        "DGO_Document_Portal_Production/config/support-routing.config.js"
+      ]
+    },
+    {
+      "sha256": "ade81339499d67fe2c1d9d701f2b50764afb3087feda120f2762b2a03cfd701a",
+      "bytes": 2691,
+      "paths": [
+        "DGO_Document_Portal_Production/config/welcome-experience.config.js"
+      ]
+    },
+    {
+      "sha256": "813749c5fdeb32cb80cf6ef0653e938e768678436e50a2a4995bf4897bb7a502",
+      "bytes": 10376,
+      "paths": [
+        "DGO_Document_Portal_Production/config/workflow-clarity.config.js"
+      ]
+    },
+    {
+      "sha256": "4f8c2cd7de1242ab89442b7caf6fba2c861e78c13a1e673bcac5b2dcebfe030c",
+      "bytes": 11684,
+      "paths": [
+        "DGO_Document_Portal_Production/core/acknowledgement-service.js"
+      ]
+    },
+    {
+      "sha256": "8dad6d65c0fc215fdd93982b07e867d2270bc5ebb6fac00bb8c849f8d9b1bb59",
+      "bytes": 6851,
+      "paths": [
+        "DGO_Document_Portal_Production/core/action-authority.js"
+      ]
+    },
+    {
+      "sha256": "ed4dfc8ed176a0c9794adaf4015740b49011587975869e25887006988930de1d",
+      "bytes": 1965,
+      "paths": [
+        "DGO_Document_Portal_Production/core/action-runtime.js"
+      ]
+    },
+    {
+      "sha256": "1994d26bae6b44f9e98566f0029d524dd7d62882e36a0d7e0b57b643d266e10b",
+      "bytes": 16779,
+      "paths": [
+        "DGO_Document_Portal_Production/core/activity-parity.js"
+      ]
+    },
+    {
+      "sha256": "8ce627bca2667bd971a15924ae33618440152d4311653b6a51dec546496c1f83",
+      "bytes": 1785,
+      "paths": [
+        "DGO_Document_Portal_Production/core/api.js"
+      ]
+    },
+    {
+      "sha256": "265a869a4c89d2a77d0285430aa39488ee11efcd04eb19af9f11f8852cef8f21",
+      "bytes": 3708,
+      "paths": [
+        "DGO_Document_Portal_Production/core/archive.js"
+      ]
+    },
+    {
+      "sha256": "d88b00233448a90a8e3283c2874200eeb0bbc1c0ed6c6c84f935172e2fa4a8ef",
+      "bytes": 14175,
+      "paths": [
+        "DGO_Document_Portal_Production/core/assignment-cascade.js"
+      ]
+    },
+    {
+      "sha256": "4ba0e013bdd69e1bfcd6f4fa03aef6bb163276845344113679f3f5294bde2e39",
+      "bytes": 9376,
+      "paths": [
+        "DGO_Document_Portal_Production/core/assignment-payload.js"
+      ]
+    },
+    {
+      "sha256": "6e793c2467cc503cf733dfb71be13ecf1c736e0bfa706b1494ce619033e38464",
+      "bytes": 1431,
+      "paths": [
+        "DGO_Document_Portal_Production/core/audit-log.js"
+      ]
+    },
+    {
+      "sha256": "315cb3c67d0568770e1a12284e4b41ff64ab432e219fe5fef079dd04af4350ba",
+      "bytes": 7430,
+      "paths": [
+        "DGO_Document_Portal_Production/core/auth.js"
+      ]
+    },
+    {
+      "sha256": "063e57bd5ff807d6b4a3fc4a1b0426615faadfabf9ffe42b1b0281916bd5324b",
+      "bytes": 5803,
+      "paths": [
+        "DGO_Document_Portal_Production/core/boot.js"
+      ]
+    },
+    {
+      "sha256": "83267be2e54049aac5611a089efb32b05c8fd3e0986edbf528a4fdb845119fe6",
+      "bytes": 2893,
+      "paths": [
+        "DGO_Document_Portal_Production/core/cache-manager.js"
+      ]
+    },
+    {
+      "sha256": "40c9539e576782c9298897ed0dac49982c1d6d2c35e3785d6746f2915553c06b",
+      "bytes": 3489,
+      "paths": [
+        "DGO_Document_Portal_Production/core/contracts.js"
+      ]
+    },
+    {
+      "sha256": "3f99cd35a24543918747d1717b9337447cf0bb6903633d47c7f934fec237696a",
+      "bytes": 10739,
+      "paths": [
+        "DGO_Document_Portal_Production/core/correspondence-email-service.js"
+      ]
+    },
+    {
+      "sha256": "50dfe546d8352b3ab983b1be0bc5e03fccf4992cc9cb8894d3fbf273081826b2",
+      "bytes": 7181,
+      "paths": [
+        "DGO_Document_Portal_Production/core/current-user.js"
+      ]
+    },
+    {
+      "sha256": "aa810ccf144f5adf93944289f317ea0515f2be18e678500e2f9b187c21760eae",
+      "bytes": 3677,
+      "paths": [
+        "DGO_Document_Portal_Production/core/data-client.js"
+      ]
+    },
+    {
+      "sha256": "dba6d75ff1cf01b05d762d903c71ee5c8d4feb0d07b8f2d0c984dd2308261c9b",
+      "bytes": 8329,
+      "paths": [
+        "DGO_Document_Portal_Production/core/data-loader.js"
+      ]
+    },
+    {
+      "sha256": "957bf33e091a98bc9bc00838639b9e68d751586bba2bac8222dd38fcd94c7a4a",
+      "bytes": 955,
+      "paths": [
+        "DGO_Document_Portal_Production/core/data-reconciler.js"
+      ]
+    },
+    {
+      "sha256": "8c0123c52c0713c73309b1e25e9d4bbe0c59ff77c519f5d28d5e078fbaa2e714",
+      "bytes": 2869,
+      "paths": [
+        "DGO_Document_Portal_Production/core/data-selectors.js"
+      ]
+    },
+    {
+      "sha256": "5ac89f6e9e5a682d4f7337e1545017425a2fb4b88bbeba024335c00d3f577b70",
+      "bytes": 2519,
+      "paths": [
+        "DGO_Document_Portal_Production/core/deeplink-resolver.js"
+      ]
+    },
+    {
+      "sha256": "87b9d45ff61ad608a382e2b43d1b0ecfe82326f48ec5bf7bc050fbe15d1276aa",
+      "bytes": 1616,
+      "paths": [
+        "DGO_Document_Portal_Production/core/directorate-scope.js"
+      ]
+    },
+    {
+      "sha256": "9f49befffc9905de47a1eebb44b0b31cbf06cc08e510021b2c6f333275fb95de",
+      "bytes": 2880,
+      "paths": [
+        "DGO_Document_Portal_Production/core/dispatch-service.js"
+      ]
+    },
+    {
+      "sha256": "210dba26fc022a4aaf0093c9f7abc9e937270b53c4b00be9b858716f68e799e3",
+      "bytes": 6546,
+      "paths": [
+        "DGO_Document_Portal_Production/core/document-flags.js"
+      ]
+    },
+    {
+      "sha256": "3cd93aff83602d480324a941b06b159e5c2a3ee3ab785c53d813f8eff3b6950c",
+      "bytes": 8001,
+      "paths": [
+        "DGO_Document_Portal_Production/core/domain.js"
+      ]
+    },
+    {
+      "sha256": "104ab72a2ec99043b1db864573c16b76ed9c42b8da8122293051fd91b70ef631",
+      "bytes": 6514,
+      "paths": [
+        "DGO_Document_Portal_Production/core/endpoint-registry.js"
+      ]
+    },
+    {
+      "sha256": "746aaeec4867e5c4b095bdbca2e1f75334b78c199c6647b6bf82427373e40397",
+      "bytes": 7093,
+      "paths": [
+        "DGO_Document_Portal_Production/core/enterprise-domain.js"
+      ]
+    },
+    {
+      "sha256": "ccdfee0b6c84853b7d7a3fbe7dfc3ed3ebc00246fd1c93990368c23bfe4bd404",
+      "bytes": 9447,
+      "paths": [
+        "DGO_Document_Portal_Production/core/entity-store.js"
+      ]
+    },
+    {
+      "sha256": "14020a2e65c78cdd53d09590f1934490ea870b498ca28070521f7fb2c1186d4b",
+      "bytes": 4869,
+      "paths": [
+        "DGO_Document_Portal_Production/core/entry-point-feeds.js"
+      ]
+    },
+    {
+      "sha256": "ab71605176d2305450f1a1e5264a2931d711971c310c2e74002426ddd7e4d685",
+      "bytes": 1853,
+      "paths": [
+        "DGO_Document_Portal_Production/core/errors.js"
+      ]
+    },
+    {
+      "sha256": "e7de117acd5ef557f9fd018b55101390a158ab7f2a5ce06ec8a26483bcb307fe",
+      "bytes": 9163,
+      "paths": [
+        "DGO_Document_Portal_Production/core/executive-register.js"
+      ]
+    },
+    {
+      "sha256": "c831802a326d3c6c931512942f0bebd2f38bafa3d0381bed2c5f7004083f1842",
+      "bytes": 1436,
+      "paths": [
+        "DGO_Document_Portal_Production/core/export-bundle.js"
+      ]
+    },
+    {
+      "sha256": "0e5941403eb29951958a13d4667ac4379a120c450b68e1d8cdaeecddbff0c284",
+      "bytes": 1725,
+      "paths": [
+        "DGO_Document_Portal_Production/core/fetch-manager.js"
+      ]
+    },
+    {
+      "sha256": "10c7705dd4373225842e42ba510b02f495f21263f14a735cf599512331cdd339",
+      "bytes": 2275,
+      "paths": [
+        "DGO_Document_Portal_Production/core/flow-confirmation.js"
+      ]
+    },
+    {
+      "sha256": "9d4701b0b7da11cc066794a918198cc8160d0cd09678c98f76a4f6ae1d7cc3d1",
+      "bytes": 5078,
+      "paths": [
+        "DGO_Document_Portal_Production/core/focus-trap.js"
+      ]
+    },
+    {
+      "sha256": "26e0d26360dfad98d88ed9841386d3dbd002d925a1a90101ffccb7f0e5b2840d",
+      "bytes": 748,
+      "paths": [
+        "DGO_Document_Portal_Production/core/governed-actions.js"
+      ]
+    },
+    {
+      "sha256": "bc52389d38d313724f36e0c5e7710394dc0851b2122bfa599aedb19435e02687",
+      "bytes": 1039,
+      "paths": [
+        "DGO_Document_Portal_Production/core/idempotency.js"
+      ]
+    },
+    {
+      "sha256": "0a5cfcee2715eccc9e46eac1507eb48c608f1fdd27a6e48479c73d66e82e94fa",
+      "bytes": 9629,
+      "paths": [
+        "DGO_Document_Portal_Production/core/intake-triage.js"
+      ]
+    },
+    {
+      "sha256": "8046c53b0695c954f879bcca942f62eba257d2623808f6ed23d33009badb8445",
+      "bytes": 2405,
+      "paths": [
+        "DGO_Document_Portal_Production/core/lifecycle.js"
+      ]
+    },
+    {
+      "sha256": "681b1a63e66a03b8570d2c29788bac4e5d9b2c69fb159890056970fddd8455d5",
+      "bytes": 2306,
+      "paths": [
+        "DGO_Document_Portal_Production/core/loading-state.js"
+      ]
+    },
+    {
+      "sha256": "7712a703f6539eb370a15c0552bd066f6d3058b2870a83150fc0c1fd24bcb055",
+      "bytes": 1201,
+      "paths": [
+        "DGO_Document_Portal_Production/core/metrics-service.js"
+      ]
+    },
+    {
+      "sha256": "6bb05878fefe9e7f2770c2f759e56c72601da59efd3805f59cf5c491b30028be",
+      "bytes": 6679,
+      "paths": [
+        "DGO_Document_Portal_Production/core/nitda-module-adapter.js"
+      ]
+    },
+    {
+      "sha256": "e2ae75f37daea85f5d1fc30985787046ab0d44bb89258f417b6ccad356ed02d8",
+      "bytes": 3898,
+      "paths": [
+        "DGO_Document_Portal_Production/core/notification-center.js"
+      ]
+    },
+    {
+      "sha256": "3720cc77c640db878b772f36769a09afbf0d0f31da59b5732055c27fbba6337e",
+      "bytes": 2072,
+      "paths": [
+        "DGO_Document_Portal_Production/core/offline-action-queue.js"
+      ]
+    },
+    {
+      "sha256": "f6759db5adf5777e9610d9fda7186d7b3d132d8d8d23b627e8c47a6e1955c377",
+      "bytes": 7855,
+      "paths": [
+        "DGO_Document_Portal_Production/core/otp-identity.js"
+      ]
+    },
+    {
+      "sha256": "5dee44f11f69b63712bbbf9b535c82fa77b7f808b950043f475aaaf4922c3e93",
+      "bytes": 1746,
+      "paths": [
+        "DGO_Document_Portal_Production/core/otp-service.js"
+      ]
+    },
+    {
+      "sha256": "61e72cd29ff4f1341b56ba9300afa9f5d3ccfdebdee60f7a49eb385777431a7d",
+      "bytes": 1941,
+      "paths": [
+        "DGO_Document_Portal_Production/core/pending-queue.js"
+      ]
+    },
+    {
+      "sha256": "ed42efdfe065493158c55b9c837400a8192e98be08f3ab9d945697cf5ad70289",
+      "bytes": 1651,
+      "paths": [
+        "DGO_Document_Portal_Production/core/performance-monitor.js"
+      ]
+    },
+    {
+      "sha256": "efc49dfad6635e5f5b0a05c89c87a679f1cfb2df9280b4f0388f5adf784c6635",
+      "bytes": 2981,
+      "paths": [
+        "DGO_Document_Portal_Production/core/platform-provisioner.js"
+      ]
+    },
+    {
+      "sha256": "419ff32fa3fa6f0dd0aaaac61f0f3479ebd412174f6f37e09ac81d2f2fd6187f",
+      "bytes": 1059,
+      "paths": [
+        "DGO_Document_Portal_Production/core/query-store.js"
+      ]
+    },
+    {
+      "sha256": "3e6a2985eaaac3caf48c2a8a34b41ddc6938961ff5d7b66424991d7f6f2725ea",
+      "bytes": 2699,
+      "paths": [
+        "DGO_Document_Portal_Production/core/receipt-ledger.js"
+      ]
+    },
+    {
+      "sha256": "b04de73b55a5dd5f190b2f5d57851513a90ea27f7b4e9dc6d44a1ef34d6246e7",
+      "bytes": 5130,
+      "paths": [
+        "DGO_Document_Portal_Production/core/reference-minter.js"
+      ]
+    },
+    {
+      "sha256": "7f7a766a09e372d8d3b60bf51f41b405dd073a8219994619b5240552351c72b7",
+      "bytes": 1119,
+      "paths": [
+        "DGO_Document_Portal_Production/core/render-budget.js"
+      ]
+    },
+    {
+      "sha256": "68da1b0e9bcd4429b893517a8738808c04fdf31714b9c488964e0102b1c59269",
+      "bytes": 4388,
+      "paths": [
+        "DGO_Document_Portal_Production/core/report-export-service.js"
+      ]
+    },
+    {
+      "sha256": "713e9a1f8f781de21dc3e987666b23ff09dcae0b5f71010d4fee6cf34ee9ea62",
+      "bytes": 970,
+      "paths": [
+        "DGO_Document_Portal_Production/core/retention.js"
+      ]
+    },
+    {
+      "sha256": "cea0a1a2a3fed719240cf63d785b56f63102ecce6ed38e537fb6a1a65967bad0",
+      "bytes": 3424,
+      "paths": [
+        "DGO_Document_Portal_Production/core/router.js"
+      ]
+    },
+    {
+      "sha256": "f5cff9ac8ad2bbde0f6418b40894f80f81ab990e8af06ee805ce9a93eb80642e",
+      "bytes": 5907,
+      "paths": [
+        "DGO_Document_Portal_Production/core/scan-intake-service.js"
+      ]
+    },
+    {
+      "sha256": "e6c2792fe52206ad08b2d57024f117ef1d0c9a860837e96ed0fa3320ca30db9c",
+      "bytes": 1171,
+      "paths": [
+        "DGO_Document_Portal_Production/core/security-actions.js"
+      ]
+    },
+    {
+      "sha256": "f05dea5b075deadda82a894f3a734231a3ee761c1e0641d1bc0bc4d01af2aeb2",
+      "bytes": 15524,
+      "paths": [
+        "DGO_Document_Portal_Production/core/source-normalizer.js"
+      ]
+    },
+    {
+      "sha256": "2672fea2f3181e0a669428d547a6fc8f236a6518297997f548a0ab4959523f9d",
+      "bytes": 4328,
+      "paths": [
+        "DGO_Document_Portal_Production/core/source-views.js"
+      ]
+    },
+    {
+      "sha256": "2b2ae9d0de2809d53a38247d3e15400da0d682996a6dffa3fcf976e31c6ead42",
+      "bytes": 3397,
+      "paths": [
+        "DGO_Document_Portal_Production/core/state.js"
+      ]
+    },
+    {
+      "sha256": "7eb83686d3a4a450ec6501d379505fde3b029152b393b3f9bcfa0cd8f871bf3f",
+      "bytes": 1378,
+      "paths": [
+        "DGO_Document_Portal_Production/core/support-service.js"
+      ]
+    },
+    {
+      "sha256": "da3495fc2c1cfbfa36cc37609f431bb94206469db97c33f09cc9654258ed8db7",
+      "bytes": 1805,
+      "paths": [
+        "DGO_Document_Portal_Production/core/ui-interactions.js"
+      ]
+    },
+    {
+      "sha256": "7be0bc26d647a11807ba48c33305f6b92ea41e15b3cdc75a4589e31db53c8c35",
+      "bytes": 820,
+      "paths": [
+        "DGO_Document_Portal_Production/core/ui-state.js"
+      ]
+    },
+    {
+      "sha256": "1fa617e0b87fc0421f3d33587faef87659d90d6939996a81193579965526dc74",
+      "bytes": 13414,
+      "paths": [
+        "DGO_Document_Portal_Production/core/ui.js"
+      ]
+    },
+    {
+      "sha256": "9a52f0de47071e7ad3b0083651c62679f3088b549db83d8356cd1805db0276ba",
+      "bytes": 25477,
+      "paths": [
+        "DGO_Document_Portal_Production/core/welcome-experience.js"
+      ]
+    },
+    {
+      "sha256": "3ddbe6cc873d930517c8821999fe23a622efb70d3ca902b3d7357551cd2a6c3a",
+      "bytes": 1583,
+      "paths": [
+        "DGO_Document_Portal_Production/core/write-manager.js"
+      ]
+    },
+    {
+      "sha256": "f4f3f3e99e891fe736e660f8753c7b79e2c98fb8fe4573a1f761e8c2e87ac92d",
+      "bytes": 179,
+      "paths": [
+        "DGO_Document_Portal_Production/docker-compose.yml"
+      ]
+    },
+    {
+      "sha256": "2bd904cd7590e55db04d478e632038ca6ed2c6e0a5d8009b9ad011740a014f48",
+      "bytes": 5624,
+      "paths": [
+        "DGO_Document_Portal_Production/index.html"
+      ]
+    },
+    {
+      "sha256": "dd863cb42ad6ada28c05aafff29c755cbc516abe9349ea3c8c04256daaf0a88a",
+      "bytes": 14630,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/acknowledgment.js"
+      ]
+    },
+    {
+      "sha256": "b941b6007da838752f12c3b1a4d890e4a54730af45ba82b4ccd7d4da9c76b8f6",
+      "bytes": 27959,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/activities.js"
+      ]
+    },
+    {
+      "sha256": "99ae94f87141de6a7a4971321fd9024f6daefab95b2e24cc2c54505cf111b1a2",
+      "bytes": 7625,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/approvals.js"
+      ]
+    },
+    {
+      "sha256": "6dfd0589c0c9181f8b55018de9a2b9d05a7ee90867eb44533f37531130c676bc",
+      "bytes": 7510,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/archive.js"
+      ]
+    },
+    {
+      "sha256": "5dafae2afed12583a94945378812e34475591320ded4cae93078198fca0fb78b",
+      "bytes": 7163,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/assistant.js"
+      ]
+    },
+    {
+      "sha256": "f251c156863982a12017a75f64f4eb509c35c5368cc232ab743dbf4161d07f8f",
+      "bytes": 12525,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/briefs.js"
+      ]
+    },
+    {
+      "sha256": "a614afaf30685abdb882fd7b1e7236717cdb350870745622efdd5254b8bb08be",
+      "bytes": 11458,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/bulk-assignment.js"
+      ]
+    },
+    {
+      "sha256": "19f2ef7265bfa904d9f3e3c4f2aa76c0debe4f3cf6a2fcc92a06414cee88470a",
+      "bytes": 4275,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/comments.js"
+      ]
+    },
+    {
+      "sha256": "d87e616b4de7106cc78f3e6a5d91c9f75f5009adfb8f0a41222d9bf7005f9b85",
+      "bytes": 14897,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/correspondence-email.js"
+      ]
+    },
+    {
+      "sha256": "616cd7543eb04d06a99c92317a84ffef4b8145fe9595da40df14412a814a4d4a",
+      "bytes": 30310,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/correspondence.js"
+      ]
+    },
+    {
+      "sha256": "92a74d7ac91b6e9c48cc7c45d7f5576b8c41adeb2160d94f8c5b7f1e051a6b81",
+      "bytes": 10473,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/diagnostics.js"
+      ]
+    },
+    {
+      "sha256": "bb7a1aba18759f308aed915a3eb1420e2909d85136bfcc6bce0b88d24751e79d",
+      "bytes": 10044,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/dispatch.js"
+      ]
+    },
+    {
+      "sha256": "8acc8f83472151bf380aedc70f7dc3d85196916d8e450fac25d0462f3e01d393",
+      "bytes": 17981,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/ecm-erp-charter.js"
+      ]
+    },
+    {
+      "sha256": "112191e33d872b41bf75b039b6a812b5893425ab05706867f0446bfc398fcfe8",
+      "bytes": 12101,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/executive.js"
+      ]
+    },
+    {
+      "sha256": "27d9c7539e3363ba247a797a175d00ef25ddfc17b88e18dbc58bbc4f11893b3f",
+      "bytes": 10675,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/fasttrack.js"
+      ]
+    },
+    {
+      "sha256": "d00bca8553de69f1845ceaaccea15db78cedee5d58a4bebb569580e023f95847",
+      "bytes": 5354,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/home.js"
+      ]
+    },
+    {
+      "sha256": "9f8af71ed1a181cc029cfff203aa17d8ba021c5046eb89961cf5beafc43179bc",
+      "bytes": 22726,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/lookup.js"
+      ]
+    },
+    {
+      "sha256": "fb5bb38b62477c9ef8ca08467ec4e75e10528de6a6bc244b088f4111cdfead41",
+      "bytes": 15123,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/meetings.js"
+      ]
+    },
+    {
+      "sha256": "2765fe11700c8504d285732bf130642483024d0d6137950d9d2aeded62f2333c",
+      "bytes": 6626,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/operator-hud.js"
+      ]
+    },
+    {
+      "sha256": "19244fab272f89c41dd9037821f95d429c5ebd83e1b597f9067e93aa885f019b",
+      "bytes": 8171,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/orchestrator.js"
+      ]
+    },
+    {
+      "sha256": "4dbc394c2bad074f97abf3c611781fe70b5a35fd4d632cf30296375ae7040a77",
+      "bytes": 9784,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/projects.js"
+      ]
+    },
+    {
+      "sha256": "583bf6b797e6a530e3d4dab5a9d58c8d7cf05f2c502a9fd70ca52e7dc6b94885",
+      "bytes": 13875,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/registry.js"
+      ]
+    },
+    {
+      "sha256": "7cb9f84952287acc354ba4291475cabff460b06c01955518257ad826b1af4c01",
+      "bytes": 10262,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/reports.js"
+      ]
+    },
+    {
+      "sha256": "37a70064eaef0fae1a2ed36b46f258bcf98e1eefd71de0bf1f2033a1bad3bfe7",
+      "bytes": 11740,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/response-tracking.js"
+      ]
+    },
+    {
+      "sha256": "8097f7f905f7bd4a8c80bbd9bf06d25ec686d767991b9d3c6c826740dc6b5c49",
+      "bytes": 17232,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/scan-intake.js"
+      ]
+    },
+    {
+      "sha256": "e50762848e071679afbdc12506fc2ef9bea3d981e84dc84bcbf2df408e356020",
+      "bytes": 12662,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/settings.js"
+      ]
+    },
+    {
+      "sha256": "455aea803d7a58a159408c895cb685c7cc7e874e5ffb79986a904757f8e6f19e",
+      "bytes": 18869,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/single-assignment.js"
+      ]
+    },
+    {
+      "sha256": "a103d1340cc726ffaae78b0bfcb2b865adc4cecbdeb1b553655f9ab065c97268",
+      "bytes": 10832,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/statistics.js"
+      ]
+    },
+    {
+      "sha256": "eabcf212fd0ef7c7f3bc38b0c2389218b9ceee1f30ee8e0384de45ae0622f7a6",
+      "bytes": 12842,
+      "paths": [
+        "DGO_Document_Portal_Production/modules/user-admin.js"
+      ]
+    },
+    {
+      "sha256": "1cc43669fcdfaf5c3d37038d6409a17739403e3caf2aace3a0d6f96002f38531",
+      "bytes": 4410,
+      "paths": [
+        "DGO_Document_Portal_Production/server.py"
+      ]
+    },
+    {
+      "sha256": "19c725a9c6ad8193509066090e45cc5b0fc14cee0127dada7c30ed25290ad71c",
+      "bytes": 493,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/accessibility.js"
+      ]
+    },
+    {
+      "sha256": "79ee4753ec787c22576c80bc835641cc25b409a555ad8dc10922787ef0350475",
+      "bytes": 12499,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/components.js"
+      ]
+    },
+    {
+      "sha256": "af932169e88d1f99000d38adfa6d1fe3425784378d9c531cc6f1be844be4469c",
+      "bytes": 6177,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/design-system-adapter.js"
+      ]
+    },
+    {
+      "sha256": "ffa3aa8164bb80a40285549fa16520c949091aec1b0eb779c50d29701250caf4",
+      "bytes": 3746,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/figma-uiux-runtime.js"
+      ]
+    },
+    {
+      "sha256": "0fe91500b991930b2b4ff07578300910154114388cbb4e1320d7d4c941a0b6e1",
+      "bytes": 3628,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/relationship-runtime.js"
+      ]
+    },
+    {
+      "sha256": "fcb2a547f9bbc5b5158d301e1dd1e3b8d43cf41ac6c55c68fe52c3a742f6c776",
+      "bytes": 30434,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/shell.js"
+      ]
+    },
+    {
+      "sha256": "1fc52b2ccf3823c32da6071234615b4c05cd498d8b6697a1733dd8b778a9d78b",
+      "bytes": 9320,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/welcome-runtime.js"
+      ]
+    },
+    {
+      "sha256": "ff60a8bf74540f4c4b2c86c101c086eec9bb0ab1ca053fbebebecaf92d7abce9",
+      "bytes": 1034,
+      "paths": [
+        "DGO_Document_Portal_Production/shared/workspace-guide.js"
+      ]
+    },
+    {
+      "sha256": "6b76b4eda9d12bd3975271ce634413b5b3140d8f61ba0abb36f1ec71112e2ac5",
+      "bytes": 107876,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/app.css"
+      ]
+    },
+    {
+      "sha256": "5b4f7531daa1596882a38705c91eaea9be7c56ca621960ec90943a6358b7713a",
+      "bytes": 5499,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/base.css"
+      ]
+    },
+    {
+      "sha256": "2270e3c2d0ce0149e6016a2dc376825177cc179581a98e1f7d5f6480391ac38a",
+      "bytes": 6261,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/brand-type.css"
+      ]
+    },
+    {
+      "sha256": "4c58c97556716594d042639d03370411786affe98148fe2008d1f710ae89e388",
+      "bytes": 9091,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/colors_and_type.css"
+      ]
+    },
+    {
+      "sha256": "e510f965752d137d284e84e32405a4c045b34349cc621137a50d179b539659bd",
+      "bytes": 40569,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/components.css"
+      ]
+    },
+    {
+      "sha256": "5efce35bee5d3082fe63fe9c501289a34257894cc509191bb84b0a8383a008c2",
+      "bytes": 3263,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/layout.css"
+      ]
+    },
+    {
+      "sha256": "200948430283e8fd7503a1fc7e2a8684e060ac97cf6f18b3731c3ab32fef1808",
+      "bytes": 10662,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/platform-authority.css"
+      ]
+    },
+    {
+      "sha256": "b3f408326d3c4de1fa4d3b6da098749c1936c66ff55f0665df33dcf595664cd6",
+      "bytes": 1129,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/reset.css"
+      ]
+    },
+    {
+      "sha256": "77f3e301ea8222726947db3fd5305bfebaf47ca817b2ebacde0de5e0f453c102",
+      "bytes": 1094,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.enhanced.css"
+      ]
+    },
+    {
+      "sha256": "815d633bc5d450fd5491f3a7f2259efa761c65f202098f2b855145b107db2ca4",
+      "bytes": 3062,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.legacy-bridge.css"
+      ]
+    },
+    {
+      "sha256": "305f17bfdca2af459cb715ffffa80230f93bcb1c71e65a4de3370d0445cdab51",
+      "bytes": 7077,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/dgo-design-system/tokens/tokens.semantic.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.semantic.css"
+      ]
+    },
+    {
+      "sha256": "f4b095d75f571641cb6b7258caa6e280870710982be3a2b123862c5b135e50d7",
+      "bytes": 3089,
+      "paths": [
+        "DGO_Document_Portal_Production/styles/index.css"
+      ]
+    },
+    {
+      "sha256": "3ed4419b016a73c76884a3e73270216d18a0c805ad65c133039e27ec1791000d",
+      "bytes": 74089,
+      "paths": [
+        "Document Portal Parity Review/index.html"
+      ]
+    },
+    {
+      "sha256": "5027c28005f98a6a56961fbb6b452eac3d143b2939c35e87b26e1a47f4448132",
+      "bytes": 9872,
+      "paths": [
+        "Document Portal Parity Review/shots/clearance-desktop.jpg"
+      ]
+    },
+    {
+      "sha256": "da07778e6acd4b629250ce71859cff906083085957a009fcfae343baa72afc41",
+      "bytes": 8560,
+      "paths": [
+        "Document Portal Parity Review/shots/clearance-mobile.jpg"
+      ]
+    },
+    {
+      "sha256": "454de35b8b3b28b3cf0fc5befd73fae602b48b4ebae0491949eba7afc1fecbe5",
+      "bytes": 32823,
+      "paths": [
+        "Document Portal Parity Review/shots/dl4all-desktop.jpg"
+      ]
+    },
+    {
+      "sha256": "4b0feb10dd57fc847f06b3d9a81e85ec22e26b161f09ed0022e76de7c24e2187",
+      "bytes": 21063,
+      "paths": [
+        "Document Portal Parity Review/shots/dl4all-mobile.jpg"
+      ]
+    },
+    {
+      "sha256": "9b66cb39bfbf182962cfa70344671ac8e4e70321ae2ba6746215a49b4e3e91b9",
+      "bytes": 27238,
+      "paths": [
+        "Document Portal Parity Review/shots/lms-desktop.jpg"
+      ]
+    },
+    {
+      "sha256": "cbe9a8bc3b7c5815943f21f96bfb98c6ecbc05092c5c5e7c8ccd7c5583ff81de",
+      "bytes": 19856,
+      "paths": [
+        "Document Portal Parity Review/shots/lms-mobile.jpg"
+      ]
+    },
+    {
+      "sha256": "3ed35dffb961aa7620b56f0afcd4560ff02d2dcf6d8cb9957613fc7c404eccea",
+      "bytes": 41717,
+      "paths": [
+        "Document Portal Parity Review/shots/nitda-desktop.jpg"
+      ]
+    },
+    {
+      "sha256": "4d5a0d2cbf4b7d031131953128bdc476f25c860bab46d56b3e597ecf7ffdc9fd",
+      "bytes": 27162,
+      "paths": [
+        "Document Portal Parity Review/shots/nitda-mobile.jpg"
+      ]
+    },
+    {
+      "sha256": "c06c037389f78837b495270be2e1c3a07bc27fd335eb3309ff4067d486a8d91e",
+      "bytes": 35238,
+      "paths": [
+        "Document Portal Parity Review/shots/portal-desktop.jpg"
+      ]
+    },
+    {
+      "sha256": "ade0238976963527e4b70706c9669fa1b84dbd850e581c1e856653c8cdca363a",
+      "bytes": 25951,
+      "paths": [
+        "Document Portal Parity Review/shots/portal-mobile.jpg"
+      ]
+    },
+    {
+      "sha256": "7df076f6a7ee93c68a5c82172100f979b3decc647e4a91c3c8df4809e6cc051c",
+      "bytes": 5249,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/404.html"
+      ]
+    },
+    {
+      "sha256": "aa783a027005dd91ea0bde9db40b4fbf3afd1ebf4f3e117b82d33abc09023960",
+      "bytes": 39681,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/ds/styles/components.css"
+      ]
+    },
+    {
+      "sha256": "fd2bd0461897e3f8d9e253f8a19e1b16af1754f680e4fc9176c1b56e579b36c3",
+      "bytes": 12938,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/index.html"
+      ]
+    },
+    {
+      "sha256": "196e2cb3df0cecbec3ba1439a5bca0ec6513ac73da4c0ac0c0fb7206038b3760",
+      "bytes": 51519,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/core.js"
+      ]
+    },
+    {
+      "sha256": "934959ec487e9578a28e838017a2909ae61bc6e135f6b865d66c82e32c4a76ff",
+      "bytes": 24721,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/data.js"
+      ]
+    },
+    {
+      "sha256": "2d2819c4209174050a0d6fff37dbb897f7b42ac57a6c4ec3453430d42d4796af",
+      "bytes": 9742,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/home.js"
+      ]
+    },
+    {
+      "sha256": "648586f69172025663993a3fe2c24e0edf53db35ca0e8aa728fc1b9035ebff27",
+      "bytes": 39504,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/submit.js"
+      ]
+    },
+    {
+      "sha256": "50c2e7dca5a22f3efb123bfbc9c388ba031786c6744d3beeb91dd93aeae992d4",
+      "bytes": 16920,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/support.js",
+        "document-portal_isolated-code-session-scope-bghduo/js/support.js"
+      ]
+    },
+    {
+      "sha256": "99177677051f966803017fceffd8edec44faa278bd021373b81c3651051453f8",
+      "bytes": 38665,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/js/track.js"
+      ]
+    },
+    {
+      "sha256": "cc77847150657d6cbef21946a21c1283f75c860e62e8efa90059edf823e40612",
+      "bytes": 29129,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/portal.css"
+      ]
+    },
+    {
+      "sha256": "3dda2b97dd0d980d16090a3edde23593d532ecba02465cc0265c075e7b873dc3",
+      "bytes": 14107,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/submit.html"
+      ]
+    },
+    {
+      "sha256": "e51a94350bc5cd8ac4c1af51e3cdc15537c978551f283b63771910b1e26d6b1c",
+      "bytes": 12659,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/support.html"
+      ]
+    },
+    {
+      "sha256": "23f8803aca63b1b86b617c882d413f1e16cd69eb0b2589eaf590532de23e73fc",
+      "bytes": 4466,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/sw.js"
+      ]
+    },
+    {
+      "sha256": "1138effdc72f535230d032f6687f3fa324286231dc5ffc2ad8f4d4497434efcf",
+      "bytes": 7606,
+      "paths": [
+        "FOLIO-PORTAL-Production__Commissioned_v1_181026/track.html"
+      ]
+    },
+    {
+      "sha256": "892864f1f5378e1892d4d1184b921c353629f0e79a56ff40959330666c6ad7d6",
+      "bytes": 327,
+      "paths": [
+        "FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/BUILD-ID.json"
+      ]
+    },
+    {
+      "sha256": "7812def82e71811e23959dad63f7a8705a68aa05befd79fa43e1a058ad379e96",
+      "bytes": 5680,
+      "paths": [
+        "Folio-Portal-Premium/404.html"
+      ]
+    },
+    {
+      "sha256": "a718f7ea7e7ae44373dc98d96b8de3e46de99d62b38a18c9ae348bc7df6c7a99",
+      "bytes": 327,
+      "paths": [
+        "Folio-Portal-Premium/BUILD-ID.json"
+      ]
+    },
+    {
+      "sha256": "bef2d49fd503de1943add44b196734abcef7c2bf50e0e9862f7fbb916ce8dced",
+      "bytes": 422,
+      "paths": [
+        "Folio-Portal-Premium/README-DELIVERY.txt"
+      ]
+    },
+    {
+      "sha256": "d4dbd615fef0c7b0da2e4f67bd1a248d546b2276ba6d48bde3c94d6ccbfd48f1",
+      "bytes": 14396,
+      "paths": [
+        "Folio-Portal-Premium/index.html"
+      ]
+    },
+    {
+      "sha256": "a8fdb979678767b75d8f0b05880d120781269730de7778a32b2a169492d25f5a",
+      "bytes": 53724,
+      "paths": [
+        "Folio-Portal-Premium/js/core.js"
+      ]
+    },
+    {
+      "sha256": "fe9da7fd47d07c52cba042f446729481ee7f010f25dbd9bdd9bc836f1e086ed7",
+      "bytes": 1044,
+      "paths": [
+        "Folio-Portal-Premium/js/home.js"
+      ]
+    },
+    {
+      "sha256": "4b10f05c5ff9923fa736f869033c7b2592b94a37ec9760962a689b67338e2850",
+      "bytes": 3301,
+      "paths": [
+        "Folio-Portal-Premium/js/premium.js"
+      ]
+    },
+    {
+      "sha256": "a50befacde99a441b87e036f21172cef1928b716a3b0a5c625fa79d909cf5437",
+      "bytes": 39815,
+      "paths": [
+        "Folio-Portal-Premium/js/submit.js"
+      ]
+    },
+    {
+      "sha256": "4ce1cd4f0df727bf1d7039eb0adde5df8e5b75d095e9dd6f8d516015f31361ad",
+      "bytes": 39970,
+      "paths": [
+        "Folio-Portal-Premium/js/track.js"
+      ]
+    },
+    {
+      "sha256": "f575f7444a6264b2cd0f037bf1e9053ec706205d04e12982ce469ed10dec52d7",
+      "bytes": 12687,
+      "paths": [
+        "Folio-Portal-Premium/premium.css"
+      ]
+    },
+    {
+      "sha256": "b1d4746f84183c32c322aa81ad32cedd365abe7171091faf6452642390b55394",
+      "bytes": 11726,
+      "paths": [
+        "Folio-Portal-Premium/privacy.html"
+      ]
+    },
+    {
+      "sha256": "af4271fe0360435b72b739fe9f6a5f7f5a90a5634988fd2f18e370ad0e75d492",
+      "bytes": 14695,
+      "paths": [
+        "Folio-Portal-Premium/submit.html"
+      ]
+    },
+    {
+      "sha256": "a1c764c912f2df04b5d012a2435e74827f7bc0c0496215a1cf33488f0c5e7368",
+      "bytes": 13867,
+      "paths": [
+        "Folio-Portal-Premium/support.html"
+      ]
+    },
+    {
+      "sha256": "f2838d5359928861a1bdf539769fdc2cd111dd306ea5473326356d9116fad122",
+      "bytes": 8379,
+      "paths": [
+        "Folio-Portal-Premium/track.html"
+      ]
+    },
+    {
+      "sha256": "fff6dc2828bec6fdd498217861b04e77e82f0b50e8791d404007ef8359a3e7c1",
+      "bytes": 2893,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/404.html"
+      ]
+    },
+    {
+      "sha256": "eee491733f63426e8fda9b38857a4b74a5854b163b758511428f5351cd5c1825",
+      "bytes": 1836,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/COMPLETION.md"
+      ]
+    },
+    {
+      "sha256": "b009b977366952c86d90f1aac77ac719ffc0647d7c80fe106981e2ef90d52ec3",
+      "bytes": 188,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/Dockerfile"
+      ]
+    },
+    {
+      "sha256": "d9a1e56438e17014010a7f0344daaff7611f4aa9363c3f94ae4c2917f6153a17",
+      "bytes": 2891,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/FINAL_QA_REPORT.md"
+      ]
+    },
+    {
+      "sha256": "d5c901135733039e46aa8e58770266371d189ce28bda11cfb7317813d9244e5d",
+      "bytes": 8600,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/PACKAGE_MANIFEST.json"
+      ]
+    },
+    {
+      "sha256": "b70d9189170ff2965c469c2881a0854f22a100949e41bfedf3fe7aaa41d9ab5d",
+      "bytes": 1172,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/README.md"
+      ]
+    },
+    {
+      "sha256": "a70de011769f1ba1857199607a0ea1564c63e042e0de71d129b98f4d04a42c53",
+      "bytes": 372,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/TEST-RESULTS.md"
+      ]
+    },
+    {
+      "sha256": "82b7e39150abb6a389db8bfe138d835b76229827b146a56710ddf35859926745",
+      "bytes": 11453,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/app/server.py"
+      ]
+    },
+    {
+      "sha256": "74550641613ada6f9a5842ec475f5d21cdd2f6d690d027870f0271da1e0e9443",
+      "bytes": 425,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/compose.yaml"
+      ]
+    },
+    {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/data/.gitkeep",
+        "NITDA_Document_Portal_Production_Final/Docs/data/files/.gitkeep"
+      ]
+    },
+    {
+      "sha256": "4ec5abd78fabbaad6b8975acceddadad3ef55c837f6dd51c9fe517e4d87a2ae7",
+      "bytes": 338,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/deploy/nginx.conf"
+      ]
+    },
+    {
+      "sha256": "6838e4bc242034a9e409f573ca64e85c956937e49fdcf20f33caf75aa5f81733",
+      "bytes": 46,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/Docs/requirements.txt"
+      ]
+    },
+    {
+      "sha256": "a753ef20858b5daa6bc6d63862fe959bbfdd45907f6e1e85097adaf14c4f6367",
+      "bytes": 10326,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/README.md"
+      ]
+    },
+    {
+      "sha256": "c843ffc31e5acb97af446410987d0ee43242daa607c8fea7f1dab76328a285a8",
+      "bytes": 12355,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/README.md"
+      ]
+    },
+    {
+      "sha256": "0e884530b52fe0ab265594142d69ff8063040bf650325d48f2507f8da29d598a",
+      "bytes": 37670,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_adherence.oxlintrc.json"
+      ]
+    },
+    {
+      "sha256": "e985a80837013f3de95cab591819a5b5a4ee3f954f5abe6a31bf49cb209b602d",
+      "bytes": 404069,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_ds_bundle.js"
+      ]
+    },
+    {
+      "sha256": "53112d44ab74ada1f458767f0841ac82cc6e5a21d4776bc7b12e10855ecea3d6",
+      "bytes": 92603,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/_ds_manifest.json"
+      ]
+    },
+    {
+      "sha256": "c0d283e30889ed1270888b1ff72aff2f877c1025cf42fc233e0789f2357b6b11",
+      "bytes": 10767,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/colors_and_type.css"
+      ]
+    },
+    {
+      "sha256": "fca1de68e642c17ee14863421ca0e57b8f8bb2886e772698c1f58b334e6a7a60",
+      "bytes": 4566,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/base.css"
+      ]
+    },
+    {
+      "sha256": "f0c9e0e641e04fa7bf545e8bbfec22a871aad7ebbfc67467f7b755f2494dc2b9",
+      "bytes": 39333,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/components.css",
+        "document-portal_isolated-code-session-scope-bghduo/ds/styles/components.css"
+      ]
+    },
+    {
+      "sha256": "84a3c4686b0a53666fcde3eceb7861c224c8a1af9ac8e6f1da6df13f30ba4b08",
+      "bytes": 3252,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/styles/layout.css"
+      ]
+    },
+    {
+      "sha256": "2832cde866d657df070570deb1a6e3b57e5687d9f380f979f1fc86676da05dc2",
+      "bytes": 8731,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.primitive.css"
+      ]
+    },
+    {
+      "sha256": "18310e769678e9c31c11afb4d337173b48d7e6a8d2663e54901801b97e1a481a",
+      "bytes": 7088,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.semantic.css"
+      ]
+    },
+    {
+      "sha256": "e5eed11e51d14bc2a20a00cde3feca1527733af3877924afd72971d86a1ca2bc",
+      "bytes": 3096,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-dark.css"
+      ]
+    },
+    {
+      "sha256": "b81ec9463163c33f84ce8274be73e262145e53e3a294ff5590940f3fe55ca13d",
+      "bytes": 2575,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-hc.css"
+      ]
+    },
+    {
+      "sha256": "fd0c6c1fb18d32fad05aeb639193d241791790451d6ed97ce1516aa6e144addf",
+      "bytes": 753,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/dgo-design-system/tokens/tokens.theme-light.css"
+      ]
+    },
+    {
+      "sha256": "a8775805c63891c8bcc06e062b946a0958e023e72c8256a7a501e0012bb3a610",
+      "bytes": 1999,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/_ds/nitda-design-system-019ddcd9-a7c2-72b6-9389-5f8171e90f2b/styles.css"
+      ]
+    },
+    {
+      "sha256": "d45eaf7c2d907399ff42aae624e15b51c7d0e6de622980548a926fc9d9e2e156",
+      "bytes": 1579,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/config.example.js"
+      ]
+    },
+    {
+      "sha256": "5898b75ba191e4a08ac194570e68d00d071579b0327948cdbb8630226ba13a3e",
+      "bytes": 177713,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/index.html"
+      ]
+    },
+    {
+      "sha256": "431871329533cc9f16716c3ee2efdbd2e99ba6358894447190b70a68c46f1d76",
+      "bytes": 612,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/manifest.webmanifest"
+      ]
+    },
+    {
+      "sha256": "000be91ac685a2a9d2e53738ea2e841ae330e780225c3c33f74afbef13ec52c4",
+      "bytes": 75,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/robots.txt"
+      ]
+    },
+    {
+      "sha256": "ab61c4ccccdebb4b086cced507491bc7dd23c1dc2b9c032c49f5203ae9c98562",
+      "bytes": 221,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/sitemap.xml"
+      ]
+    },
+    {
+      "sha256": "8fe7df74405f3c55f49b7249c74ea1397e65d07dea2b1bd3b4a489bec2e28cbe",
+      "bytes": 69150,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/support.js"
+      ]
+    },
+    {
+      "sha256": "42e064772d3e180ac200d92fcb852dfba221897ae9e3591b9bd56bf18ae42cfa",
+      "bytes": 3735,
+      "paths": [
+        "NITDA_Document_Portal_Production_Final/sw.js"
+      ]
+    },
+    {
+      "sha256": "54c1ea8733f1468a03dd9a6a7230351a604e870c141a93711e60b14155b416ca",
+      "bytes": 5583,
+      "paths": [
+        "document-portal/404.html",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/404.html",
+        "document-portal_handover_source/404.html",
+        "document-portal_repo_ root/404.html"
+      ]
+    },
+    {
+      "sha256": "eb4e3a135b4aa6fdd28d8923552001846a16ba3817920f8090aed7dc0ad59fb5",
+      "bytes": 16413,
+      "paths": [
+        "document-portal/README.md",
+        "document-portal _folio-platform-suite-1.0.2/README.md",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/README.md",
+        "document-portal_folio-platform-suite-1.0.3/README.md",
+        "document-portal_handover_source/README.md",
+        "document-portal_repo_ root/README.md",
+        "document-portal_suite/README.md"
+      ]
+    },
+    {
+      "sha256": "e2c54622d1d2d5466ae0e6e7b81d5c8e4bd48502433c244498a30877f0a263b3",
+      "bytes": 3668,
+      "paths": [
+        "document-portal/config.example.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/config.example.js",
+        "document-portal_handover_source/config.example.js",
+        "document-portal_repo_ root/config.example.js"
+      ]
+    },
+    {
+      "sha256": "f9482637c0d71309781e7679be5cfa37656aa7fdd0c0e37716a17e4bfd899141",
+      "bytes": 73,
+      "paths": [
+        "document-portal/robots.txt",
+        "document-portal _folio-platform-suite-1.0.2/robots.txt",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/robots.txt",
+        "document-portal_folio-platform-suite-1.0.3/robots.txt",
+        "document-portal_handover_source/robots.txt",
+        "document-portal_repo_ root/robots.txt",
+        "document-portal_suite/robots.txt"
+      ]
+    },
+    {
+      "sha256": "50f426947f57c7ee6e2af22303c7f7e344028eb606bcacb563540df8e2dfe588",
+      "bytes": 702,
+      "paths": [
+        "document-portal/sitemap.xml",
+        "document-portal _folio-platform-suite-1.0.2/sitemap.xml",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/sitemap.xml",
+        "document-portal_folio-platform-suite-1.0.3/sitemap.xml",
+        "document-portal_handover_source/sitemap.xml",
+        "document-portal_repo_ root/sitemap.xml",
+        "document-portal_suite/sitemap.xml"
+      ]
+    },
+    {
+      "sha256": "d43bdc84b746ce20bdc3f30f1eb7a1fd84726890e5e4958b87e1731455140044",
+      "bytes": 4471,
+      "paths": [
+        "document-portal/sw.js",
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/sw.js",
+        "document-portal_handover_source/sw.js",
+        "document-portal_repo_ root/sw.js"
+      ]
+    },
+    {
+      "sha256": "88cce7c60484fcde4a2c1f951010e3d4e62d7373e2391ac8f4a7c8bf178519aa",
+      "bytes": 3650,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/DEPLOY.md",
+        "document-portal_folio-platform-suite-1.0.3/DEPLOY.md",
+        "document-portal_suite/DEPLOY.md"
+      ]
+    },
+    {
+      "sha256": "bafefa7e2a2c0ed593d92455f8c73db56ccda2d3f28caef128f08afc8aa5a279",
+      "bytes": 58137,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/ENDPOINT-CHECK-STANDALONE.html",
+        "document-portal_folio-platform-suite-1.0.3/ENDPOINT-CHECK-STANDALONE.html",
+        "document-portal_suite/ENDPOINT-CHECK-STANDALONE.html"
+      ]
+    },
+    {
+      "sha256": "6df9411c11f2d962a4c93a116d76fbc8af0246ea5b566f45f03bdef78c676960",
+      "bytes": 53135,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/ENDPOINT-CHECK.html",
+        "document-portal_folio-platform-suite-1.0.3/ENDPOINT-CHECK.html",
+        "document-portal_suite/ENDPOINT-CHECK.html"
+      ]
+    },
+    {
+      "sha256": "bceed2bf43e0d5be257e226240518867154ca75fd89d9b2e58aabd634617a0d9",
+      "bytes": 3649,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/ENDPOINT_PROVISIONING.md",
+        "document-portal_folio-platform-suite-1.0.3/ENDPOINT_PROVISIONING.md",
+        "document-portal_suite/ENDPOINT_PROVISIONING.md"
+      ]
+    },
+    {
+      "sha256": "cb8472324d8e1d0a96c20a66dffd42fff032a2c806ea707556209adb2b45e2b2",
+      "bytes": 3396,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/FLOW_CATALOGUE.json",
+        "document-portal_folio-platform-suite-1.0.3/FLOW_CATALOGUE.json",
+        "document-portal_suite/FLOW_CATALOGUE.json"
+      ]
+    },
+    {
+      "sha256": "32aea8fd604853b9c5aee60207b5205ed71900cd489c05b862fa595b4910db84",
+      "bytes": 11577,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/PACKAGE_MANIFEST.json",
+        "document-portal_suite/PACKAGE_MANIFEST.json"
+      ]
+    },
+    {
+      "sha256": "b415f787e768a2619d04fb043c7e154fa78ca342906261b547fb7a4cf7cf84da",
+      "bytes": 4484,
+      "paths": [
+        "document-portal _folio-platform-suite-1.0.2/sw.js",
+        "document-portal_folio-platform-suite-1.0.3/sw.js",
+        "document-portal_suite/sw.js"
+      ]
+    },
+    {
+      "sha256": "4c0ca97c039f2eea5b1cc1a41028c3aad771bc8952d40ce1796d614d4d6bc62b",
+      "bytes": 55953,
+      "paths": [
+        "document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/js/core.js",
+        "document-portal_folio-platform-suite-1.0.3/js/core.js",
+        "document-portal_repo_ root/js/core.js"
+      ]
+    },
+    {
+      "sha256": "0370b70a1142b1e332e9db8661b659df21435c52171832dabe6872cc0d6d744b",
+      "bytes": 11576,
+      "paths": [
+        "document-portal_folio-platform-suite-1.0.3/PACKAGE_MANIFEST.json"
+      ]
+    },
+    {
+      "sha256": "ad82446c4924a3bb27ffa0943567073b2b8dbb2b5c79bb5b4da7ef46085e945f",
+      "bytes": 5235,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/404.html"
+      ]
+    },
+    {
+      "sha256": "2302577fcc5ff1905f2b99a820d59ac1a147374c54bb106923365a0337fd0c6f",
+      "bytes": 16178,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/README.md"
+      ]
+    },
+    {
+      "sha256": "5f515145ee3d7856c096e8462bff4d9dee22237c3a13c690769a44eb788abbba",
+      "bytes": 2939,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/config.example.js"
+      ]
+    },
+    {
+      "sha256": "75476042524c6784fa7a65aec49c72dcd794adad677978c1a6aae2c820bc00f2",
+      "bytes": 808,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/ds/ds.css"
+      ]
+    },
+    {
+      "sha256": "2d1549e39380168164f1f2e6dbe50e725a48ec5eeef98511ea0e674b121ccc81",
+      "bytes": 1171,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/ds/tokens/tokens.portal.css"
+      ]
+    },
+    {
+      "sha256": "16bd5b26be7a9dd6cb7011a49c0488d7d236a8ea7846928d1c8666ed426e9088",
+      "bytes": 12924,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/index.html"
+      ]
+    },
+    {
+      "sha256": "d7c7296da83cfa8ac732727f52f4673d258119fb5f397b370ce1c948d217ab64",
+      "bytes": 47750,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/core.js"
+      ]
+    },
+    {
+      "sha256": "49c47ac17f99ac356c91f57d3a728c4d15722e6d0a722a48eb7feddf52ea28a1",
+      "bytes": 24727,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/data.js"
+      ]
+    },
+    {
+      "sha256": "46de45a1b3e085e95660348e1eab06c8cfa782d573e2e3a5f700b8025ffa8ad3",
+      "bytes": 9745,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/home.js"
+      ]
+    },
+    {
+      "sha256": "eaab8c62659a85c766806283b3e8bf3e12a93d18fd4b884b07822e641bc592c5",
+      "bytes": 14116,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/icons.js"
+      ]
+    },
+    {
+      "sha256": "01bbb9036ac1b55e1ed68a632bcd0bda6cf8ea2c0dae7d3a080b77169bdbc58d",
+      "bytes": 37125,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/submit.js"
+      ]
+    },
+    {
+      "sha256": "e892cc89847024a8a56d810d7b6bec3cc4f94a0c2f57e78a735a41a05c04e6e7",
+      "bytes": 37587,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/js/track.js"
+      ]
+    },
+    {
+      "sha256": "be34ce8cf5aa373386f4452c74275d75fe7ab282e6b26febd818caefe337694f",
+      "bytes": 736,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/manifest.webmanifest"
+      ]
+    },
+    {
+      "sha256": "38506029aaf1b7f722a74de5d3c9fca2236641a3709ccb19f7e407d467f0620b",
+      "bytes": 29132,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/portal.css"
+      ]
+    },
+    {
+      "sha256": "d500ca2f193311e22b70bc8f4d7c7a67543c5ff63897b0c817d45a94834b8bea",
+      "bytes": 349,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/robots.txt"
+      ]
+    },
+    {
+      "sha256": "ac810f05e4ec81962cf72acd4949be198077188cf3aea312f88e57c70a7e7252",
+      "bytes": 1286,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/sitemap.xml"
+      ]
+    },
+    {
+      "sha256": "7c83604bd19773f089046d7524df7df5181ac6fdf4a3fe722d16a9c197888a1f",
+      "bytes": 14093,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/submit.html"
+      ]
+    },
+    {
+      "sha256": "2541a0eb6153e187eb71f5efbe1dc5087eaa6a29743543a581fbbe5d1a6c7cad",
+      "bytes": 12645,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/support.html"
+      ]
+    },
+    {
+      "sha256": "6a132e2d02cc6e6c7eb995db3ec2bbf77588b8384e8392cdfc91544f4a430101",
+      "bytes": 4456,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/sw.js"
+      ]
+    },
+    {
+      "sha256": "adf1699659c0a0b03b78ec9a0fcf47391a59d274da4d525e9201dd57a7a78ea6",
+      "bytes": 7592,
+      "paths": [
+        "document-portal_isolated-code-session-scope-bghduo/track.html"
+      ]
+    }
+  ]
+}

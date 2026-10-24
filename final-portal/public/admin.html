@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Registry administration · Document Portal</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="ds/ds.css">
+  <link rel="stylesheet" href="portal.css">
+  <link rel="stylesheet" href="portal-journey.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <a class="pf-skip" href="#main">Skip to main content</a>
+  <header class="staff-header"><a href="index.html">Citizen portal</a><h1>Registry administration</h1>
+    <p>Server-authorized operators only. The operator email allowlist is managed in deployment configuration, never in this browser.</p>
+  </header>
+  <main id="main" class="staff-main">
+    <form id="staffLogin" class="pf-panel staff-card">
+      <label class="dgo-field"><span class="dgo-field__label">Operator email</span>
+        <input id="staffEmail" class="dgo-input" type="email" autocomplete="email" required></label>
+      <button class="dgo-btn dgo-btn--primary" type="submit">Verify and load registry</button>
+      <button class="dgo-btn dgo-btn--secondary" type="button" id="staffLogout">Clear session</button>
+    </form>
+    <p id="staffStatus" role="status" aria-live="polite"></p>
+    <div id="staffWorkspace" hidden>
+      <p>100 items per queue per page; use paging or exact-reference lookup to reach older work. Incomplete intakes cannot be processed. Downloads are unscanned: handle documents in an approved isolated environment.</p>
+      <form id="staffFilter">
+        <label>Exact reference (blank for all queues)<input class="dgo-input" name="referenceId" maxlength="100"></label>
+        <button class="dgo-btn dgo-btn--secondary" type="submit">Find reference / reset queues</button>
+      </form>
+      <div class="dgo-cluster">
+        <button id="staffPrevious" class="dgo-btn dgo-btn--secondary" type="button">Previous page</button>
+        <span id="staffPage"></span>
+        <button id="staffNext" class="dgo-btn dgo-btn--secondary" type="button">Next page</button>
+      </div>
+      <button id="staffExport" class="dgo-btn dgo-btn--secondary" type="button">Export displayed registry JSON</button>
+      <section aria-labelledby="recordsTitle"><h2 id="recordsTitle">Correspondence</h2><div id="staffRecords"></div></section>
+      <section aria-labelledby="casesTitle"><h2 id="casesTitle">Support cases</h2><div id="staffCases"></div></section>
+      <section aria-labelledby="feedbackTitle"><h2 id="feedbackTitle">Feedback</h2><div id="staffFeedback"></div></section>
+      <section aria-labelledby="auditTitle"><h2 id="auditTitle">Latest audit events</h2><pre id="staffAudit"></pre></section>
+    </div>
+  </main>
+  <script src="js/icons.js"></script>
+  <script src="config.local.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/identity.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
