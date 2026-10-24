@@ -101,6 +101,11 @@ class PortalTests(unittest.TestCase):
         self.assertEqual(len(result["record"]["files"]), 1)
         status, body = self.call("/api/files", dict(query, index=0), binary=True)
         self.assertEqual((status, body), (200, self.body))
+        request = Request(self.base + "/api/files", data=json.dumps(dict(query, index=0)).encode(),
+                          headers={"Content-Type": "application/json"})
+        with urlopen(request, timeout=5) as response:
+            self.assertEqual(response.headers["Content-Disposition"], 'attachment; filename="document.bin"')
+            self.assertEqual(response.headers["Content-Type"], "application/octet-stream")
         # A second application instance reads persisted state without reseeding.
         reopened = server_module.Portal(self.env)
         self.assertEqual(reopened.status(query)["record"]["id"], ref)
