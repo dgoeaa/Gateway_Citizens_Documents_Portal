@@ -222,6 +222,7 @@ PF.page = function () {
 
   /* ---------- draft ---------- */
   var attemptId = null;
+  var storageWarning = false;
   var FIELDS = ['service', 'priority', 'name', 'email', 'phone', 'org', 'orgType', 'state', 'title', 'description'];
   function snapshot() {
     var d = { at: new Date().toISOString(), attemptId: attemptId, step: step, declare: PF.$('#declare').checked, files: files.map(function (f) { return { name: f.name, size: f.size }; }) };
@@ -231,7 +232,10 @@ PF.page = function () {
   function saveDraft() {
     var d = snapshot();
     var any = FIELDS.some(function (k) { return k !== 'priority' && d[k]; });
-    if (any) PF.store.draft.set(d);
+    if (any && !PF.store.draft.set(d) && !storageWarning) {
+      storageWarning = true;
+      PF.toast('warning', 'Draft could not be saved', 'Browser storage is unavailable. Keep this page open and keep your original files; do not rely on resuming.', 10000);
+    }
   }
   form.addEventListener('input', function () { saveDraft(); });
   form.addEventListener('change', function (e) {
@@ -408,7 +412,10 @@ PF.page = function () {
 
             /* The registry reference supersedes the local id. Recording it is what makes a
                later status lookup possible at all — a local id means nothing to the registry. */
-            if (res.referenceId) PF.store.setReference(rec.id, res.referenceId);
+            if (res.referenceId) {
+              rec.referenceId = res.referenceId;
+              PF.store.setReference(rec.id, res.referenceId);
+            }
             if (missing.length) {
               PF.store.log('integration', res.referenceId || rec.id,
                 missing.length + ' attachment(s) could not be sent — bytes were not available after a draft restore');
@@ -571,9 +578,9 @@ PF.page = function () {
         toast: ['success', 'Submission received', 'Tracking ID ' + rec.id]
       },
       queued: {
-        title: 'Saved — not yet delivered',
+        title: 'Receipt not confirmed',
         note: 'The registry has not confirmed receipt. This is a local preparation ID, not a registry reference. Nothing will be resent automatically. Keep your original files and retry from the submission form.',
-        toast: ['warn', 'Not delivered', 'No registry receipt was confirmed. Keep your original files.']
+        toast: ['warn', 'Receipt not confirmed', 'No registry receipt was confirmed. Keep your original files.']
       },
       held: {
         title: 'Saved on this device only',
@@ -582,9 +589,9 @@ PF.page = function () {
         toast: ['error', 'Not sent to the registry', 'This portal is not connected. Your answers are saved on this device.']
       },
       incomplete: {
-        title: 'Incomplete — not received',
+        title: 'Receipt not confirmed',
         note: 'One or more uploads or the completion reply failed. Receipt is NOT CONFIRMED. Resume the saved draft and reattach the same files to retry this intake; do not discard it. You can also verify its current state on tracking.',
-        toast: ['error', 'Upload incomplete', 'Do not treat this as a completed submission.']
+        toast: ['error', 'Receipt not confirmed', 'Do not treat this as a confirmed submission. Verify its current state or resume the draft.']
       },
       rejected: {
         title: 'Registry refused this attempt',
@@ -597,7 +604,7 @@ PF.page = function () {
       window.removeEventListener('beforeunload', holdPage);
       /* Once the registry has issued its reference, that is the tracking ID: it is what the
          registry indexes and what its emails quote. The receipt showed only the portal ID. */
-      var issued = (PF.store.get(rec.id) || {}).referenceId;
+      var issued = rec.referenceId || (PF.store.get(rec.id) || {}).referenceId;
       if (issued) {
         trackingId = issued;
         var code = PF.$('#trackingId'), link = PF.$('#trackLink');

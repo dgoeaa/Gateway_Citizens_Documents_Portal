@@ -269,7 +269,7 @@
     },
     draft: {
       get: function () { return read(K.draft, null); },
-      set: function (d) { write(K.draft, d); },
+      set: function (d) { return write(K.draft, d); },
       clear: function () { try { localStorage.removeItem(K.draft); } catch (e) {} }
     },
     reset: function () {
