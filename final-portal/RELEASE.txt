@@ -1,0 +1,282 @@
+FINAL BASELINE SELECTION, CONSOLIDATION AND RELEASE RECORD
+
+Release classification: PRE-PRODUCTION PACKAGE
+Full requested completion: FAILED — do not use with live citizen data.
+
+1. INPUT BOUNDARY AND EVIDENCE
+
+Repository root (R):
+/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal
+Definitive package (P):
+/home/runner/work/Gateway_Citizens_Documents_Portal/Gateway_Citizens_Documents_Portal/final-portal
+R and P below abbreviate these absolute paths.
+Original source snapshot: 8df72a65d42b4d6a72a2c2429e44f66ab6e4e7cf.
+Work was performed on the assigned copilot/portal-source branch.
+
+The visible issue summarizes a longer instruction but does not supply that
+instruction's ordered hierarchy or complete prescribed-outcome vocabulary.
+It is not legitimate to reconstruct missing criteria or claim compliance with
+them. Selection below follows only the visible functional requirements.
+
+The specifically named input
+FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root__FULL_EMBEDDED_CONTENTS.json
+is ABSENT from the accessible local repository. It was not opened or used.
+The commissioned directory also has no BUILD-ID.json: a filename appearing in
+a discussion or another variant is not evidence that the file exists there.
+
+P/source-inventory.json records all 874 accessible original files in 17 trees,
+328 unique byte contents, per-file hashes/occurrences and tree hashes. All bytes
+were read. All 309 distinct UTF-8 materials were decoded; 14 JSON files, 2 Python
+files, 176 JavaScript files, 3 SVGs and 35 HTML files were parsed/syntax checked,
+with no parser failures. HTML parsing is not HTML conformance certification.
+19 distinct binary files were read/hashed: 7 PNGs, 10 JPEGs, one WOFF2, one
+archival compiled Python artifact. Images/font headers were inspected; these
+assets and supplied screenshots are not evidence of connected functionality.
+The compiled artifact was not executed or copied into the final package.
+
+Content/architecture review covered the source families, docs/configuration,
+UI/API flows and unique variants. Hash/read/parse coverage does not establish
+that every statement in the historical reports is true. No historical PASS,
+accessibility score, organizational fact or production designation was adopted
+as a newly executed result.
+
+No web searches, outside repositories, external reference materials, package
+downloads or dependency installation were used. GitHub's current-repository
+CI metadata/log lookup found no failed job; it is not product verification.
+All runtime/test code uses supplied local assets and installed standard tools.
+
+2. COMPARISON AND EXACTLY ONE BASELINE CHOICE
+
+Selected whole candidate: R/NITDA_Document_Portal_Production_Final
+This selects the complete accessible tree, including its root client and Docs,
+not an isolated server file presented as a separate complete product.
+It is the strongest supplied citizen/server starting architecture, NOT a
+complete deployable release as received. No candidate demonstrated all of the
+visible requirements unchanged, so the "complete original baseline" criterion
+is FAILED rather than silently treating a prototype as complete.
+
+Why this architecture: it actually models OTP proofs, owner records, SQLite,
+file tickets, private storage, tracking and write-back, rather than merely
+accepting generic operations or relying on unprovisioned external flows.
+It keeps citizen intake and a server-owned registry in one deployable unit.
+Its root client has unavailable CDN runtime dependencies; Docs/app/server.py
+expects a missing Docs/public directory. These are package defects, not live
+validation gates. This consolidation repairs packaging and replaces only the
+incompatible client runtime with a compatible supplied dependency-free UI.
+
+Evidence:
+  R/NITDA_Document_Portal_Production_Final/Docs/app/server.py:6
+    expects Docs/public, which is absent in the original tree.
+  R/NITDA_Document_Portal_Production_Final/Docs/app/server.py:68-117
+    actual OTP, records, tickets, status, write-back and support code.
+  R/NITDA_Document_Portal_Production_Final/support.js:1142-1180,1838-1908
+    external React/ReactDOM/Babel loading, not self-contained local runtime.
+  R/DGO_Document_Portal_Production/server.py:18,26-35
+    empty generic API reads, OTP "sent" without mail transport, generic accepted
+    writes; this does not enforce the rich frontend's domain workflows.
+  R/DGO_Document_Portal_Production/config/product-definition.config.json
+    the broader staff/registry/assignment/dispatch/archive product, not merely
+    citizen intake. Its unique functions must not be called implemented here.
+  R/FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/js/core.js:397-625
+    compatible vanilla JSON/PUT service contracts and verified lookup UX.
+
+All 17 source trees accounted for (file counts are inventory measurements):
+  4/                                      49  Exact duplicate of October 22 -2.
+  CG/                                     43  Static citizen client. NOT equal
+      to October 22 -1: BUILD-ID.json, two logos and js/track.js differ.
+      -1 adds a missing-element guard that is retained through the -2 client.
+  DGO_Document_Portal_Production/          170  Rich modular staff platform;
+      generic Python gateway is not a complete server for those modules.
+      Workflow concepts inform the limited staff workspace; not imported as
+      supposedly functional enterprise modules.
+  Document Portal Parity Review/          11  Local comparison HTML and ten
+      screenshots; review input, not an executable portal/server.
+  FOLIO-PORTAL-Production__Commissioned_v1_181026/
+                                          40  Earlier static client/assets.
+      Its name is not proof of commissioning or production validation.
+  FOLIO-PORTAL-v2026.10.22-1-upload-to-portal-site-root/
+                                          43  Guarded static client; no server.
+  FOLIO-PORTAL-v2026.10.22-2-upload-to-site-root/
+                                          49  Compatible enhancement: native
+      HTML/CSS/JS, guided form, themes, drafts, command palette, print, responsive
+      controls and journey/accessibility layer. Adopted with service corrections.
+  Folio-Portal-Premium/                    46  Static premium styling and delivery
+      notes explicitly say runtime endpoints are not supplied. Styling is not
+      a reason to displace a connected server architecture.
+  NITDA_Document_Portal_Production_Final/  45  Selected whole baseline, with the
+      defects and limits described above.
+  document-portal/                        46  Static citizen reference family;
+      no locally supplied backend; shared functions retained via -2 UI.
+  document-portal _folio-platform-suite-1.0.2/
+                                          51  Static portal plus endpoint-check
+      workbench/catalogue/manifests. External workflow provisioning is missing.
+  document-portal_ECM_DOCS_DEV-4e3efeaa211b97ee66d97af91ceac43519c0370e/
+                                          46  Static variant; byte-identical to
+      document-portal_repo_ root/.
+  document-portal_folio-platform-suite-1.0.3/
+                                          51  Distinct suite metadata/catalogue;
+      no active provisioned workflows demonstrated. Workbench remains archival.
+  document-portal_handover_source/         46  Exact duplicate of document-portal/.
+  document-portal_isolated-code-session-scope-bghduo/
+                                          41  Earlier static delivery, not an
+      additional complete connected server candidate.
+  document-portal_repo_ root/             46  Exact ECM_DOCS_DEV duplicate.
+  document-portal_suite/                  51  Exact 1.0.2 suite duplicate.
+
+The four duplicate pairs are established by hashes, not assumed from names.
+The other 13 distinct trees were not discarded from inspection as duplicates.
+Comparison rejects external-flow/CDN assumptions without browsing those URLs.
+
+3. ENHANCEMENT REGISTER
+
+These outcome labels describe actual decisions; a missing longer instruction's
+prescribed labels cannot be asserted to have been satisfied.
+
+Item | Material/requirement | Outcome and actual implementation
+01 | NITDA server architecture | ADAPTED: private SQLite/files, real owner APIs,
+     SMTP code transport, proofs, upload tickets and audit in P/app/server.py.
+02 | October 22 -2 citizen UI | ADAPTED: local supplied assets, native runtime,
+     four steps, category requirements, themes, command search, navigation,
+     draft restoration, file limits, receipts and device history retained.
+03 | Citizen journey layer | RETAINED + CORRECTED: focus/labels/live regions,
+     Escape recovery, mobile controls, tooltips, reading progress, return-to-top,
+     reduced motion and print styles. Shared OTP closure now resolves correctly.
+04 | Submission/upload | IMPLEMENTED: stable retry ID saved in draft, restored
+     file-byte reattachment, atomic single-use tickets, SHA-256/length checks,
+     stable attachment indexes, idempotent completion, no receipt before all
+     files. Same filenames do not confuse resumed uploads.
+05 | Tracking/response/note/withdraw | IMPLEMENTED: owner proof, uniform denial,
+     authoritative timeline, response returns action-required to review,
+     terminal-state protection, labelled read-only offline copies.
+06 | Common email OTP | IMPLEMENTED: one provider and one client dialog for
+     submission, tracking/write-back, support, feedback and admin. Server expiry,
+     resend/attempt/address/IP limits, proof hashing and revocation. Local test
+     transport explicitly does not claim actual email delivery.
+07 | Support | IMPLEMENTED: verified create, real CASE reference only on storage,
+     request-key conflict detection, admin replies/closure, verified paged
+     retrieval. Unknown reference can be quoted without revealing a record.
+08 | Feedback | IMPLEMENTED: verified rating 1–5 plus message and real FEEDBACK
+     reference, optional owner-scoped linked request, staff visibility.
+09 | Admin | IMPLEMENTED LIMITED SCOPE: server allowlist, queue pagination/exact
+     lookup, unit/officer/status updates, replies, feedback, audit, authenticated
+     file downloads, displayed-snapshot export, server proof logout.
+10 | Responsive/accessibility | RETAINED + LOCALLY CHECKED: six pages at four
+     widths and keyboard cancellation; no horizontal page overflow in measured
+     cases. No full WCAG/assistive-technology certification is claimed.
+11 | PWA/offline | ADAPTED: allowlisted public shell only; API/admin data excluded
+     from service-worker caching. No automatic submission retries with stale
+     proofs or nonexistent file bytes. Browser caches are labelled nonauthoritative.
+12 | Seed data/random officer/fake progress | EXCLUDED FROM RUNTIME: no seeded
+     authoritative people/cases/records or randomly animated upload percentages.
+     Local preparation IDs are not used as successful registry receipts.
+13 | Old completion/audit reports and original deploy roots | ARCHIVAL ONLY:
+     preserved unchanged in R, not served/imported by the final runtime.
+14 | Endpoint-check workbenches/vault/tenant integrations | PRESERVED/DEFERRED:
+     unique supplied tools remain archival. Not published as a public credential
+     broker or falsely described as connected external services.
+15 | Full DGO workflows | PRESERVED/DEFERRED: scan/counter intake, assignment
+     cascade, executive registers, approvals/dispatch, meetings/projects,
+     email acknowledgements, provisioning, enterprise RBAC, retention/archive
+     and richer reporting remain in the original source. They are NOT working
+     functions of this consolidated package. Full functional parity is FAILED.
+16 | Production privacy/contacts/service guarantees | CORRECTED/OWNER REQUIRED:
+     actual SQLite/file/localStorage behavior documented; Microsoft 365 storage,
+     automatic decision/receipt email, fixed retention, guaranteed reply times
+     and official commissioning claims removed or explicitly qualified.
+17 | Missing embedded input and full hierarchy | MISSING INPUT: no fabricated
+     contents, precedence, comparison results or assertion of final compliance.
+
+4. CONFIGURATION, INVENTORY AND REMOVAL RECORD
+
+P is portable as one directory, with public assets, app/server.py, standard-
+library tests, configuration/proxy examples, inventory and release evidence.
+Only P/public is served. Data stays outside it; P/data is ignored. No source
+variant directory, CDN, external package, outside file or build-time download
+is used by this runtime. Packaging corrects the original missing public root.
+P/README.txt is the operational/configuration reference.
+
+Only the final package is added; no original source tree is deleted or modified.
+Old sources are archival inputs in this PR, not alternate recommended releases.
+This preserves unique source functions without pretending all are implemented
+in the final runtime. No compiled cache, database, uploaded test file, temporary
+browser profile, private code file or test certificate belongs in the package.
+Temporary verification artifacts were isolated under /tmp.
+
+Final exclusions relative to source inputs:
+  - React/Babel CDN runtime and remote deployment canonical metadata.
+  - Old .htaccess root/endpoint assumptions and container image downloads.
+  - Seed records/staff identities, random assignments, simulated upload progress.
+  - Local-write-as-authoritative actions, automatic stale-proof outbox replay.
+  - Unauthenticated generic write acceptance and public private-file URLs.
+  - Historical completion/test claims as evidence of this delivery.
+Supplied brand/design assets are local copies; owner authorization is still a
+release gate. Source contact details in inherited footers are visibly qualified
+by the pre-production notice; they are not newly researched or live-confirmed.
+
+5. VERIFICATION AND CONSISTENCY REVIEW
+
+Only executed local checks count as PASSED. A failed or unimplemented function
+is FAILED, not "live validation required." NOT VERIFIABLE is reserved for an
+actual unavailable dependency such as the operator's SMTP, DNS or certificate.
+Detailed current results are in P/verification.json.
+
+Executed local evidence:
+  - Standard-library unittest suite: 16 tests passed, including private storage,
+    actual HTTP creates/downloads, SHA/size failures, ticket replay/concurrency,
+    retry indexes, expiry, OTP ceilings, uniform ownership denial, production
+    configuration failure, idempotency conflicts, support/feedback, admin,
+    older queue access, logout and restart persistence.
+  - Python compilation and Node syntax checks passed.
+  - Real installed Chromium, external DNS blocked: citizen wizard, OTP, actual
+    upload/finalization/receipt, staff update, verified tracking/response, support
+    case/reply and feedback exercised with synthetic local data.
+  - Six pages x 320/390/768/1280 viewports: 24 measured layouts had no horizontal
+    page overflow, unnamed buttons, missing main headings, runtime exceptions
+    or external resource requests in that run. This is not full WCAG testing.
+  - Escape resolves verification cancellation; no stuck sending promise.
+
+Earlier check failures are not concealed:
+  - Playwright tool transport closed. Installed Chromium was used locally;
+    no browser or library was downloaded.
+  - One browser evaluation command redeclared a global const; corrected inline
+    evaluation completed the remaining case/reply/feedback checks.
+  - The first integrity assertion misinterpreted a "/" href as filesystem root;
+    corrected web-root resolution, then the complete suite passed.
+  - Read-only review found six functional issues (dialog closure, conflicting
+    retries, attempt persistence, older queues, unreachable paging listeners,
+    duplicate-filename resume); each was corrected, with targeted regressions
+    and browser verification where applicable.
+
+Consistency:
+  - No client "success" before storage/completion replies.
+  - Incomplete metadata and unavailable lookup do not imply received/not-found.
+  - Codes are single-use; proofs are reusable, email-bound and expiring.
+  - Authorized staff capability comes from server configuration, not a UI role.
+  - SQLite/local files, not SharePoint, are the actual backend.
+  - Only verification codes use SMTP; receipts/status/support replies use UI.
+  - Planning targets, source contacts and logos are not production assurances.
+  - Missing enterprise workflows remain explicitly FAILED, not hidden as
+    external credentials or counted as implemented because files exist.
+
+6. RELEASE DECISION AND REMAINING WORK
+
+The declared classification at the top is the sole release classification.
+Core local package paths are executable, but the full requested final-baseline
+consolidation is unfinished and must not be asserted complete.
+
+FAILED gates: complete supplied original baseline; unavailable detailed
+hierarchy/outcome instructions; full DGO unique-function parity; external
+registry adapters/domain implementation; full accessibility acceptance;
+retention/deletion, scanner integration, immutable audit/production operations
+and organizational policy approval. These need implementation or owner input.
+
+NOT VERIFIABLE live dependencies: actual operator SMTP inbox delivery, real
+public DNS/certificates/TLS deployment, organizational identities/service
+ownership and supported assistive-technology facilities not provided locally.
+Local test transport and self-signed/local checks cannot satisfy these gates.
+
+Next owner decisions: supply the omitted full instruction/embedded input if it
+exists elsewhere; confirm the desired enterprise workflow scope and selection
+hierarchy; approve contact/privacy/retention/permissions; complete the deferred
+code; then execute supported-device, load, restore and live-service acceptance
+before changing the release classification or collecting real citizen data.
