@@ -136,7 +136,7 @@ PF.page = function () {
         return unavailable(id, res.reason);
       }
       keepUrl(id, email);
-      render(rec, 'device');
+      render(Object.assign({}, rec, { id: rec.referenceId || rec.id }), 'device');
     });
   }
 

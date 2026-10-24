@@ -171,7 +171,7 @@
     get: function (id) {
       id = String(id || '').trim().toUpperCase();
       var all = this.all();
-      for (var i = 0; i < all.length; i++) if (all[i].id === id) return all[i];
+      for (var i = 0; i < all.length; i++) if (all[i].id === id || all[i].referenceId === id) return all[i];
       return null;
     },
     save: function (list) { write(K.recs, list); },
